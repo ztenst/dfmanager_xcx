@@ -1,0 +1,108 @@
+<view class="listFixed">
+  <search placeholder="请输入公司名称" bindconfirm="onSearch" value="{{kw}}"></search>
+</view>
+<view class="company xfList-wrap noTabs">
+  <view class="company-list">
+    <view class="companyItem flex" wx:for="{{list}}" wx:key="id" bindtap="goDetailCompany" data-item="{{item}}">
+      <view class="companyItem-pic flex-box0">
+        <image src="{{item.image}}" class="blockImg"/>
+        <!--view class="companyItem-pictag">置顶房源</view-->
+      </view>
+      <view class="companyItem-info flex-box1">
+        <view class="companyItem-title">{{item.name}}</view>
+        <view class="companyItem-bd flex flex-main-justify">
+          <view class="companyItem-b1">
+            <view class="companyItem-span">{{item.area}} {{item.street}}</view>
+            <view class="companyItem-span">{{item.address}}</view>
+          </view>
+          <!--view class="companyItem-b2">
+            <view class="companyItem-score">8.9<span class="companyItem-unit">分</span></view>
+            <view class="companyItem-span">公司评分</view>
+          </view-->
+        </view>
+        <!--view class="companyItem-tags">
+          <view class="companyItem-tag i1">非常靠谱</view>
+          <view class="companyItem-tag i2">房源优良</view>
+          <view class="companyItem-tag i3">专业可靠</view>
+        </view-->
+      </view>
+    </view>
+    <!--view class="companyItem flex">
+      <view class="companyItem-pic">
+        <image src="../../images/220x170.png" class="blockImg"/>
+        <view class="companyItem-pictag i1">置顶房源</view>
+      </view>
+      <view class="companyItem-info flex-box1">
+        <view class="companyItem-title">上海星河科技房产有限公司</view>
+        <view class="companyItem-bd flex flex-main-justify">
+          <view class="companyItem-b1">
+            <view class="companyItem-span">上海市 静安区</view>
+            <view class="companyItem-span">关注用户 200人</view>
+          </view>
+          <view class="companyItem-b2">
+            <view class="companyItem-score">8.9<span class="companyItem-unit">分</span></view>
+            <view class="companyItem-span">公司评分</view>
+          </view>
+        </view>
+        <view class="companyItem-tags">
+          <view class="companyItem-tag i1">非常靠谱</view>
+          <view class="companyItem-tag i2">房源优良</view>
+          <view class="companyItem-tag i3">专业可靠</view>
+        </view>
+      </view>
+    </view-->
+    <!--view class="companyItem flex">
+      <view class="companyItem-pic">
+        <image src="../../images/220x170.png" class="blockImg"/>
+        <view class="companyItem-pictag">置顶房源</view>
+      </view>
+      <view class="companyItem-info flex-box1">
+        <view class="companyItem-title">上海星河科技房产有限公司</view>
+        <view class="companyItem-bd flex flex-main-justify">
+          <view class="companyItem-b1">
+            <view class="companyItem-span">上海市 静安区</view>
+            <view class="companyItem-span">关注用户 200人</view>
+          </view>
+          <view class="companyItem-b2">
+            <view class="companyItem-score">8.9<span class="companyItem-unit">分</span></view>
+            <view class="companyItem-span">公司评分</view>
+          </view>
+        </view>
+        <view class="companyItem-tags">
+          <view class="companyItem-tag i1">非常靠谱</view>
+          <view class="companyItem-tag i2">房源优良</view>
+          <view class="companyItem-tag i3">专业可靠</view>
+        </view>
+      </view>
+    </view>
+    <view class="companyItem flex">
+      <view class="companyItem-pic">
+        <image src="../../images/220x170.png" class="blockImg"/>
+        <view class="companyItem-pictag">置顶房源</view>
+      </view>
+      <view class="companyItem-info flex-box1">
+        <view class="companyItem-title">上海星河科技房产有限公司</view>
+        <view class="companyItem-bd flex flex-main-justify">
+          <view class="companyItem-b1">
+            <view class="companyItem-span">上海市 静安区</view>
+            <view class="companyItem-span">关注用户 200人</view>
+          </view>
+          <view class="companyItem-b2">
+            <view class="companyItem-score">8.9<span class="companyItem-unit">分</span></view>
+            <view class="companyItem-span">公司评分</view>
+          </view>
+        </view>
+        <view class="companyItem-tags">
+          <view class="companyItem-tag i1">非常靠谱</view>
+          <view class="companyItem-tag i2">房源优良</view>
+          <view class="companyItem-tag i3">专业可靠</view>
+        </view>
+      </view>
+    </view-->
+  </view>
+</view>
+<load-more type="{{isNeedLoadMore}}" wx:if="{{isNeedLoadMore!=0}}"></load-more>
+<view class="common-fixbtnplaceholder"></view>
+<view class="common-fixbtnWrap">
+  <view class="common-fixbtn" bindtap="addCompany">添加分销公司</view>
+</view>

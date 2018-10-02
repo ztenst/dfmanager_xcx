@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText" : "测试",
+    "usingComponents" : {
+        "login-dialog" : "../components/login-dialog",
+        "jubao" : "../components/jubao",
+        "load-more" : "../components/load-more",
+        "search" : "../components/search",
+        "ercode" : "../components/ercode"
+    }
+}

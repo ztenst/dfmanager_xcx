@@ -1,0 +1,45 @@
+<view class="newIndex" wx:if="{{isLoad}}">
+  <view class="newIndex-info flex">
+    <view class="newIndex-ava">
+      <open-data type="userAvatarUrl" class="blockImg" wx:if="{{!user.avatarUrl}}"></open-data>
+      <!--image src="../../images/120x120.png" class="blockImg"/-->
+    </view>
+    <view class="newIndex-userinfo flex flex-dir-top flex-main-center">
+      <view class="flex">
+        <view class="newIndex-name">{{topArr.name}}</view><view class="newIndex-tag">{{topArr.tag}}</view>
+      </view>
+      <view class="newIndex-company">{{topArr.company}}</view>
+    </view>
+  </view>
+  <view class="blank2"></view>
+  <view class="newIndex-swiper">
+    <swiper class="newIndex-wrapper" vertical="true" autoplay="true" interval="3000" circular="true">
+      <swiper-item class="newIndex-swipertitle" wx:for="{{topNewsList}}">{{item}}</swiper-item>
+    </swiper>
+  </view>
+  <view class="newIndex-data">
+    <view class="newIndex-title">
+      <view class="newIndex-h1">今日数据</view>
+    </view>
+    <view class="newIndex-dataList flex flex-main-justify">
+      <view class="newIndex-dataItem" wx:for="{{todayList}}">
+        <view class="newIndex-dataNum">{{item.num}}</view>
+        <view class="newIndex-dataText">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="newIndex-menu">
+    <view class="newIndex-title">
+      <view class="newIndex-h1">工作台</view>
+    </view>
+    <view class="newIndex-menuList">
+      <view class="newIndex-menuItem" wx:for="{{tags}}" bindtap="onLink" data-item="{{item}}">
+        <view class="newIndex-menuIcon">
+          <image src="{{item.image}}" class="blockImg"/>
+        </view>
+        <view class="newIndex-menuText">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <footer></footer>
+</view>

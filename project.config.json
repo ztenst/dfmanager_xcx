@@ -1,0 +1,278 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wxd8f6a2dbe6df67fb",
+	"projectname": "zongdai",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "城市选择",
+					"pathName": "pages/index/city",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "报备详情",
+					"pathName": "pages/baobei/detail",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "订单详情",
+					"pathName": "pages/baobei/order",
+					"query": "id=7"
+				},
+				{
+					"id": 4,
+					"name": "申请带看",
+					"pathName": "pages/baobei/daikan",
+					"query": "id=7"
+				},
+				{
+					"id": 5,
+					"name": "添加跟进",
+					"pathName": "pages/baobei/genjin",
+					"query": "id=7"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的报备列表",
+					"pathName": "pages/my/baobei",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "动态",
+					"pathName": "pages/xinfang/dongtai",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "添加楼盘",
+					"pathName": "pages/xinfang/select",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "报备客户",
+					"pathName": "pages/baobei/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "房源图片",
+					"pathName": "pages/xinfang/img",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "房源详情",
+					"pathName": "pages/xinfang/detail",
+					"query": "id=2714"
+				},
+				{
+					"id": 13,
+					"name": "新房列表",
+					"pathName": "pages/xinfang/list",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "绑定门店码",
+					"pathName": "pages/login/bind",
+					"query": "phone=15380039099"
+				},
+				{
+					"id": -1,
+					"name": "申请",
+					"pathName": "pages/login/apply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "弹框",
+					"pathName": "pages/login/dialog",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/login/reg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的客户",
+					"pathName": "pages/my/manage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "案场-我的",
+					"pathName": "pages/anchang/index",
+					"query": ""
+				},
+				{
+					"id": 20,
+					"name": "案场-报备详情",
+					"pathName": "pages/anchang/order",
+					"query": "id=11"
+				},
+				{
+					"id": 21,
+					"name": "案场-客户列表",
+					"pathName": "pages/anchang/baobei",
+					"query": "sid=57"
+				},
+				{
+					"id": 22,
+					"name": "案场-添加跟进",
+					"pathName": "pages/anchang/genjin",
+					"query": "id=11"
+				},
+				{
+					"id": -1,
+					"name": "案场-项目列表",
+					"pathName": "pages/anchang/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "申请门店码",
+					"pathName": "pages/login/applymd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公司",
+					"pathName": "pages/index/company",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "案场-绑定公司",
+					"pathName": "pages/anchang/bindcomp",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/test/index",
+					"query": ""
+				},
+				{
+					"id": 28,
+					"name": "我的关注",
+					"pathName": "pages/my/fav",
+					"query": ""
+				},
+				{
+					"id": 29,
+					"name": "市场-分销管理",
+					"pathName": "pages/shichang/company",
+					"query": ""
+				},
+				{
+					"id": 30,
+					"name": "市场-添加分销公司",
+					"pathName": "pages/shichang/applymd",
+					"query": "id=6"
+				},
+				{
+					"id": 31,
+					"name": "市场-添加绑定",
+					"pathName": "pages/shichang/select",
+					"query": ""
+				},
+				{
+					"id": 32,
+					"name": "市场-绑定公司",
+					"pathName": "pages/shichang/bindcomp",
+					"query": "title=九霄别苑&id=2719"
+				},
+				{
+					"id": -1,
+					"name": "市场-报备列表",
+					"pathName": "pages/shichang/baobei",
+					"query": ""
+				},
+				{
+					"id": 34,
+					"name": "案场-客户管理",
+					"pathName": "pages/anchang/baobei",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "案场-分配案场销售",
+					"pathName": "pages/anchang/fenpei",
+					"query": "id=13"
+				},
+				{
+					"id": -1,
+					"name": "案场-报备详情",
+					"pathName": "pages/anchang/order",
+					"query": "id=13"
+				},
+				{
+					"id": 37,
+					"name": "案场-添加跟进",
+					"pathName": "pages/anchang/genjin",
+					"query": "id=13"
+				},
+				{
+					"id": 38,
+					"name": "案场-项目列表",
+					"pathName": "pages/anchang/select",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "切换身份",
+					"pathName": "pages/my/shenfen",
+					"query": ""
+				}
+			]
+		}
+	}
+}

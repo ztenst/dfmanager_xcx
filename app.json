@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/index",
+    "pages/login/bind",
+    "pages/login/apply",
+    "pages/login/applymd",
+    "pages/login/dialog",
+    "pages/login/reg",
+    "pages/my/manage",
+    "pages/my/baobei",
+    "pages/my/shenfen",
+    "pages/my/fav",
+    "pages/anchang/index",
+    "pages/anchang/fenpei",
+    "pages/anchang/order",
+    "pages/anchang/baobei",
+    "pages/anchang/genjin",
+    "pages/anchang/select",
+    "pages/anchang/bindcomp",
+    "pages/test/index",
+    "pages/shichang/company",
+    "pages/shichang/applymd",
+    "pages/shichang/select",
+    "pages/shichang/bindcomp",
+    "pages/shichang/baobei"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

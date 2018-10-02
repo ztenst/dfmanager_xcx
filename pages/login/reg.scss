@@ -1,0 +1,69 @@
+@import '../../arg.scss';
+.reg{
+  padding:109rpx 70rpx;
+  &-hd{
+    margin-bottom:44rpx;
+  }
+  &-title{
+    font-size:36rpx;
+    line-height:1;
+  }
+  &-login{
+    font-size:30rpx;
+    line-height:1;
+    color:#3778FF;
+  }
+  &-ele{
+    height:110rpx;
+    line-height:110rpx;
+    margin-bottom:10rpx;
+    input{
+      height:110rpx;
+      font-size:34rpx;
+    }
+  }
+  &-code{
+    font-size:28rpx;
+    color:#1F2D48;
+  }
+  &-codeele{
+    border-bottom:1rpx solid #eee;
+  }
+  &-qh{
+    font-size:32rpx;
+    width:104rpx;
+    border-bottom:1rpx solid #eee;
+    margin-right:20rpx;
+    &:after{
+      content:'';
+      display:inline-block;
+      width:16rpx;
+      height:9rpx;
+      background:url(#{$domain}xfList-down.png) 0 0 no-repeat;
+      background-size:100% 100%;
+      vertical-align:2px;
+      margin-left:5rpx;
+    }
+  }
+  &-tel{
+    border-bottom:1rpx solid #eee;
+  }
+  &-btn{
+    width:610rpx;
+    height:100rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:8rpx;
+    margin:0 auto;
+    margin-top:80rpx;
+    font-size:34rpx;
+    color:#FFF;
+    text-align:center;
+    line-height:100rpx;
+  }
+  &-tip{
+    font-size:28rpx;
+    line-height:1;
+    margin-top:40rpx;
+    color:$c2;
+  }
+}

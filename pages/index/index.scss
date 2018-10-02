@@ -1,0 +1,119 @@
+@import '../../arg.scss';
+.newIndex{
+  &-info{
+    width:670rpx;
+    height:220rpx;
+    box-sizing:border-box;
+    padding:60rpx 50rpx;
+    margin:0 auto;
+    background:url(#{$domain}670x220.png) 0 0/670rpx 220rpx no-repeat
+  }
+  &-company{
+    font-size:30rpx;
+    color:#FFF;
+    margin-top:17rpx;
+  }
+  &-ava{
+    width:100rpx;
+    height:100rpx;
+  }
+  .blank2{
+    height:44rpx;
+    background:#FFF;
+    box-shadow:0 -10rpx 18rpx 0 rgba(0,0,0,0.1);
+  }
+  &-swiper{
+    width:670rpx;
+    height:76rpx;
+    background:rgba(243,243,246,1) url(#{$domain}40x40.png) 20rpx center/40rpx 40rpx no-repeat;
+    border-radius:76rpx;
+    margin:0 auto;
+    box-sizing:border-box;
+    padding-left:72rpx;
+    padding-right:38rpx;
+    swiper{
+      height:76rpx;
+    }
+    pointer-events:none;
+  }
+  &-userinfo{
+    margin-left:18rpx;
+    color:#FFF;
+  }
+  &-name{
+    font-size:40rpx;
+    line-height:1;
+  }
+  &-tag{
+    font-size:24rpx;
+    margin-left:14rpx;
+    padding:0 10rpx;
+    height:36rpx;
+    line-height:36rpx;
+    border-radius:6rpx;
+    color:#FFF;
+    display:inline-block;
+    margin-top:2rpx;
+    background:rgba(255,255,255,0.14);
+  }
+  &-swipertitle{
+    font-size:28rpx;
+    height:76rpx;
+    line-height:76rpx;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  &-data{
+    margin-top:54rpx;
+    padding:0 40rpx;
+  }
+  &-dataItem{
+    text-align:center;
+  }
+  &-dataNum{
+    font-size:60rpx;
+    color:$c1;
+    line-height:1;
+    font-family:'DINMittelschriftLT';
+  }
+  &-dataText{
+    margin-top:21rpx;
+    font-size:28rpx;
+    color:#9097A3;
+    line-height:1;
+  }
+  &-title{
+    margin-bottom:40rpx;
+  }
+  &-h1{
+    font-weight:bold;
+    font-size:38rpx;
+    color:$c1;
+    line-height:1;
+  }
+  &-menu{
+    margin-top:56rpx;
+    padding:0 40rpx;
+  }
+  &-menuList{
+    margin:0 -20rpx;
+  }
+  &-menuItem{
+    margin-bottom:40rpx;
+    float:left;
+    width:25%;
+  }
+  &-menuIcon{
+    margin:0 auto;
+    width:96rpx;
+    height:96rpx;
+  }
+  &-menuText{
+    text-align:center;
+    font-size:28rpx;
+    margin-top:20rpx;
+    color:$c1;
+    line-height:1;
+  }
+}

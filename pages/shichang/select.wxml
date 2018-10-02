@@ -1,0 +1,122 @@
+<view class="addPlot" wx:if="{{isLoad}}">
+  <view class="listFixed">
+    <search placeholder="请输入搜索楼盘" bindconfirm="onSearch" value="{{kw}}"></search>
+  </view>
+  <view class="addPlot-list xfList-wrap noTabs">
+    <view class="addPlotItem flex" wx:for="{{list}}" wx:key="id" bindtap="onSelect" data-item="{{item}}">
+      <!--view class="addPlotItem-radio flex-box0"></view-->
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">{{item.title}}</view>
+          <view class="addPlotItem-sub">{{item.price}}{{item.unit}} {{item.area}} {{item.street}}</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">{{item.pay}}</span><span class="isunit dn">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <!--
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0 ison"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+    <view class="addPlotItem flex">
+      <view class="addPlotItem-radio flex-box0"></view>
+      <view class="addPlotItem-info flex-box1 flex-main-justify flex flex-cross-center">
+        <view class="addPlotItem-b1">
+          <view class="addPlotItem-title">中安银领国际申能大厦</view>
+          <view class="addPlotItem-sub">26520元/㎡ 新昌县</view>
+        </view>
+        <view class="addPlotItem-b2">
+          <view class="addPlotItem-rate"><span class="isnumber">5.2</span><span class="isunit">%+现金奖</span></view>
+          <view class="addPlotItem-type">佣金</view>
+        </view>
+      </view>
+    </view>
+  -->
+  </view>
+  <!--view class="common-fixbtnplaceholder"></view>
+  <view class="common-fixbtnWrap flex flex-main-justify wrapper flex-cross-center">
+    <view class="common-text flex-box0">
+      <view class="common-t1">已选择2个</view>
+      <view class="common-t2">最多可选择5个楼盘</view>
+    </view>
+    <view class="common-fixbtn">确定</view>
+  </view-->
+  <load-more type="{{isNeedLoadMore}}" wx:if="{{isNeedLoadMore!=0}}"></load-more>
+</view>

@@ -1,0 +1,6 @@
+<view class="bindMd-ele flex">
+  <view class="bindMd-label flex-box0">{{item.text}}</view>
+  <view class="bindMd-option flex-box1">
+    <input type="text" name="{{item.param}}" placeholder="{{item.placeholder}}" value="{{item.value}}" bindinput="onInput"/>
+  </view>
+</view>

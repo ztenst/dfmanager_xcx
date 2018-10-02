@@ -1,0 +1,94 @@
+@import '../../arg.scss';
+page{
+  background:#F3F3F6;
+}
+.search{
+  background:#FFF;
+  &-input{
+    width:670rpx;
+    height:68rpx;
+    border-radius:8rpx;
+    padding-left:78rpx;
+    background:rgba(243,243,246,1) url(#{$domain}search2.png) 34rpx center no-repeat;
+    background-size:30rpx 33rpx;
+    box-sizing:border-box;
+    margin:0 auto;
+    input{
+      font-size:28rpx;
+      height:68rpx;
+    }
+  }
+}
+.myBaobei{
+  &-tabs{
+    background:#FFF;
+    white-space:nowrap;
+    padding-top:40rpx;
+  }
+  &-tab{
+    display:inline-block;
+    font-size:32rpx;
+    vertical-align:top;
+    line-height:1;
+    height:57rpx;
+    margin-right:64rpx;
+    &.ison{
+      color:#2F74FB;
+      position:relative;
+      &:after{
+        content:'';
+        position:absolute;
+        left:50%;
+        bottom:0;
+        width:46rpx;
+        margin-left:-23rpx;
+        height:5rpx;
+        background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+        border-radius:6rpx;
+      }
+    }
+    &:first-child{
+      margin-left:40rpx;
+    }
+    &:last-child{
+      margin-right:40rpx;
+    }
+  }
+  scroll-view{
+  }
+  &-list{
+    margin-top:40rpx;
+  }
+}
+.myBaobeiItem{
+  margin:0 auto;
+  margin-bottom:30rpx;
+  width:670rpx;
+  height:240rpx;
+  padding:40rpx;
+  box-sizing:border-box;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 12rpx 20rpx 0px rgba(21,21,21,0.03);
+  border-radius:8rpx;
+  &-sao{
+    width:38rpx;
+    height:38rpx;
+    background:url(#{$domain}sao.png) 0 0 no-repeat;
+    background-size:100% 100%;
+  }
+  &-name{
+    width:162rpx;
+  }
+  &-i1{
+    line-height:1;
+    font-size:32rpx;
+    color:$c1;
+    margin-bottom:42rpx;
+  }
+  &-i2{
+    color:#95949E;
+    font-size:28rpx;
+    line-height:1;
+    margin-bottom:28rpx;
+  }
+}

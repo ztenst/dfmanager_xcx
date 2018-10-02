@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText" : "添加绑定",
+    "usingComponents" : {
+        "load-more" : "../components/load-more",
+        "search" : "../components/search"
+    }
+}

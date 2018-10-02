@@ -1,0 +1,2 @@
+<view class="yzm" wx:if="{{run}}">{{time}}s</view>
+<view class="yzm" wx:if="{{!run}}"><slot></slot></view>

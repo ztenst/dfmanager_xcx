@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText" : "添加跟进",
+    "usingComponents" : {
+      "typeone" : "../components/typeone",
+      "typetwo" : "../components/typetwo",
+      "typethree" : "../components/typethree"
+    }
+}

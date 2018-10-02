@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText" : "分销管理",
+    "usingComponents" : {
+      "search" : "../components/search",
+      "load-more" : "../components/load-more"
+    }
+}

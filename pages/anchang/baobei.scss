@@ -1,0 +1,142 @@
+@import '../../arg.scss';
+page{
+  background:#F3F3F6;
+}
+.search{
+  background:#FFF;
+  &-input{
+    width:670rpx;
+    height:68rpx;
+    border-radius:8rpx;
+    padding-left:78rpx;
+    background:rgba(243,243,246,1) url(#{$domain}search2.png) 34rpx center no-repeat;
+    background-size:30rpx 33rpx;
+    box-sizing:border-box;
+    margin:0 auto;
+    input{
+      font-size:28rpx;
+      height:68rpx;
+    }
+  }
+}
+.myBaobei{
+  &-tabs{
+    background:#FFF;
+    white-space:nowrap;
+    padding-top:40rpx;
+  }
+  &-tab{
+    display:inline-block;
+    font-size:32rpx;
+    vertical-align:top;
+    line-height:1;
+    height:57rpx;
+    margin-right:64rpx;
+    &.ison{
+      color:#2F74FB;
+      position:relative;
+      &:after{
+        content:'';
+        position:absolute;
+        left:50%;
+        bottom:0;
+        width:46rpx;
+        margin-left:-23rpx;
+        height:5rpx;
+        background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+        border-radius:6rpx;
+      }
+    }
+    &:first-child{
+      margin-left:40rpx;
+    }
+    &:last-child{
+      margin-right:40rpx;
+    }
+  }
+  scroll-view{
+  }
+  &-list{
+    margin-top:40rpx;
+  }
+}
+.myBaobeiItem{
+  margin:0 auto;
+  margin-bottom:30rpx;
+  width:670rpx;
+  padding:0rpx 0 0rpx 40rpx;
+  box-sizing:border-box;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 12rpx 20rpx 0px rgba(21,21,21,0.03);
+  border-radius:8rpx;
+  &-title{
+    font-size:34rpx;
+    height:44rpx;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    line-height:40rpx;
+    color:#12213E;
+    margin-bottom:28rpx;
+    font-weight:bold;
+  }
+  &-i1{
+    width:420rpx;
+    padding-top:36rpx;
+  }
+  &-label{
+    margin-right:36rpx;
+  }
+  &-status{
+    border-radius:4rpx;
+    margin-right:26rpx;
+    display:inline-block;
+    box-sizing:border-box;
+    border:1px solid #ff601b;
+    font-size:28rpx;
+    padding:4rpx 0;
+    width:66rpx;
+    text-align:center;
+    line-height:1;
+    &.s0{
+      color:#FF601B;
+      border-color:#FF601B;
+    }
+    &.s1{
+      color:#00CC24;
+      border-color:#00CC24;
+    }
+  }
+  &-row{
+    font-size:28rpx;
+    color:#9097A3;
+    line-height:1;
+    margin-bottom:24rpx;
+    white-space:nowrap;
+  }
+  &-sao{
+    background:url(#{$domain}54x54.png?t=1) center 103rpx no-repeat;
+    background-size:54rpx 54rpx;
+    box-sizing:border-box;
+    line-height:1;
+    text-align:center;
+    padding-top:187rpx;
+  }
+  &-name{
+    width:162rpx;
+  }
+  &-i1{
+    line-height:1;
+    font-size:32rpx;
+    color:$c1;
+    margin-bottom:16rpx;
+  }
+  &-i2{
+    width:204rpx;
+    color:#95949E;
+    font-size:28rpx;
+    line-height:1;
+    margin-bottom:28rpx;
+  }
+}
+

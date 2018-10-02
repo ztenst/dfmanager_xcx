@@ -1,0 +1,87 @@
+@import '../../arg.scss';
+.company{
+  &-list{
+    padding:0 40rpx;
+  }
+}
+.companyItem{
+  padding:40rpx 0;
+  border-bottom:1rpx solid #eee;
+  &:last-child{
+    border-bottom:0;
+  }
+  &-pic{
+    width:220rpx;
+    height:170rpx;
+    border:1rpx solid #eee;
+    position:relative;
+    margin-right:30rpx;
+  }
+  &-pictag{
+    position:absolute;
+    font-size:22rpx;
+    color:#FFF;
+    line-height:38rpx;
+    text-align:center;
+    left:0;
+    top:0;
+    width:110rpx;
+    height:38rpx;
+    background:linear-gradient(90deg,rgba(239,203,140,1),rgba(209,167,98,1));
+    border-radius:8rpx 0px 6rpx 0px;
+    &.i1{
+      background:linear-gradient(90deg,rgba(245,71,49,1),rgba(255,115,55,1));
+    }
+  }
+  &-title{
+    font-size:32rpx;
+    line-height:1;
+    overflow:hidden;
+    height:40rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+  &-bd{
+    margin-top:8rpx;
+    margin-bottom:8rpx;
+  }
+  &-span{
+    font-size:24rpx;
+    color:$c2;
+    line-height:40rpx;
+  }
+  &-score{
+    font-size:40rpx;
+    line-height:40rpx;
+    color:#FF601B;
+  }
+  &-unit{
+    font-size:24rpx;
+  }
+  &-tags{
+    height:32rpx;
+  }
+  &-tag{
+    background:rgba(253,231,224,1);
+    border-radius:4rpx;
+    text-align:center;
+    font-size:20rpx;
+    line-height:1;
+    display:inline-block;
+    padding:6rpx 10rpx;
+    margin-right:10rpx;
+    vertical-align:top;
+    &.i1{
+      color:#FF601B;
+      background:#FDE7E0;
+    }
+    &.i2{
+      color:#4AC845;
+      background:#E4F8E3;
+    }
+    &.i3{
+      color:#3778FF;
+      background:#E7EEFF;
+    }
+  }
+}

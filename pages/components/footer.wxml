@@ -1,0 +1,12 @@
+<view class="footer-placeholder">
+  <view class="footer flex flex-main-justify">
+    <view class="footer-item i1 {{route === 'pages/index/index' ? 'ison' : ''}}" bindtap="onGoIndex">
+      <span>首页</span>
+    </view>
+    <view class="footer-sao" bindtap="onSao"></view>
+    <view class="footer-item i2 {{route === 'pages/my/index' ? 'ison' : ''}}" bindtap="onGoMy">
+      <span>我的</span>
+    </view>
+  </view>
+</view>
+<sao id="c-sao"></sao>

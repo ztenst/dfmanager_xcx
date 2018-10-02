@@ -1,0 +1,40 @@
+<view class="my">
+  <view class="my-hd wrapper flex flex-cross-center flex-main-justify">
+    <view class="flex  flex-cross-center">
+      <view class="my-ava isvip">
+        <image src="../../images/120x120.png" class="blockImg"/>
+      </view>
+      <view class="my-info">
+        <view class="my-infohd flex">
+          <view class="my-name">经纪圈</view>
+          <view class="my-tag">总代</view>
+        </view>
+        <view class="my-time">尊贵VIP会员 | 有效期 2018.12.29</view>
+      </view>
+    </view>
+    <view class="my-btn">立即续费</view>
+  </view>
+  <view class="my-nav flex flex-main-justify">
+    <view class="my-navItem i1">客户管理</view>
+    <view class="my-navItem i2">会员服务</view>
+    <view class="my-navItem i3">我的关注</view>
+    <view class="my-navItem i4">发布房源</view>
+  </view>
+  <view class="my-menu">
+    <view class="my-menuItem">我的订阅</view>
+    <view class="my-menuItem flex flex-main-justify"><view class="flex-box0">更换公司</view><view class="my-menuSub">上海牛咖营销策划有限公司 845020</view></view>
+    <view class="my-menuItem">案场销售</view>
+    <view class="my-menuItem">案场助理</view>
+    <view class="my-menuItem">我的点评</view>
+    <view class="my-menuItem flex flex-main-justify"><view>联系客服</view><view class="my-menuSub">021-3160-5999</view></view>
+  </view>
+</view>
+<view class="backdrop"></view>
+<view class="cDialog">
+  <view class="cDialog-title">提示信息</view>
+  <view class="cDialog-content">你确定要离开上海牛咖营销策划有限公司吗？</view>
+  <view class="cDialog-btns flex flex-box-mean">
+    <view class="cDialog-btn b1 flex-item">取消</view>
+    <view class="cDialog-btn b2 flex-item">确定</view>
+  </view>
+</view>

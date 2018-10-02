@@ -1,0 +1,30 @@
+    <view class="bb-plotaddList">
+      <view class="bb-plotaddItem plotaddItem flex flex-main-justify flex-cross-center" wx:for="{{list}}" wx:key="id">
+        <view>
+          <view class="plotaddItem-title">{{item.title}}</view>
+          <view class="plotaddItem-price" wx:if="{{item.pay}}">{{item.pay}}/佣</view>
+        </view>
+        <view class="plotaddItem-del" bindtap="del" data-item="{{item}}"></view>
+      </view>
+      <!--view class="bb-plotaddItem plotaddItem flex flex-main-justify flex-cross-center">
+        <view>
+          <view class="plotaddItem-title">悦珑湾2期（新西塘孔雀城）</view>
+          <view class="plotaddItem-price">10万-30万/佣</view>
+        </view>
+        <view class="plotaddItem-del"></view>
+      </view>
+      <view class="bb-plotaddItem plotaddItem flex flex-main-justify flex-cross-center">
+        <view>
+          <view class="plotaddItem-title">悦珑湾2期（新西塘孔雀城）</view>
+          <view class="plotaddItem-price">10万-30万/佣</view>
+        </view>
+        <view class="plotaddItem-del"></view>
+      </view>
+      <view class="bb-plotaddItem plotaddItem flex flex-main-justify flex-cross-center">
+        <view>
+          <view class="plotaddItem-title">悦珑湾2期（新西塘孔雀城）</view>
+          <view class="plotaddItem-price">10万-30万/佣</view>
+        </view>
+        <view class="plotaddItem-del"></view>
+      </view-->
+    </view>

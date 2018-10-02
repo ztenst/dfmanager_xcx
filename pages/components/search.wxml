@@ -1,0 +1,5 @@
+    <view class="search">
+      <view class="search-input">
+        <input type="text" placeholder="{{placeholder}}" bindconfirm="confirm" confirm-type="search" value="{{value}}"/>
+      </view>
+    </view>

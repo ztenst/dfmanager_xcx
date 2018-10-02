@@ -1,0 +1,10 @@
+<!--
+<login-dialog id="j-login-dialog"></login-dialog>
+<button bindtap="send">发送验证码</button>
+<input type="text" name="" bindinput="onInput"/>
+<button bindtap="check">校验</button>
+<button bindtap="jubao">显示举报</button>
+<jubao id="cjubao"></jubao-->
+<!--load-more type="{{isNeedLoadMore}}"></load-more-->
+<search placeholder="搜索测试" value="{{111}}" bindconfirm="onSearch"></search>
+<!--ercode text="1111"></ercode-->

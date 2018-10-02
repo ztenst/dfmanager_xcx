@@ -1,0 +1,47 @@
+<view class="applyMd">
+  <view class="applyMd-ele flex">
+    <view class="applyMd-label flex-box0">公司名称</view>
+    <view class="applyMd-option flex-box1">
+      <input type="text" name="" placeholder="南通海上传奇"/>
+    </view>
+  </view>
+  <view class="applyMd-ele flex">
+    <view class="applyMd-label flex-box0">联系人名</view>
+    <view class="applyMd-option flex-box1">
+      <input type="text" name="" placeholder="请输入公司信息"/>
+    </view>
+  </view>
+  <view class="applyMd-ele flex">
+    <view class="applyMd-label flex-box0">联系人电话</view>
+    <view class="applyMd-option flex-box1">
+      <input type="text" name="" placeholder="请输入公司信息"/>
+    </view>
+  </view>
+  <view class="wrapper applyMd-ht">
+    <view class="commonUpload-pztitle">合同照片</view>
+    <view class="commonUpload-pzuploads">
+      <view class="commonUpload-pzupload">
+        <image src="../../images/206x206.png" class="blockImg"/>
+        <view class="commonUpload-del"></view>
+      </view>
+      <view class="commonUpload-pzupload">
+        <image src="../../images/206x206.png" class="blockImg"/>
+        <view class="commonUpload-del"></view>
+      </view>
+      <view class="commonUpload-pzupload">
+        <image src="../../images/206x206.png" class="blockImg"/>
+        <view class="commonUpload-del"></view>
+      </view>
+      <view class="commonUpload-pzupload commonUpload-pzuploadBtn">
+      </view>
+    </view>
+  </view>
+  <view class="applyMd-ht">
+    <view class="applyMd-htTitle"></view>
+    <view class="applyMd-htPhoto"></view>
+  </view>
+  <view class="common-fixbtnplaceholder"></view>
+  <view class="common-fixbtnWrap">
+    <view class="common-fixbtn">提交</view>
+  </view>
+</view>

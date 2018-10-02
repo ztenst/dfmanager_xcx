@@ -1,0 +1,14 @@
+    <navigator class="relationItem flex" url="/pages/xinfang/detail?id={{item.id}}" hover-class="none">
+      <view class="relationItem-pic flex-box0">
+        <view class="relationItem-sort" wx:if="{{item.sort}}">{{item.sort}}</view>
+        <image src="{{item.image}}" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">{{item.title}}</view>
+        <view class="relationItem-area">{{item.area}} {{item.street}}</view>
+        <view class="relationItem-yj">{{item.pay}}</view>
+        <view class="relationItem-company">{{item.zd_company}}</view>
+        <view class="relationItem-price"><span>{{item.price}}</span><span class="unit">{{item.unit}}</span></view>
+        <view class="relationItem-type">{{item.wylx}}</view>
+      </view>
+    </navigator>

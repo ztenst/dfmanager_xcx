@@ -1,0 +1,21 @@
+<form bindsubmit="bindCompany">
+<view class="bindMd">
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">项目信息</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" value="{{options.title}}" disabled/>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">公司信息</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="company" placeholder="请输入公司信息"/>
+    </view>
+  </view>
+</view>
+<view class="common-fixbtnplaceholder"></view>
+<view class="common-fixbtnWrap flex flex-box-mean common-btnstwo">
+  <view class="common-f1 flex-item" bindtap="newCompany">新增</view>
+  <button formType="submit" class="common-f2 flex-item">绑定</button>
+</view>
+</form>

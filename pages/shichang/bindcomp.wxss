@@ -1,0 +1,68 @@
+.bindMd-ele {
+  height: 110rpx;
+  line-height: 110rpx; }
+.bindMd-label {
+  width: 230rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  font-size: 32rpx; }
+.bindMd-option {
+  border-bottom: 1rpx solid #eee; }
+  .bindMd-option input {
+    height: 110rpx;
+    width: 100%;
+    font-size: 32rpx; }
+.bindMd-select {
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  padding: 0 24rpx;
+  background: #F3F3F6;
+  border-radius: 8rpx;
+  margin-right: 10rpx; }
+.bindMd-rcodetitle {
+  font-size: 32rpx;
+  line-height: 1;
+  margin-top: 40rpx;
+  margin-bottom: 26rpx; }
+.bindMd-rcodetip {
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #9097A3; }
+.bindMd-rcodeImg {
+  width: 206rpx;
+  height: 206rpx;
+  margin-top: 40rpx; }
+.bindMd-rcodetxt {
+  width: 206rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 1;
+  margin-top: 26rpx;
+  margin-bottom: 40rpx; }
+.bindMd-note {
+  font-size: 26rpx;
+  line-height: 48rpx;
+  color: #9097A3; }
+.bindMd .link {
+  color: #2F74FB;
+  text-decoration: underline; }
+.bindMd-btn {
+  width: 670rpx;
+  margin: 0 auto;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  font-size: 34rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top: 56rpx; }
+
+button {
+  background: none; }
+  button:after {
+    border: 0; }
+
+/*# sourceMappingURL=bindcomp.wxss.map */

@@ -1,0 +1,6 @@
+<view class="filter filter-order">
+  <view class="filter-bd">
+    <view class="filter-ele {{id == 0 ? 'ison' : ''}}" bindtap="onSelect">默认排序</view>
+    <view class="filter-ele {{item.id == id ? 'ison' : ''}}" wx:for="{{data.list}}" bindtap="onSelect" data-item="{{item}}">{{item.name}}</view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="loginDialog">
+  <view class="loginDialog-backdrop"></view>
+  <view class="loginDialog-hd">
+    <view class="loginDialog-title">登录或注册经纪圈</view>
+    <view class="loginDialog-ele s1">微信账号快速登录</view>
+    <view class="loginDialog-ele s2">微信账号快速登录</view>
+    <view class="loginDialog-other">其它方式登录</view>
+    <view class="loginDialog-close"></view>
+  </view>
+</view>

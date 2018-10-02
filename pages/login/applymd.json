@@ -1,0 +1,6 @@
+{
+"navigationBarTitleText" : "申请门店码",
+"usingComponents" : {
+    "upload" : "../components/upload"
+}
+}

@@ -1,0 +1,49 @@
+<!--view class="reg">
+  <view class="reg-hd flex flex-main-justify flex-cross-center">
+    <view class="reg-title">注册经纪圈</view>
+    <view class="reg-login">登录</view>
+  </view>
+  <form bindsubmit="submitForm">
+    <view class="reg-form">
+      <view class="reg-ele flex">
+        <view class="reg-ele1 reg-qh flex-box0">+86</view>
+        <view class="reg-ele2 reg-tel flex-box1">
+          <input type="text" placeholder="请输入您的手机号" bindinput="onInputPhone" name="form[phone]"/>
+        </view>
+      </view>
+      <view class="reg-ele flex reg-codeele">
+        <view class="reg-ele1 flex-box1 reg-codeinput">
+          <input placeholder="请输入您的验证码" type="text" name="form[code]"/>
+        </view>
+        <view class="reg-ele2 flex-box0 reg-code" bindtap="sendYzm"><yzm id="cyzm" phone="{{phone}}">获取验证码</yzm></view>
+      </view>
+      <button class="reg-btn" formType="submit">注册</button>
+      <view class="reg-tip">注册经纪圈代表你已同意《经纪圈用户协议》</view>
+    </view>
+  </form>
+</view-->
+<view class="reg">
+  <view class="reg-hd flex flex-main-justify flex-cross-center">
+    <view class="reg-title">登录{{config.sitename1}}</view>
+    <!--view class="reg-login">登录</view-->
+  </view>
+  <form bindsubmit="submitForm">
+    <view class="reg-form">
+      <view class="reg-ele flex">
+        <view class="reg-ele1 flex-box0 reg-eleqh">
+          <picker mode="selector" range-key="name" range="{{qs}}" bindchange="changeQs"><view class="phone-q reg-qh">{{qs[qs_index]['value']}}</view></picker>
+        </view>
+        <view class="reg-ele2 reg-tel flex-box1">
+          <input type="number" placeholder="请输入您的手机号" bindinput="onInputPhone" name="form[phone]" maxlength="11"/>
+        </view>
+      </view>
+      <view class="reg-ele flex reg-codeele">
+        <view class="reg-ele1 flex-box1 reg-codeinput">
+          <input placeholder="请输入密码" type="password" name="form[code]"/>
+        </view>
+        <!--view class="reg-ele2 flex-box0 reg-code" bindtap="sendYzm"><yzm id="cyzm" phone="{{phone}}">获取验证码</yzm></view-->
+      </view>
+      <button class="reg-btn" formType="submit">登陆</button>
+    </view>
+  </form>
+</view>

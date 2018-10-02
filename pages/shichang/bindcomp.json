@@ -1,0 +1,6 @@
+{
+"navigationBarTitleText" : "绑定公司",
+"usingComponents" : {
+    "upload" : "../components/upload"
+}
+}

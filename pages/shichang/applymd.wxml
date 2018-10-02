@@ -1,0 +1,59 @@
+<view class="bindMd" wx:if="{{isLoad}}">
+  <form bindsubmit="submitForm">
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">公司全称</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="name" placeholder="请输入公司名称"/>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">办公地址</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="address" placeholder="输入办公地址" value="{{address}}"/>
+    </view>
+    <view class="bindMd-option bindMd-map" bindtap="chooseLocation">地图选择</view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">所在区域</view>
+    <view class="bindMd-option flex-box1">
+      <picker mode="multiSelector" bindchange="onSelectRegion" range="{{multiArray}}" range-key="name" bindcolumnchange="columnChange" value="{{[city_index,area_index,street_index]}}">
+        <input type="text" value="{{region_text}}" placeholder="请输入所在区域" disabled/>
+      </picker>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">店长姓名</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="manager" placeholder="请输入店长姓名"/>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">店长手机</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="phone" placeholder="请输入店长手机"/>
+    </view>
+  </view>
+  <!--view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">公司类型</view>
+    <view class="bindMd-option flex-box1 flex flex-cross-center">
+      <view class="bindMd-select ison">总代公司</view>
+      <view class="bindMd-select">分销公司</view>
+    </view>
+  </view-->
+  <view class="bindMe-rcode wrapper">
+    <view class="bindMd-rcodetitle">营业执照</view>
+    <view class="bindMd-rcodetip">营业执照不得有遮挡，保证字迹清晰，保证营业执照 的边缘清晰，画面不变形。</view>
+    <view class="bindMd-rcodeImg">
+      <upload limit="1" id="cupload" images="{{images}}"></upload>
+    </view>
+  </view>
+  <view class="bindMe-rcode wrapper">
+    <view class="bindMd-rcodetitle">门店照片</view>
+    <view class="bindMd-rcodeImg">
+      <upload limit="1" id="cupload2" images="{{images}}"></upload>
+    </view>
+  </view>
+  <button class="bindMd-btn" formType="submit">提交</button>
+  </form>
+</view>
+<common-dialog-other id="j-common-dialog-other" bind:call="onCall" bind:ok="onOk"></common-dialog-other>

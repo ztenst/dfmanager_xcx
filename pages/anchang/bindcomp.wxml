@@ -1,0 +1,19 @@
+<view class="bindMd">
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">项目信息</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="" placeholder="南通海上传奇"/>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">公司信息</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="" placeholder="请输入公司信息"/>
+    </view>
+  </view>
+</view>
+<view class="common-fixbtnplaceholder"></view>
+<view class="common-fixbtnWrap flex flex-box-mean common-btnstwo">
+  <view class="common-f1 flex-item">新增</view>
+  <view class="common-f2 flex-item">绑定</view>
+</view>

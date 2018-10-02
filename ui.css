@@ -1,0 +1,843 @@
+.blockImg {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+page {
+  color: #12213E; }
+
+.wrapper {
+  padding: 0 40rpx; }
+
+.common-fixbtnplaceholder {
+  height: 140rpx; }
+.common-btnstwo {
+  position: relative;
+  height: 110rpx !important; }
+  .common-btnstwo:before {
+    content: '';
+    width: 1px;
+    height: 60rpx;
+    background: #eeeeee;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+.common-f1, .common-f2 {
+  font-size: 32rpx;
+  line-height: 110rpx;
+  text-align: center; }
+.common-fixbtnWrap {
+  height: 140rpx;
+  background: white;
+  box-shadow: 0px -6rpx 16rpx 0rpx rgba(0, 0, 0, 0.06);
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+.common-fixbtn {
+  width: 670rpx;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  margin: 20rpx auto;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #FFF; }
+  .common-fixbtn.s1 {
+    background: linear-gradient(90deg, #f54731, #ff7337); }
+.common-text {
+  margin-right: 26rpx; }
+.common-t1 {
+  font-size: 32rpx;
+  color: #12213E;
+  line-height: 1;
+  margin-bottom: 18rpx; }
+.common-t2 {
+  line-height: 1;
+  font-size: 26rpx;
+  color: #9097A3; }
+
+.search {
+  background: #FFF; }
+  .search-input {
+    width: 670rpx;
+    height: 68rpx;
+    border-radius: 8rpx;
+    padding-left: 78rpx;
+    background: #f3f3f6 url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/search2.png) 34rpx center no-repeat;
+    background-size: 30rpx 33rpx;
+    box-sizing: border-box;
+    margin: 0 auto; }
+    .search-input input {
+      font-size: 28rpx;
+      height: 68rpx; }
+
+.relationItem {
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #eee; }
+  .relationItem-pic {
+    margin-right: 30rpx;
+    position: relative;
+    width: 220rpx;
+    height: 170rpx;
+    border-radius: 8rpx;
+    overflow: hidden; }
+  .relationItem-sort {
+    width: 110rpx;
+    height: 38rpx;
+    background: linear-gradient(90deg, #f54731, #ff7337);
+    border-radius: 8rpx 0px 8rpx 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22rpx;
+    color: #FFF;
+    line-height: 38rpx;
+    text-align: center; }
+  .relationItem-info {
+    position: relative; }
+  .relationItem-price {
+    font-size: 44rpx;
+    color: #FF601B;
+    top: 0rpx;
+    right: 0;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 50rpx; }
+    .relationItem-price .unit {
+      font-size: 28rpx; }
+  .relationItem-type {
+    font-size: 24rpx;
+    color: #9097A3;
+    position: absolute;
+    top: 106rpx;
+    right: 0;
+    line-height: 1; }
+  .relationItem-title {
+    font-size: 32rpx;
+    line-height: 1;
+    margin-bottom: 18rpx; }
+  .relationItem-area {
+    font-size: 24rpx;
+    margin-bottom: 18rpx;
+    line-height: 1;
+    color: #9097A3; }
+  .relationItem-yj {
+    margin-bottom: 16rpx;
+    padding-left: 48rpx;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/label.png) left center no-repeat;
+    background-size: 38rpx 38rpx;
+    line-height: 38rpx;
+    font-size: 24rpx;
+    color: #FF601B; }
+  .relationItem-company {
+    font-size: 24rpx;
+    line-height: 1;
+    color: #9097A3; }
+
+.commonUpload-pztitle {
+  line-height: 1;
+  font-size: 32rpx;
+  color: #12213E;
+  margin-bottom: 40rpx; }
+.commonUpload-pzuploads {
+  margin-right: -26rpx; }
+.commonUpload-pzupload {
+  width: 206rpx;
+  height: 206rpx;
+  position: relative;
+  margin-right: 26rpx;
+  float: left;
+  margin-bottom: 26rpx; }
+.commonUpload-del {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 36rpx;
+  height: 36rpx;
+  top: -18rpx;
+  right: -18rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/pz-del.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.commonUpload-pzuploadBtn {
+  width: 206rpx;
+  height: 206rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/pz-uploadBtn.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+
+.dn {
+  display: none !important; }
+
+.blank10 {
+  height: 10rpx; }
+
+.loginDialog-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4); }
+.loginDialog-hd {
+  width: 540rpx;
+  height: 420rpx;
+  background: white;
+  border-radius: 8rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+.loginDialog-title {
+  font-size: 34rpx;
+  line-height: 1;
+  text-align: center;
+  padding-top: 60rpx;
+  padding-bottom: 50rpx; }
+.loginDialog-ele {
+  width: 460rpx;
+  height: 96rpx;
+  background: #1aad1a url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/login-wx.png) 67rpx center no-repeat;
+  background-size: 50rpx 42rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: #FFF;
+  text-indent: 137rpx;
+  line-height: 96rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  padding: 0;
+  text-align: left;
+  padding-left: 0; }
+  .loginDialog-ele.s2 {
+    width: 460rpx;
+    height: 96rpx;
+    background: #f8f8f8 url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/login-phone.png) 67rpx center no-repeat;
+    background-size: 31rpx 42rpx;
+    border-radius: 8rpx;
+    border: 1rpx solid #c7c7c7;
+    color: #1F2D48;
+    margin-bottom: 0; }
+.loginDialog-other {
+  margin-top: 38rpx;
+  line-height: 1;
+  font-size: 26rpx;
+  color: #9097A3;
+  text-align: center; }
+.loginDialog-close {
+  width: 88rpx;
+  height: 88rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/login-close.png) center center no-repeat;
+  background-size: 28rpx 28rpx; }
+
+.filter {
+  position: relative;
+  z-index: 10;
+  background: #FFF; }
+  .filter-order .filter-bd {
+    padding: 10rpx 0; }
+  .filter-hd {
+    font-size: 32rpx;
+    color: #12213E;
+    height: 92rpx;
+    line-height: 92rpx;
+    text-indent: 40rpx;
+    font-weight: bold; }
+  .filter-ele {
+    height: 92rpx;
+    line-height: 92rpx;
+    text-indent: 40rpx;
+    font-size: 32rpx;
+    color: #12213E; }
+    .filter-ele.ison {
+      color: #3778FF; }
+  .filter-bd1 {
+    overflow: hidden;
+    padding: 0 40rpx;
+    margin-bottom: -4rpx;
+    margin-top: 10rpx; }
+  .filter-inner {
+    margin-right: -26rpx; }
+  .filter-ele1 {
+    margin-right: 26rpx;
+    margin-bottom: 24rpx;
+    width: 148rpx;
+    height: 60rpx;
+    overflow: hidden;
+    background: #F3F3F6;
+    border-radius: 8rpx;
+    font-size: 20rpx;
+    color: #12213E;
+    text-align: center;
+    line-height: 60rpx;
+    float: left; }
+    .filter-ele1.ison {
+      background: #E7EEFF;
+      color: #3778FF; }
+  .filter-ft {
+    padding: 30rpx 40rpx; }
+  .filter-hd {
+    padding-top: 10rpx; }
+  .filter-btn1 {
+    width: 240rpx;
+    height: 88rpx;
+    background: #9399a5;
+    border-radius: 8rpx;
+    line-height: 88rpx;
+    text-align: center;
+    color: #FFF;
+    font-size: 34rpx; }
+  .filter-btn2 {
+    width: 410rpx;
+    height: 88rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    border-radius: 8rpx;
+    font-size: 34rpx;
+    color: #FFF;
+    line-height: 88rpx;
+    text-align: center; }
+
+.xfList-area {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background: #fff; }
+.xfList scroll-view {
+  overflow: hidden; }
+.xfList-areaList {
+  width: 33.3%;
+  float: left;
+  height: 644rpx; }
+.xfList-area1, .xfList-area3 {
+  background: #F3F3F6; }
+.xfList-area2 {
+  background: #FFF; }
+.xfList-areaElement {
+  height: 92rpx;
+  line-height: 92rpx;
+  font-size: 32rpx;
+  text-indent: 40rpx;
+  color: #333; }
+  .xfList-areaElement.ison {
+    color: #3778FF; }
+
+.bindMd-ele {
+  min-height: 110rpx;
+  line-height: 110rpx;
+  font-size: 32rpx; }
+.bindMd-mulOption {
+  padding-top: 31rpx;
+  line-height: 1.5;
+  padding-bottom: 31rpx; }
+.bindMd-map {
+  font-size: 24rpx;
+  width: 150rpx;
+  text-align: center;
+  color: #2F74FB;
+  border-left: 1rpx solid #eee; }
+.bindMd-label {
+  width: 230rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  font-size: 32rpx; }
+.bindMd-option {
+  border-bottom: 1rpx solid #eee; }
+  .bindMd-option input, .bindMd-option .placeholder {
+    height: 110rpx;
+    width: 100%;
+    font-size: 32rpx; }
+.bindMd-select {
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  padding: 0 24rpx;
+  background: #F3F3F6;
+  border-radius: 8rpx;
+  margin-right: 10rpx; }
+  .bindMd-select.ison {
+    background: #E7EEFF;
+    color: #3778FF; }
+.bindMd-rcodetitle {
+  font-size: 32rpx;
+  line-height: 1;
+  margin-top: 40rpx;
+  margin-bottom: 26rpx; }
+.bindMd-rcodetip {
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #9097A3; }
+.bindMd-rcodeImg {
+  width: 206rpx;
+  height: 206rpx;
+  margin-top: 40rpx; }
+.bindMd-rcodetxt {
+  width: 206rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 1;
+  margin-top: 26rpx;
+  margin-bottom: 40rpx; }
+.bindMd-note {
+  font-size: 26rpx;
+  line-height: 48rpx;
+  color: #9097A3; }
+.bindMd .link {
+  color: #2F74FB;
+  text-decoration: underline; }
+.bindMd-btn {
+  width: 670rpx;
+  margin: 0 auto;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  font-size: 34rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top: 56rpx;
+  margin-bottom: 40rpx; }
+
+.jubao {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFF;
+  z-index: 10; }
+  .jubao-title {
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 36rpx;
+    border-bottom: 1rpx solid #eee; }
+  .jubao-textarea {
+    padding: 0 20rpx; }
+    .jubao-textarea textarea {
+      box-sizing: border-box;
+      padding: 20rpx;
+      width: 100%;
+      height: 400rpx;
+      border: 1rpx solid #eee;
+      font-size: 32rpx; }
+  .jubao-close {
+    width: 104rpx;
+    height: 120rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/login-close.png) center center no-repeat;
+    background-size: 24rpx 24rpx; }
+  .jubao-bd {
+    padding: 30rpx 0; }
+  .jubao-item {
+    height: 96rpx;
+    text-align: center;
+    font-size: 32rpx;
+    line-height: 96rpx; }
+    .jubao-item.ison {
+      color: #3778FF; }
+  .jubao-ft {
+    height: 100rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    color: #fff;
+    font-size: 34rpx;
+    line-height: 100rpx;
+    text-align: center; }
+
+.jubao-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.4); }
+
+.cDialog {
+  z-index: 10;
+  width: 540rpx;
+  background: white;
+  border-radius: 24rpx;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .cDialog-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9; }
+  .cDialog-title {
+    line-height: 1;
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+    font-size: 36rpx;
+    color: #12213E;
+    text-align: center; }
+  .cDialog-content {
+    margin: 0 auto;
+    margin-bottom: 23rpx;
+    line-height: 50rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #9097A3;
+    max-width: 360rpx; }
+  .cDialog-btns {
+    border-top: 1rpx solid #ddd; }
+  .cDialog-btn {
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    font-size: 36rpx; }
+    .cDialog-btn.b1 {
+      border-right: 1rpx solid #ddd;
+      color: #12213E; }
+    .cDialog-btn.b2 {
+      color: #526FFF; }
+
+.common-opts {
+  line-height: 1;
+  font-size: 24rpx;
+  color: #12213E;
+  text-align: center; }
+.common-opt1 {
+  padding-top: 84rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/detail-tel.png) center 30rpx no-repeat;
+  background-size: 43rpx 43rpx;
+  margin-right: 54rpx; }
+.common-opt2 {
+  padding-top: 84rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/detail-fav.png) center 31rpx no-repeat;
+  background-size: 44rpx 40rpx;
+  margin-right: 52rpx; }
+
+.listFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #FFF;
+  z-index: 2; }
+
+.xfList-tabs {
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #eee; }
+.xfList-wrap {
+  padding-top: 158rpx; }
+  .xfList-wrap.noTabs {
+    padding-top: 68rpx; }
+
+.xfList-tab {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  text-align: center; }
+  .xfList-tab.ison {
+    color: #2F74FB; }
+    .xfList-tab.ison:after {
+      border-top-color: #2F74FB; }
+  .xfList-tab.isorder {
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/xfList-order.png) center center no-repeat;
+    width: 96rpx;
+    background-size: 22rpx 26rpx;
+    margin-right: 10rpx; }
+    .xfList-tab.isorder:after {
+      display: none; }
+  .xfList-tab:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 9rpx solid #9097A3;
+    border-left: 8rpx solid transparent;
+    border-right: 8rpx solid transparent;
+    border-bottom: 8rpx solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 48rpx;
+    margin-left: 10rpx; }
+
+.weui-loadmore {
+  margin: 0 auto;
+  height: 76rpx;
+  line-height: 76rpx;
+  clear: both; }
+
+.weui-loadmore-isshort {
+  margin-top: -20rpx; }
+
+.listLoad {
+  clear: both;
+  background-color: #f5f5f5;
+  height: 76rpx;
+  line-height: 76rpx; }
+  .listLoad-text {
+    color: #999;
+    font-size: 28rpx;
+    text-align: center; }
+  .listLoad.islight {
+    background: transparent; }
+
+.plotaddItem {
+  padding: 40rpx 0;
+  border-bottom: 1px solid #eee; }
+  .plotaddItem:last-child {
+    border-bottom: 0; }
+  .plotaddItem-title {
+    font-size: 32rpx;
+    color: #12213E;
+    line-height: 1;
+    margin-bottom: 28rpx; }
+  .plotaddItem-price {
+    line-height: 1;
+    font-size: 28rpx;
+    color: #FF601B; }
+  .plotaddItem-del {
+    width: 32rpx;
+    height: 32rpx;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/del.png) 0 0 no-repeat;
+    background-size: 100% 100%; }
+
+.daikan-tip {
+  height: 74rpx;
+  line-height: 74rpx;
+  background: #E7EEFF;
+  font-size: 30rpx;
+  text-align: center;
+  color: #3E7DFF;
+  margin-top: 50rpx; }
+.daikan-ercode {
+  margin-top: 60rpx;
+  margin-bottom: 40rpx; }
+.daikan-ercodeImg {
+  width: 232rpx;
+  height: 232rpx;
+  margin: 0 auto; }
+.daikan-ercodeText {
+  font-size: 32rpx;
+  color: #12213E;
+  line-height: 44rpx;
+  text-align: center;
+  margin-top: 24rpx; }
+.daikan-pz {
+  padding-top: 30rpx;
+  overflow: hidden; }
+.daikan-pztitle {
+  line-height: 1;
+  font-size: 32rpx;
+  color: #12213E;
+  margin-bottom: 40rpx; }
+.daikan-pzuploads {
+  margin-right: -26rpx; }
+.daikan-pzupload {
+  width: 206rpx;
+  height: 206rpx;
+  position: relative;
+  margin-right: 26rpx;
+  float: left;
+  margin-bottom: 26rpx; }
+.daikan-del {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 36rpx;
+  height: 36rpx;
+  top: -18rpx;
+  right: -18rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/pz-del.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.daikan-pzuploadBtn {
+  width: 206rpx;
+  height: 206rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/pz-uploadBtn.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.daikan-uploadBtnPlaceholder {
+  height: 140rpx; }
+.daikan-uploadBtnWrapper {
+  height: 140rpx;
+  width: 750rpx;
+  background: white;
+  box-shadow: 0px -6rpx 16rpx 0rpx rgba(0, 0, 0, 0.06);
+  left: 0;
+  position: fixed;
+  bottom: 0; }
+.daikan-uploadBtn {
+  width: 670rpx;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  margin: 20rpx auto;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #FFF; }
+
+.search {
+  background: #FFF; }
+  .search-input {
+    width: 670rpx;
+    height: 68rpx;
+    border-radius: 8rpx;
+    padding-left: 78rpx;
+    background: #f3f3f6 url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/search2.png) 34rpx center no-repeat;
+    background-size: 30rpx 33rpx;
+    box-sizing: border-box;
+    margin: 0 auto; }
+    .search-input input {
+      font-size: 28rpx;
+      height: 68rpx; }
+
+.myBaobei-tabs {
+  background: #FFF;
+  white-space: nowrap;
+  padding-top: 40rpx; }
+.myBaobei-tab {
+  display: inline-block;
+  font-size: 32rpx;
+  vertical-align: top;
+  line-height: 1;
+  height: 57rpx;
+  margin-right: 64rpx; }
+  .myBaobei-tab.ison {
+    color: #2F74FB;
+    position: relative; }
+    .myBaobei-tab.ison:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 46rpx;
+      margin-left: -23rpx;
+      height: 5rpx;
+      background: linear-gradient(90deg, #73a1ff, #286bf5);
+      border-radius: 6rpx; }
+  .myBaobei-tab:first-child {
+    margin-left: 40rpx; }
+  .myBaobei-tab:last-child {
+    margin-right: 40rpx; }
+.myBaobei-list {
+  margin-top: 40rpx; }
+
+.myBaobeiItem {
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  width: 670rpx;
+  padding: 0rpx 0 0rpx 40rpx;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0px 12rpx 20rpx 0px rgba(21, 21, 21, 0.03);
+  border-radius: 8rpx; }
+  .myBaobeiItem-title {
+    font-size: 34rpx;
+    height: 44rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40rpx;
+    color: #12213E;
+    margin-bottom: 28rpx;
+    font-weight: bold; }
+  .myBaobeiItem-i1 {
+    width: 420rpx;
+    padding-top: 36rpx; }
+  .myBaobeiItem-label {
+    margin-right: 36rpx; }
+  .myBaobeiItem-status {
+    border-radius: 4rpx;
+    margin-right: 26rpx;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ff601b;
+    font-size: 28rpx;
+    padding: 4rpx 0;
+    width: 66rpx;
+    text-align: center;
+    line-height: 1; }
+    .myBaobeiItem-status.s0 {
+      color: #FF601B;
+      border-color: #FF601B; }
+    .myBaobeiItem-status.s1 {
+      color: #00CC24;
+      border-color: #00CC24; }
+  .myBaobeiItem-row {
+    font-size: 28rpx;
+    color: #9097A3;
+    line-height: 1;
+    margin-bottom: 24rpx;
+    white-space: nowrap; }
+  .myBaobeiItem-sao {
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/54x54.png?t=1) center 103rpx no-repeat;
+    background-size: 54rpx 54rpx;
+    box-sizing: border-box;
+    line-height: 1;
+    text-align: center;
+    padding-top: 187rpx; }
+  .myBaobeiItem-name {
+    width: 162rpx; }
+  .myBaobeiItem-i1 {
+    line-height: 1;
+    font-size: 32rpx;
+    color: #12213E;
+    margin-bottom: 16rpx; }
+  .myBaobeiItem-i2 {
+    width: 204rpx;
+    color: #95949E;
+    font-size: 28rpx;
+    line-height: 1;
+    margin-bottom: 28rpx; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 750rpx;
+  height: 105rpx;
+  background: white;
+  box-shadow: 0px -6rpx 16rpx 0px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box; }
+  .footer-placeholder {
+    height: 125rpx; }
+  .footer-item {
+    text-align: center;
+    font-size: 22rpx;
+    line-height: 1;
+    width: 282rpx;
+    height: 32rpx;
+    padding-top: 73rpx;
+    color: #888E99; }
+    .footer-item.ison span {
+      color: #2F74FB; }
+    .footer-item.i1 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/footer-i1.png) center 17rpx/46rpx 46rpx no-repeat; }
+      .footer-item.i1.ison {
+        background-image: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/footer-i1-on.png); }
+    .footer-item.i2 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/footer-i2.png) center 17rpx/46rpx 46rpx no-repeat; }
+      .footer-item.i2.ison {
+        background-image: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/footer-i2-on.png); }
+  .footer-sao {
+    width: 104rpx;
+    height: 104rpx;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/sao46x42.png) 30rpx 33rpx/46rpx 42rpx no-repeat, linear-gradient(138deg, #6a9bff 0%, #2f70f6 100%);
+    box-shadow: 0px 8rpx 14rpx 0px rgba(87, 141, 253, 0.4);
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20rpx; }
+
+.placeholder, .input-placeholder {
+  color: #999; }
+
+/*# sourceMappingURL=ui.css.map */

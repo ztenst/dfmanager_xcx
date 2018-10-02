@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText" : "项目列表",
+    "usingComponents" : {
+        "load-more" : "../components/load-more",
+        "search" : "../components/search"
+    }
+}

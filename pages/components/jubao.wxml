@@ -1,0 +1,18 @@
+<view class="{{show ? '' : 'dn'}}">
+<view class="jubao-backdrop"></view>
+<view class="dialog jubao">
+  <view class="jubao-close" bindtap="hide"></view>
+  <view class="jubao-title">虚假房源举报</view>
+  <view class="jubao-bd">
+    <view class="jubao-item {{reasonId == 0 ? 'ison' : ''}}" data-index="0" bindtap="setReason">项目已售罄</view>
+    <view class="jubao-item {{reasonId == 1 ? 'ison' : ''}}" data-index="1" bindtap="setReason">代理公司已撤销</view>
+    <view class="jubao-item {{reasonId == 2 ? 'ison' : ''}}" data-index="2" bindtap="setReason">黑客翘客拖佣金</view>
+    <view class="jubao-item {{reasonId == 3 ? 'ison' : ''}}" data-index="3" bindtap="setReason">无法联系对接人</view>
+    <view class="jubao-item {{reasonId == 4 ? 'ison' : ''}}" data-index="4" bindtap="setReason">其他</view>
+    <view class="jubao-textarea {{reasonId == 4 ? '' : 'dn'}}">
+      <textarea bindinput="onInputReason" cols="30" rows="10" placeholder="请填写举报内容"></textarea>
+    </view>
+  </view>
+  <view class="jubao-ft" bindtap="tijiao">提交</view>
+</view>
+</view>

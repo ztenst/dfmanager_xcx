@@ -1,0 +1,67 @@
+@import '../../arg.scss';
+.loginDialog{
+  &-backdrop{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background:rgba(0,0,0,0.4);
+  }
+  &-hd{
+    width:540rpx;
+    height:472rpx;
+    background:rgba(255,255,255,1);
+    border-radius:8rpx;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  &-title{
+    font-size:34rpx;
+    line-height:1;
+    text-align:center;
+    padding-top:60rpx;
+    padding-bottom:50rpx;
+  }
+  &-ele{
+    width:460rpx;
+    height:96rpx;
+    background:rgba(26,173,26,1) url(#{$domain}login-wx.png) 67rpx center no-repeat;
+    background-size:50rpx 42rpx;
+    border-radius:8rpx;
+    font-size:32rpx;
+    color:#FFF;
+    text-indent:137rpx;
+    line-height:96rpx;
+    margin:0 auto;
+    margin-bottom:30rpx;
+    &.s2{
+      width:460rpx;
+      height:96rpx;
+      background:rgba(248,248,248,1) url(#{$domain}login-phone.png)67rpx center no-repeat;
+      background-size:31rpx 42rpx;
+      border-radius:8rpx;
+      border:1rpx solid rgba(199,199,199,1);
+      color:#1F2D48;
+      margin-bottom:0;
+    }
+  }
+  &-other{
+    margin-top:38rpx;
+    line-height:1;
+    font-size:26rpx;
+    color:$c2;
+    text-align:center;
+  }
+  &-close{
+    width:88rpx;
+    height:88rpx;
+    position:absolute;
+    right:0;
+    top:0;
+    background:url(#{$domain}login-close.png) center center no-repeat;
+    background-size:28rpx 28rpx;
+  }
+}

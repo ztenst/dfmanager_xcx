@@ -1,0 +1,438 @@
+.bbOrder-info {
+  margin-left: 30rpx; }
+.bbOrder-people {
+  padding: 40rpx;
+  box-sizing: border-box;
+  margin: 0 40rpx;
+  border-bottom: 1rpx solid #eee;
+  position: relative; }
+  .bbOrder-people.s1 {
+    width: 670rpx;
+    height: 212rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    border-radius: 20rpx; }
+  .bbOrder-people.s2 {
+    width: 670rpx;
+    height: 212rpx;
+    background: linear-gradient(-90deg, #f54731, #ff7337);
+    border-radius: 20rpx; }
+.bbOrder-photo {
+  padding: 0 0;
+  overflow: hidden; }
+.bbOrder-contact {
+  position: absolute;
+  right: 40rpx;
+  top: 65rpx; }
+.bbOrder-tel {
+  font-size: 28rpx;
+  line-height: 1;
+  color: #FFF;
+  margin-top: 24rpx; }
+.bbOrder-telIcon {
+  width: 70rpx;
+  height: 70rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/tel2.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.bbOrder-address {
+  font-size: 26rpx;
+  color: #FFF;
+  margin-top: 24rpx;
+  line-height: 1; }
+.bbOrder-name {
+  font-size: 32rpx;
+  color: #fff;
+  line-height: 1; }
+.bbOrder-tag {
+  width: 120rpx;
+  height: 36rpx;
+  border-radius: 6rpx;
+  line-height: 36rpx;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  font-size: 24rpx;
+  vertical-align: top;
+  margin-left: 22rpx;
+  color: #FFF; }
+.bbOrder-contactBtn {
+  width: 180rpx;
+  height: 66rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  line-height: 66rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: white; }
+.bbOrder-plot {
+  padding: 0 40rpx; }
+.bbOrder-plotName {
+  font-size: 34rpx;
+  line-height: 66rpx; }
+.bbOrder-plotLine {
+  margin-top: 54rpx;
+  padding-bottom: 60rpx; }
+.bbOrder-plotLineInner {
+  margin-left: -10rpx;
+  margin-right: -10rpx; }
+.bbOrder-plotStatus {
+  padding-top: 40rpx;
+  width: 120rpx;
+  font-size: 26rpx;
+  line-height: 1;
+  color: #12213E;
+  text-align: center;
+  position: relative; }
+  .bbOrder-plotStatus:before {
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 100%;
+    background: #D6D6D6;
+    position: absolute;
+    left: 50%;
+    top: -4rpx;
+    transform: translateX(-50%);
+    border: 4rpx solid #fff; }
+  .bbOrder-plotStatus:last-child:after {
+    display: none; }
+  .bbOrder-plotStatus:after {
+    content: '';
+    height: 4rpx;
+    width: 94rpx;
+    background: #eee;
+    position: absolute;
+    left: 50%;
+    margin-left: 12rpx;
+    top: 6rpx; }
+  .bbOrder-plotStatus.ison:before {
+    background-color: #FF601B; }
+  .bbOrder-plotStatus.ison:after {
+    background-color: #FF601B; }
+.bbOrder-statusItem {
+  padding: 40rpx 40rpx 40rpx 70rpx;
+  position: relative; }
+  .bbOrder-statusItem:before {
+    content: '';
+    width: 1px;
+    background: #D6D6D6;
+    position: absolute;
+    left: 32rpx;
+    top: 64rpx;
+    height: 140rpx; }
+  .bbOrder-statusItem.ison:before {
+    background: #FF601B; }
+  .bbOrder-statusItem.ison .bbOrder-statusText:before {
+    background-image: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/dot-on.png); }
+  .bbOrder-statusItem:after {
+    content: '';
+    height: 0;
+    border-bottom: 1rpx solid #eee;
+    position: absolute;
+    left: 70rpx;
+    bottom: 0;
+    right: 40rpx; }
+  .bbOrder-statusItem:last-child:before {
+    display: none; }
+  .bbOrder-statusItem:last-child:after {
+    display: none; }
+.bbOrder-statusText {
+  position: relative;
+  font-size: 28rpx;
+  color: #12213E;
+  line-height: 1;
+  margin-bottom: 20rpx; }
+  .bbOrder-statusText:before {
+    content: '';
+    width: 14rpx;
+    height: 14rpx;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/dot.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -46rpx;
+    top: 6rpx; }
+.bbOrder-statusTime {
+  font-size: 24rpx;
+  color: #95949E;
+  line-height: 1; }
+.bbOrder-statusTag {
+  font-size: 28rpx;
+  color: #12213E;
+  line-height: 1; }
+.bbOrder-option {
+  padding: 20rpx 40rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0px -6px 16px 0px rgba(0, 0, 0, 0.06);
+  font-size: 34rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx; }
+  .bbOrder-optionWrap {
+    height: 140rpx; }
+.bbOrder-full {
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx; }
+.bbOrder-half {
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  width: 320rpx; }
+  .bbOrder-half.b1 {
+    margin-right: 30rpx; }
+.bbOrder-b1 {
+  width: 240rpx;
+  height: 100rpx;
+  background: #9399a5;
+  border-radius: 8rpx; }
+.bbOrder-b2 {
+  width: 410rpx;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx; }
+
+.bbOrder-user {
+  width: 84rpx;
+  height: 84rpx; }
+.bbOrder-tabs {
+  padding: 0 124rpx; }
+.bbOrder-tab {
+  font-size: 32rpx;
+  height: 60rpx;
+  position: relative;
+  color: #12213E; }
+  .bbOrder-tab.ison {
+    color: #2F74FB; }
+    .bbOrder-tab.ison:before {
+      display: block; }
+  .bbOrder-tab:before {
+    content: '';
+    display: none;
+    width: 46rpx;
+    height: 5rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    border-radius: 6rpx;
+    position: absolute;
+    left: 50%;
+    margin-left: -23rpx;
+    bottom: 0; }
+.bbOrder-history {
+  padding: 0 40rpx; }
+
+.bbOrderhItem {
+  border-bottom: 1rpx solid #eee;
+  padding: 40rpx 0; }
+  .bbOrderhItem:last-child {
+    border-bottom: 0; }
+  .bbOrderhItem-status {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 16rpx;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/bbOrder-s1.png) 0 0 no-repeat;
+    background-size: 100% 100%; }
+    .bbOrderhItem-status.s2 {
+      background-image: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/bbOrder-s2.png); }
+  .bbOrderhItem-hd {
+    font-size: 28rpx;
+    color: #12213E;
+    line-height: 34rpx; }
+  .bbOrderhItem-tag {
+    font-size: 24rpx;
+    color: #95949E;
+    line-height: 1.5;
+    margin-top: 16rpx; }
+
+.bbDetail-people {
+  padding-top: 40rpx;
+  position: relative; }
+.bbDetail-contact {
+  position: absolute;
+  right: 0;
+  top: 40rpx; }
+.bbDetail-tel {
+  font-size: 28rpx;
+  line-height: 1;
+  color: #9097A3;
+  margin-top: 24rpx; }
+.bbDetail-smsIcon {
+  width: 70rpx;
+  height: 70rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/sms.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.bbDetail-telIcon {
+  margin-left: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/tel.png) 0 0 no-repeat;
+  background-size: 100% 100%; }
+.bbDetail-address {
+  font-size: 26rpx;
+  color: #12213E;
+  margin-top: 24rpx;
+  line-height: 1; }
+.bbDetail-name {
+  font-size: 32rpx;
+  color: #12213E;
+  line-height: 1; }
+.bbDetail-tag {
+  width: 120rpx;
+  height: 36rpx;
+  border-radius: 6rpx;
+  line-height: 36rpx;
+  text-align: center; }
+  .bbDetail-tag.tag1 {
+    background: #e4f8e3;
+    color: #4AC845;
+    font-size: 24rpx;
+    vertical-align: top;
+    margin-left: 22rpx; }
+  .bbDetail-tag.tag2 {
+    background: #E7EEFF;
+    color: #3778FF;
+    font-size: 24rpx;
+    vertical-align: top;
+    margin-left: 22rpx; }
+.bbDetail-contactBtn {
+  width: 180rpx;
+  height: 66rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx;
+  line-height: 66rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: white; }
+.bbDetail-plot {
+  padding: 0 40rpx;
+  margin-top: 35rpx; }
+.bbDetail-plotName {
+  font-size: 34rpx;
+  line-height: 66rpx; }
+.bbDetail-plotLine {
+  margin-top: 54rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 50rpx; }
+.bbDetail-plotLineInner {
+  margin-left: -10rpx;
+  margin-right: -10rpx; }
+.bbDetail-plotStatus {
+  padding-top: 40rpx;
+  width: 120rpx;
+  font-size: 26rpx;
+  line-height: 1;
+  color: #12213E;
+  text-align: center;
+  position: relative; }
+  .bbDetail-plotStatus:before {
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 100%;
+    background: #D6D6D6;
+    position: absolute;
+    left: 50%;
+    top: -4rpx;
+    transform: translateX(-50%);
+    border: 4rpx solid #fff; }
+  .bbDetail-plotStatus:last-child:after {
+    display: none; }
+  .bbDetail-plotStatus:after {
+    content: '';
+    height: 4rpx;
+    width: 94rpx;
+    background: #eee;
+    position: absolute;
+    left: 50%;
+    margin-left: 12rpx;
+    top: 6rpx; }
+  .bbDetail-plotStatus.ison:before {
+    background-color: #FF601B; }
+  .bbDetail-plotStatus.ison:after {
+    background-color: #FF601B; }
+.bbDetail-statusItem {
+  padding: 40rpx 40rpx 40rpx 70rpx;
+  position: relative; }
+  .bbDetail-statusItem:before {
+    content: '';
+    width: 1px;
+    background: #D6D6D6;
+    position: absolute;
+    left: 32rpx;
+    top: 64rpx;
+    height: 140rpx; }
+  .bbDetail-statusItem.ison:before {
+    background: #FF601B; }
+  .bbDetail-statusItem.ison .bbDetail-statusText:before {
+    background-image: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/dot-on.png); }
+  .bbDetail-statusItem:after {
+    content: '';
+    height: 0;
+    border-bottom: 1rpx solid #eee;
+    position: absolute;
+    left: 70rpx;
+    bottom: 0;
+    right: 40rpx; }
+  .bbDetail-statusItem:last-child:before {
+    display: none; }
+  .bbDetail-statusItem:last-child:after {
+    display: none; }
+.bbDetail-statusText {
+  position: relative;
+  font-size: 28rpx;
+  color: #12213E;
+  line-height: 1;
+  margin-bottom: 20rpx; }
+  .bbDetail-statusText:before {
+    content: '';
+    width: 14rpx;
+    height: 14rpx;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/dot.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -46rpx;
+    top: 6rpx; }
+.bbDetail-statusTime {
+  font-size: 24rpx;
+  color: #95949E;
+  line-height: 1; }
+.bbDetail-statusTag {
+  font-size: 28rpx;
+  color: #12213E;
+  line-height: 1; }
+.bbDetail-option {
+  padding: 20rpx 40rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0px -6px 16px 0px rgba(0, 0, 0, 0.06);
+  font-size: 34rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx; }
+  .bbDetail-optionWrap {
+    height: 140rpx; }
+.bbDetail-full {
+  height: 100rpx;
+  background: #9399a5;
+  border-radius: 8rpx; }
+.bbDetail-b1 {
+  width: 240rpx;
+  height: 100rpx;
+  background: #9399a5;
+  border-radius: 8rpx; }
+.bbDetail-b2 {
+  width: 410rpx;
+  height: 100rpx;
+  background: linear-gradient(90deg, #73a1ff, #286bf5);
+  border-radius: 8rpx; }
+
+/*# sourceMappingURL=order.wxss.map */

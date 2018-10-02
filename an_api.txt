@@ -1,0 +1,165 @@
+1. 获取openid 根据is_true判断
+/api/index/getOpenidAn?code=xx
+返回参数多一个type 1 是案场 市场是2
+
+2. 个人中心 user_type 案场传1 市场传2
+/api/user/index?uid=xx&user_type=xx
+返回参数和总代小程序一样
+
+3. 获取手机号 这个没有msg status和data 直接返回字符串
+/api/index/decodeAn  post
+参数
+accessKey
+encryptedData
+
+4. 绑定手机号和openid 第一次需要绑定
+/api/user/bindOpenid?openid=xx&phone=xx
+返回uid
+
+5. 手机号登录 
+/api/user/checkPwd?phone=xx&pwd=xx
+返回uid和type
+
+6. 分销公司列表 搜索公司名 placeholder变一下 请输入公司名称
+标签和评分去掉
+/api/user/getCompanyList?uid=xx&kw=xx
+[
+	{
+	id: "2",
+	name: "常州回音网络科技",
+	area: "上海",
+	street: "",
+	address: "天堂",
+	image: "http://oofuaem2b.bkt.clouddn.com/2018/0710/1531202794571538307.png?imageslim"
+	}
+]
+
+7. 分销公司详情
+/api/user/getCompanyInfo?id=xx
+id: "2",
+address: "天堂",
+map_lat: "",
+map_lng: "",
+area: "上海",
+street: "",
+name: "张涛",
+phone: "13861242596",
+image: "http://oofuaem2b.bkt.clouddn.com/2018/0710/1531202794571538307.png?imageslim"
+
+8. 市场代理的项目列表
+/api/plot/list?mkstaff=xx
+返回的格式一样
+
+9. 报备列表
+市场搜索placeholder显示 请输入项目名或分销公司名
+/api/user/subList?uid=xx&user_type=xx&type=xx&kw=xx&hid=xx user_type 项目展示系统用0 案场传1 市场传2 type是报备状态 
+{
+    num: 1,
+    name: "所有客户",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1,  1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"    第三行显示内容
+    }]
+},
+{
+    num: 1,
+    name: "报备",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1, 1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"   第三行显示内容     
+    }]
+},
+
+10. 添加绑定
+company 公司全称
+/api/user/bindMarket?uid=xx&hid=xx&company=xx
+
+以上为市场
+========================================================
+以下为案场
+
+1. 获取案场销售
+/api/plot/getSaleList?sid=xx
+[
+{
+id: "4",
+name: "陈建明15380039099"
+}
+]
+
+2. 确认到访
+/api/user/setCome?sid=xx
+
+3. 案场项目列表
+/api/plot/list?anstaff=xx
+返回的格式一样
+
+4. 报备列表
+市场搜索placeholder显示 请输入项目名或客户电话
+/api/user/subList?uid=xx&user_type=xx&type=xx&kw=xx&hid=xx user_type 项目展示系统用0 案场传1 市场传2 type是报备状态 
+{
+    num: 1,
+    name: "所有客户",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1,  1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"    第三行显示内容
+    }]
+},
+{
+    num: 1,
+    name: "报备",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1, 1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"   第三行显示内容     
+    }]
+},
+
+5. 添加跟进
+/api/user/addSubPro post
+参数
+sid 报备id
+note 备注
+status 状态 项目展示小程序没有这个字段 案场有
+uid 项目展示小程序的uid
+staff 案场市场小程序的uid
+price 设置的销售金额 单独一行的一个文本框
+
+6.获取报备状态列表
+/api/user/getSubTag
+
+7. 获取销售金额 
+/api/user/getSubPrice?sid=xx
+
+

@@ -1,0 +1,11 @@
+    "pages/my/index", //我的
+    "pages/anchang/fenpei", //案场-分配市场销售
+    "pages/anchang/order", //案场-报备详情
+    "pages/anchang/baobei", //案场-客户管理
+    "pages/anchang/genjin", //案场-添加跟进
+    "pages/anchang/select", //案场-项目列表
+    "pages/shichang/company", //市场-分销管理
+    "pages/shichang/applymd", //市场-添加分销公司
+    "pages/shichang/select", //市场-添加绑定
+    "pages/shichang/bindcomp",//市场-绑定公司
+    "pages/shichang/baobei" //市场-报备列表

@@ -1,0 +1,2 @@
+<view class="common-opt2 flex-item" bindtap="fav">收藏</view>
+

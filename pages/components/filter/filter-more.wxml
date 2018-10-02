@@ -1,0 +1,14 @@
+<view class="xfList-shaixuan filter">
+  <view wx:for="{{data.list}}">
+    <view class="filter-hd">{{item.name}}</view>
+    <view class="filter-bd filter-bd1">
+      <view class="filter-inner">
+        <view class="filter-ele1 {{v.id == item.value ? 'ison' : ''}}" wx:for="{{item.list}}" wx:for-item="v" wx:for-index="sindex" data-index="{{index}}" data-item="{{v}}" bindtap="onSelect">{{v.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="filter-ft flex flex-main-justify">
+    <view class="filter-btn1" bindtap="onReset">不限条件</view>
+    <view class="filter-btn2" bindtap="onConfirm">确认</view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+.genjin{
+  padding:30rpx 40rpx;
+  &-textarea{
+    width:670rpx;
+    height:240rpx;
+    background:rgba(243,243,246,1);
+    border-radius:8rpx;
+    margin:0 auto;
+    box-sizing:border-box;
+    padding:15rpx 24rpx;
+    textarea{
+      height:100%;
+      width:100%;
+      font-size:28rpx;
+      line-height:46rpx;
+    }
+  }
+  &-any{
+    font-size:32rpx;
+    margin-top:32rpx;
+  }
+  &-btn{
+    width:670rpx;
+    height:100rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:8rpx;
+    font-size:34rpx;
+    color:#FFF;
+    line-height:100rpx;
+    text-align:center;
+    //margin-top:134rpx;
+    margin-top:40rpx;
+  }
+}

@@ -1,0 +1,96 @@
+.newIndex-info {
+  width: 670rpx;
+  height: 220rpx;
+  box-sizing: border-box;
+  padding: 60rpx 50rpx;
+  margin: 0 auto;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/670x220.png) 0 0/670rpx 220rpx no-repeat; }
+.newIndex-company {
+  font-size: 30rpx;
+  color: #FFF;
+  margin-top: 17rpx; }
+.newIndex-ava {
+  width: 100rpx;
+  height: 100rpx; }
+.newIndex .blank2 {
+  height: 44rpx;
+  background: #FFF;
+  box-shadow: 0 -10rpx 18rpx 0 rgba(0, 0, 0, 0.1); }
+.newIndex-swiper {
+  width: 670rpx;
+  height: 76rpx;
+  background: #f3f3f6 url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/40x40.png) 20rpx center/40rpx 40rpx no-repeat;
+  border-radius: 76rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 72rpx;
+  padding-right: 38rpx;
+  pointer-events: none; }
+  .newIndex-swiper swiper {
+    height: 76rpx; }
+.newIndex-userinfo {
+  margin-left: 18rpx;
+  color: #FFF; }
+.newIndex-name {
+  font-size: 40rpx;
+  line-height: 1; }
+.newIndex-tag {
+  font-size: 24rpx;
+  margin-left: 14rpx;
+  padding: 0 10rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  border-radius: 6rpx;
+  color: #FFF;
+  display: inline-block;
+  margin-top: 2rpx;
+  background: rgba(255, 255, 255, 0.14); }
+.newIndex-swipertitle {
+  font-size: 28rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.newIndex-data {
+  margin-top: 54rpx;
+  padding: 0 40rpx; }
+.newIndex-dataItem {
+  text-align: center; }
+.newIndex-dataNum {
+  font-size: 60rpx;
+  color: #12213E;
+  line-height: 1; }
+.newIndex-dataText {
+  margin-top: 21rpx;
+  font-size: 28rpx;
+  color: #9097A3;
+  line-height: 1; }
+.newIndex-title {
+  margin-bottom: 40rpx; }
+.newIndex-h1 {
+  font-weight: bold;
+  font-size: 38rpx;
+  color: #12213E;
+  line-height: 1; }
+.newIndex-menu {
+  margin-top: 56rpx;
+  padding: 0 40rpx; }
+.newIndex-menuList {
+  margin: 0 -20rpx; }
+.newIndex-menuItem {
+  margin-bottom: 40rpx;
+  float: left;
+  width: 25%; }
+.newIndex-menuIcon {
+  margin: 0 auto;
+  width: 96rpx;
+  height: 96rpx; }
+.newIndex-menuText {
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  color: #12213E;
+  line-height: 1; }
+
+/*# sourceMappingURL=index.wxss.map */

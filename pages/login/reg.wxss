@@ -1,0 +1,57 @@
+.reg {
+  padding: 109rpx 70rpx; }
+  .reg-hd {
+    margin-bottom: 44rpx; }
+  .reg-title {
+    font-size: 36rpx;
+    line-height: 1; }
+  .reg-login {
+    font-size: 30rpx;
+    line-height: 1;
+    color: #3778FF; }
+  .reg-ele {
+    height: 110rpx;
+    line-height: 110rpx;
+    margin-bottom: 10rpx; }
+    .reg-ele input {
+      height: 110rpx;
+      font-size: 34rpx; }
+  .reg-code {
+    font-size: 28rpx;
+    color: #1F2D48; }
+  .reg-codeele {
+    border-bottom: 1rpx solid #eee; }
+  .reg-qh {
+    font-size: 32rpx;
+    width: 104rpx;
+    border-bottom: 1rpx solid #eee;
+    margin-right: 20rpx; }
+    .reg-qh:after {
+      content: '';
+      display: inline-block;
+      width: 16rpx;
+      height: 9rpx;
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/xfList-down.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+      vertical-align: 2px;
+      margin-left: 5rpx; }
+  .reg-tel {
+    border-bottom: 1rpx solid #eee; }
+  .reg-btn {
+    width: 610rpx;
+    height: 100rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    border-radius: 8rpx;
+    margin: 0 auto;
+    margin-top: 80rpx;
+    font-size: 34rpx;
+    color: #FFF;
+    text-align: center;
+    line-height: 100rpx; }
+  .reg-tip {
+    font-size: 28rpx;
+    line-height: 1;
+    margin-top: 40rpx;
+    color: #9097A3; }
+
+/*# sourceMappingURL=reg.wxss.map */

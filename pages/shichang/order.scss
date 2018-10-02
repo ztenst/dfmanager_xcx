@@ -1,0 +1,308 @@
+@import '../../arg.scss';
+
+.bbOrder{
+  &-info{
+    margin-left:30rpx;
+  }
+  &-people{
+    padding:40rpx;
+    box-sizing:border-box;
+    margin:0 40rpx;
+    margin-bottom:30rpx;
+    border-bottom:1rpx solid #eee;
+    position:relative;
+    &.s1{
+      width:670rpx;
+      height:212rpx;
+      background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+      border-radius:20rpx;
+    }
+    &.s2{
+      width:670rpx;
+      height:212rpx;
+      background:linear-gradient(-90deg,rgba(245,71,49,1),rgba(255,115,55,1));
+      border-radius:20rpx;
+    }
+  }
+
+  &-contact{
+    position:absolute;
+    right:40rpx;
+    top:65rpx;
+  }
+
+  &-tel{
+    font-size:28rpx;
+    line-height:1;
+    color:#FFF;
+    margin-top:24rpx;
+  }
+  &-telIcon{
+    width:70rpx;
+    height:70rpx;
+    background:url(#{$domain}tel2.png) 0 0 no-repeat;
+    background-size:100% 100%;
+  }
+  &-address{
+    font-size:26rpx;
+    color:#FFF;
+    margin-top:24rpx;
+    line-height:1;
+  }
+  &-name{
+    font-size:32rpx;
+    color:#fff;
+    line-height:1;
+  }
+  &-tag{
+    width:120rpx;
+    height:36rpx;
+    border-radius:6rpx;
+    line-height:36rpx;
+    text-align:center;
+    background:rgba(255,255,255,0.26);
+    font-size:24rpx;
+    vertical-align:top;
+    margin-left:22rpx;
+    color:#FFF;
+  }
+  &-contactBtn{
+    width:180rpx;
+    height:66rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:8rpx;
+    line-height:66rpx;
+    text-align:center;
+
+    font-size:30rpx;
+    color:rgba(255,255,255,1);
+  }
+  &-plot{
+    padding:0 40rpx;
+    margin-top:44rpx;
+  }
+  &-plotName{
+    font-size:34rpx;
+    line-height:66rpx;
+  }
+  &-plotLine{
+    margin-top:54rpx;
+    padding-bottom:60rpx;
+  }
+  &-plotLineInner{
+    margin-left:-10rpx;
+    margin-right:-10rpx;
+  }
+  &-plotStatus{
+    padding-top:40rpx;
+    width:120rpx;
+    font-size:26rpx;
+    line-height:1;
+    color:$c1;
+    text-align:center;
+    position:relative;
+    &:before{
+      content:'';
+      width:16rpx;
+      height:16rpx;
+      border-radius:100%;
+      background:#D6D6D6;
+      position:absolute;
+      left:50%;
+      top:-4rpx;
+      transform:translateX(-50%);
+      border:4rpx solid #fff;
+    }
+    &:last-child{
+      &:after{
+        display:none;
+      }
+    }
+    &:after{
+      content:'';
+      height:4rpx;
+      width:94rpx;
+      background:#eee;
+      position:absolute;
+      left:50%;
+      margin-left:12rpx;
+      top:6rpx;
+    }
+    &.ison{
+      &:before{
+        background-color:#FF601B;
+      }
+      &:after{
+        background-color:#FF601B;
+      }
+    }
+  }
+  &-status{
+  }
+  &-statusItem{
+    padding:40rpx 40rpx 40rpx 70rpx;
+    position:relative;
+    &:before{
+      content:'';
+      width:1px;
+      background:#D6D6D6;
+      position:absolute;
+      left:32rpx;
+      top:64rpx;
+      height:140rpx;
+    }
+    &.ison{
+      &:before{
+        background:#FF601B;
+      }
+      .bbOrder-statusText{
+        &:before{
+          background-image:url(#{$domain}dot-on.png);
+        }
+      }
+    }
+    &:after{
+      content:'';
+      height:0;
+      border-bottom:1rpx solid #eee;
+      position:absolute;
+      left:70rpx;
+      bottom:0;
+      right:40rpx;
+    }
+
+    &:last-child{
+      &:before{
+        display:none;
+      }
+      &:after{
+        display:none;
+      }
+    }
+
+  }
+  &-statusText{
+    position:relative;
+    &:before{
+      content:'';
+      width:14rpx;
+      height:14rpx;
+      border:1px solid #fff;
+      border-radius:100%;
+      background:url(#{$domain}dot.png) 0 0 no-repeat;
+      background-size:100% 100%;
+      position:absolute;
+      left:-46rpx;
+      top:6rpx;
+    }
+    font-size:28rpx;
+    color:$c1;
+    line-height:1;
+    margin-bottom:20rpx;
+  }
+  &-statusTime{
+    font-size:24rpx;
+    color:#95949E;
+    line-height:1;
+  }
+
+  &-statusTag{
+    font-size:28rpx;
+    color:$c1;
+    line-height:1;
+  }
+  &-option{
+    padding:20rpx 40rpx;
+    height:100rpx;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(255,255,255,1);
+    box-shadow:0px -6px 16px 0px rgba(0,0,0,0.06);
+    &Wrap{
+      height:140rpx;
+    }
+    font-size:34rpx;
+    color:#FFF;
+    text-align:center;
+    line-height:100rpx;
+
+  }
+  &-b1{
+    width:240rpx;
+    height:100rpx;
+    background:rgba(147,153,165,1);
+    border-radius:8rpx;
+  }
+  &-b2{
+    width:410rpx;
+    height:100rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:8rpx;
+  }
+}
+.bbOrder{
+  &-user{
+    width:84rpx;
+    height:84rpx;
+  }
+  &-tabs{
+    padding:0 124rpx;
+  }
+  &-tab{
+    font-size:32rpx;
+    height:60rpx;
+    position:relative;
+    color:$c1;
+    &.ison{
+      color:#2F74FB;
+      &:before{
+        display:block;
+      }
+    }
+    &:before{
+      content:'';
+      display:none;
+      width:46rpx;
+      height:5rpx;
+      background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+      border-radius:6rpx;
+      position:absolute;
+      left:50%;
+      margin-left:-23rpx;
+      bottom:0;
+    }
+  }
+  &-history{
+    padding:0 40rpx;
+  }
+}
+.bbOrderhItem{
+  border-bottom:1rpx solid #eee;
+  padding:40rpx 0;
+  &:last-child{
+    border-bottom:0;
+  }
+  &-status{
+    width:34rpx;
+    height:34rpx;
+    margin-right:16rpx;
+    background:url(#{$domain}bbOrder-s1.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    &.s2{
+      background-image:url(#{$domain}bbOrder-s2.png);
+    }
+  }
+  &-hd{
+    font-size:28rpx;
+    color:$c1;
+    line-height:34rpx;
+  }
+  &-tag{
+    font-size:24rpx;
+    color:#95949E;
+    line-height:1;
+    margin-top:16rpx;
+  }
+}

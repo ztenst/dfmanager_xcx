@@ -1,0 +1,66 @@
+<view class="manage" wx:if="{{isLoad}}">
+  <search placeholder="请输入搜索联系人姓名" bindconfirm="onSearch" value="{{kw}}"></search>
+  <view class="manage-list wrapper">
+    <view class="manage-item flex flex-main-justify flex-cross-center" wx:for="{{list}}" wx:key="*index" data-item="{{item}}" bindtap="select">
+      <view class="flex flex-cross-center">
+        <view class="manage-pic flex-box0">
+          <image src="../../images/84x84.png" class="blockImg" wx:if="{{item.sex == 1}}"/>
+          <image src="../../images/120x120x.png" class="blockImg" wx:if="{{item.sex == 2}}"/>
+        </view>
+        <view class="manage-info">
+          <view class="manage-name">{{item.name}}</view>
+          <view class="manage-phone">{{item.phone}}</view>
+        </view>
+      </view>
+      <view class="manage-tel" catchtap="call" data-item="{{item}}"></view>
+    </view>
+    <!--view class="manage-item flex flex-main-justify flex-cross-center">
+      <view class="flex flex-cross-center">
+        <view class="manage-pic flex-box0">
+          <image src="../../images/84x84.png" class="blockImg"/>
+        </view>
+        <view class="manage-info">
+          <view class="manage-name">李怡</view>
+          <view class="manage-phone">130-5201-3840</view>
+        </view>
+      </view>
+      <view class="manage-tel"></view>
+    </view>
+    <view class="manage-item flex flex-main-justify flex-cross-center">
+      <view class="flex flex-cross-center">
+        <view class="manage-pic flex-box0">
+          <image src="../../images/84x84.png" class="blockImg"/>
+        </view>
+        <view class="manage-info">
+          <view class="manage-name">李怡</view>
+          <view class="manage-phone">130-5201-3840</view>
+        </view>
+      </view>
+      <view class="manage-tel"></view>
+    </view>
+    <view class="manage-item flex flex-main-justify flex-cross-center">
+      <view class="flex flex-cross-center">
+        <view class="manage-pic flex-box0">
+          <image src="../../images/84x84.png" class="blockImg"/>
+        </view>
+        <view class="manage-info">
+          <view class="manage-name">李怡</view>
+          <view class="manage-phone">130-5201-3840</view>
+        </view>
+      </view>
+      <view class="manage-tel"></view>
+    </view>
+    <view class="manage-item flex flex-main-justify flex-cross-center">
+      <view class="flex flex-cross-center">
+        <view class="manage-pic flex-box0">
+          <image src="../../images/84x84.png" class="blockImg"/>
+        </view>
+        <view class="manage-info">
+          <view class="manage-name">李怡</view>
+          <view class="manage-phone">130-5201-3840</view>
+        </view>
+      </view>
+      <view class="manage-tel"></view>
+    </view-->
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="xfList-shoufu filter">
+  <view class="filter-hd">{{data.name}}</view>
+  <view class="filter-bd filter-bd1">
+    <view class="filter-inner">
+      <view class="filter-ele1 {{item.id == id ? 'ison' : ''}}" wx:for="{{data.list}}" data-item="{{item}}" bindtap="onSelect">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="filter-ft flex flex-main-justify">
+    <view class="filter-btn1" bindtap="onReset">不限条件</view>
+    <view class="filter-btn2" bindtap="onConfirm">确认</view>
+  </view>
+</view>

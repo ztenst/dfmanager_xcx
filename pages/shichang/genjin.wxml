@@ -1,0 +1,7 @@
+<view class="genjin">
+  <view class="genjin-textarea">
+    <textarea cols="30" rows="10">整个过程都很顺利，房源管理人员很好，和蔼可亲 态度也很好，虽然这次没有合作成功，还是希望下 次有机会再合作！</textarea>
+  </view>
+  <view class="genjin-any"><radio color="#FF601B"/>匿名点评</view>
+  <view class="genjin-btn">提交</view>
+</view>

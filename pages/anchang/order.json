@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText" : "报备详情",
+  "usingComponents" : {
+      "upload" : "../components/upload"
+  }
+}

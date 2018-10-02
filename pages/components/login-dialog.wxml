@@ -1,0 +1,12 @@
+<view class="loginDialog" wx:if="{{show}}">
+  <view class="loginDialog-backdrop"></view>
+  <view class="loginDialog-hd">
+    <view class="loginDialog-title">登录{{config.sitename}}</view>
+    <button wx:if="{{isWxPhone && !phone}}" class="loginDialog-ele s1" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信账号快速登录</button>
+    <button wx:if="{{isWxPhone && phone}}" class="loginDialog-ele s1" bindtap="goRegUserPhone">微信账号快速登录</button>
+    <button wx:if="{{!isWxPhone}}" class="loginDialog-ele s1" bindtap="getUserInfo">微信账号快速登录</button>
+    <button class="loginDialog-ele s2" bindtap="goLogin">手机号登录</button>
+    <!--view class="loginDialog-other">其它方式登录</view-->
+    <view class="loginDialog-close" bindtap="hide"></view>
+  </view>
+</view>

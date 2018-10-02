@@ -1,0 +1,129 @@
+@import '../../arg.scss';
+.my{
+  padding-top:40rpx;
+  &-ava{
+    width:120rpx;
+    height:120rpx;
+    position:relative;
+    margin-right:30rpx;
+    image{
+      width:120rpx;
+      height:120rpx;
+      border-radius:100%;
+    }
+    &.isvip{
+      &:after{
+        content:'';
+        width:32rpx;
+        height:32rpx;
+        background:url(#{$domain}vip.png) 0 0 no-repeat;
+        background-size:100% 100%;
+        position:absolute;
+        right:3rpx;
+        bottom:-4rpx;
+      }
+    }
+  }
+  &-tag{
+    font-size:24rpx;
+    color:#4AC845;
+    padding:6rpx 18rpx;
+    line-height:1;
+    vertical-align:top;
+    margin-top:3rpx;
+    margin-left:10rpx;
+    border-radius:6rpx;
+    background:#E4F8E3;
+  }
+  &-name{
+    font-size:42rpx;
+    line-height:1;
+  }
+  &-time{
+    font-sizE:24rpx;
+    color:#95949E;
+    line-height:1;
+    margin-top:20rpx;
+  }
+  &-btn{
+    width:150rpx;
+    height:60rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:100rpx;
+    font-size:24rpx;
+    line-height:60rpx;
+    text-align:center;
+    color:#FFF;
+  }
+  &-nav{
+    margin-top:60rpx;
+    flex-wrap:wrap;
+  }
+  &-navItem{
+    padding-top:116rpx;
+    line-height:1;
+    font-size:28rpx;
+    text-align:center;
+    margin-bottom:40rpx;
+    width:25%;
+    &.i1{
+      background:url(#{$domain}my-i1.png) center top no-repeat;
+      background-size:96rpx 96rpx;
+    }
+    &.i2{
+      background:url(#{$domain}my-i2.png) center top no-repeat;
+      background-size:96rpx 96rpx;
+    }
+    &.i3{
+      background:url(#{$domain}my-i3.png) center top no-repeat;
+      background-size:96rpx 96rpx;
+    }
+    &.i4{
+      background:url(#{$domain}my-i4.png) center top no-repeat;
+      background-size:96rpx 96rpx;
+    }
+  }
+  &-menu{
+    padding:0 47rpx;
+  }
+  &-menuItem{
+    height:108rpx;
+    border-bottom:1rpx solid #eee;
+    line-height:108rpx;
+    position:relative;
+    padding-right:36rpx;
+    &:after{
+      content:'';
+      position:absolute;
+      width:12rpx;
+      height:22rpx;
+      background:url(#{$domain}my-arrow.png) 0 0 no-repeat;
+      background-size:100% 100%;
+      right:0;
+      top:50%;
+      margin-top:-11rpx;
+    }
+    color:$c1;
+    font-size:32rpx;
+  }
+  &-menuSub{
+    color:#9097A3;
+    font-size:28rpx;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-left:20rpx;
+  }
+  &-sao{
+    width:120rpx;
+    height:40rpx;
+    line-height:40rpx;
+    font-size:28rpx;
+    text-align:center;
+    background:url(#{$domain}sao.png) center top/70rpx 70rpx no-repeat;
+    padding-top:70rpx;
+    margin-right:-10rpx;
+    color:#2F74FB;
+  }
+}
+

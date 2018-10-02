@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText" : "绑定门店码",
+    "usingComponents" : {
+        "upload" : "../components/upload"
+    }
+}

@@ -1,0 +1,102 @@
+.my {
+  padding-top: 40rpx; }
+  .my-ava {
+    width: 120rpx;
+    height: 120rpx;
+    position: relative;
+    margin-right: 30rpx; }
+    .my-ava image {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 100%; }
+    .my-ava.isvip:after {
+      content: '';
+      width: 32rpx;
+      height: 32rpx;
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/vip.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 3rpx;
+      bottom: -4rpx; }
+  .my-tag {
+    font-size: 24rpx;
+    color: #4AC845;
+    padding: 6rpx 18rpx;
+    line-height: 1;
+    vertical-align: top;
+    margin-top: 3rpx;
+    margin-left: 10rpx;
+    border-radius: 6rpx;
+    background: #E4F8E3; }
+  .my-name {
+    font-size: 42rpx;
+    line-height: 1; }
+  .my-time {
+    font-sizE: 24rpx;
+    color: #95949E;
+    line-height: 1;
+    margin-top: 20rpx; }
+  .my-btn {
+    width: 150rpx;
+    height: 60rpx;
+    background: linear-gradient(90deg, #73a1ff, #286bf5);
+    border-radius: 100rpx;
+    font-size: 24rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #FFF; }
+  .my-nav {
+    margin-top: 60rpx;
+    flex-wrap: wrap; }
+  .my-navItem {
+    padding-top: 116rpx;
+    line-height: 1;
+    font-size: 28rpx;
+    text-align: center;
+    margin-bottom: 40rpx;
+    width: 25%; }
+    .my-navItem.i1 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-i1.png) center top no-repeat;
+      background-size: 96rpx 96rpx; }
+    .my-navItem.i2 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-i2.png) center top no-repeat;
+      background-size: 96rpx 96rpx; }
+    .my-navItem.i3 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-i3.png) center top no-repeat;
+      background-size: 96rpx 96rpx; }
+    .my-navItem.i4 {
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-i4.png) center top no-repeat;
+      background-size: 96rpx 96rpx; }
+  .my-menu {
+    padding: 0 47rpx; }
+  .my-menuItem {
+    height: 108rpx;
+    border-bottom: 1rpx solid #eee;
+    line-height: 108rpx;
+    position: relative;
+    padding-right: 36rpx;
+    color: #12213E;
+    font-size: 32rpx; }
+    .my-menuItem:after {
+      content: '';
+      position: absolute;
+      width: 12rpx;
+      height: 22rpx;
+      background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-arrow.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+      right: 0;
+      top: 50%;
+      margin-top: -11rpx; }
+  .my-menuSub {
+    color: #9097A3;
+    font-size: 28rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20rpx; }
+  .my-sao {
+    width: 80rpx;
+    height: 80rpx;
+    background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/sao.png) 0 0/100% 100% no-repeat; }
+
+/*# sourceMappingURL=index.css.map */

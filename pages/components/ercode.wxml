@@ -1,0 +1,1 @@
+<canvas style="width: 150px; height: 150px;margin:0 auto" canvas-id="myQrcode" bind:longpress="saveImage"></canvas>

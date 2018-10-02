@@ -1,0 +1,41 @@
+<view class="my" wx:if="{{isLoad}}">
+  <view class="my-hd wrapper flex flex-cross-center flex-main-justify">
+    <view class="flex  flex-cross-center">
+      <view class="my-ava" wx:if="{{user.avatarUrl}}">
+        <image src="{{user.avatarUrl}}" class="blockImg"/>
+      </view>
+      <open-data type="userAvatarUrl" class="my-ava" wx:if="{{!user.avatarUrl}}"></open-data>
+      <view class="my-info">
+        <view class="my-infohd flex">
+          <view class="my-name">{{user.name}}</view>
+          <view class="my-tag">{{user.typename}}</view>
+        </view>
+        <view class="my-time">{{user.wx_word}}</view>
+      </view>
+    </view>
+    <!--view class="my-sao" bindtap="sao" wx:if="{{user.type == 1}}">扫一扫</view-->
+  </view>
+  <view class="my-nav flex">
+    <view class="my-navItem i1 flex-box0" wx:for="{{user.tags}}" bindtap="goLink" data-item="{{item}}" wx:key="*index" style="background-image:url({{item.image}})">{{item.name}}</view>
+    <!--view class="my-navItem i1">客户管理</view>
+    <view class="my-navItem i2">会员服务</view>
+    <view class="my-navItem i3">我的关注</view>
+    <view class="my-navItem i4">发布房源</view-->
+  </view>
+  <view class="my-menu">
+    <!--view class="my-menuItem">我的订阅</view>
+    <view class="my-menuItem">案场销售</view>
+    <view class="my-menuItem">案场助理</view>
+    <view class="my-menuItem">我的点评</view-->
+    <!--view class="my-menuItem flex flex-main-justify" wx:if="{{user.type == 2}}" bindtap="changeCompany"><view class="flex-box0">更换公司</view><view class="my-menuSub">{{user.company}}</view></view>
+    <view class="my-menuItem flex flex-main-justify" bindtap="joinCompany" wx:if="{{user.type == 3}}"><view class="flex-box0">加入公司</view><view class="my-menuSub"></view></view-->
+    <!--view class="my-menuItem flex flex-main-justify" bindtap="beAnchang" wx:if="{{user.type == 2}}"><view>成为案场</view></view>
+    <view class="my-menuItem flex flex-main-justify" bindtap="beShichang" wx:if="{{user.type == 1}}"><view>成为市场</view></view-->
+    <view class="my-menuItem flex flex-main-justify" bindtap="onChangeshenfen"><view>切换身份</view><view class="my-menuSub">当前身份（{{user.typename}}）</view></view>
+    <view class="my-menuItem flex flex-main-justify" bindtap="call"><view>联系客服</view><view class="my-menuSub">{{user.tel}}</view></view>
+    <view class="my-menuItem" bindtap="quit">退出登录</view>
+  </view>
+</view>
+<footer></footer>
+<common-dialog wx:if="{{user.company}}" title="提示信息" msg="你确定要离开{{user.company}}吗？" id="cdialog" bind:ok="ok" bind:cancel="cancel"></common-dialog>
+<login-dialog id="j-login-dialog" bind:refreshuser="refreshuser"></login-dialog>

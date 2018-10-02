@@ -1,0 +1,13 @@
+<import src="../../libs/wxParse/wxParse.wxml"/>
+<view class="{{show ? '' : 'dn'}}">
+  <view class="cDialog-backdrop"></view>
+  <view class="cDialog">
+    <view class="cDialog-title2">
+      <template is="wxParse" data="{{wxParseData:_msg.nodes}}"/>
+    </view>
+    <view class="cDialog-btns flex flex-box-mean">
+      <view class="cDialog-btn b1 flex-item" bindtap="onTapCall">拨打电话</view>
+      <view class="cDialog-btn b2 flex-item" bindtap="onTapOk">知道了</view>
+    </view>
+  </view>
+</view>

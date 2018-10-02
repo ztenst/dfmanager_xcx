@@ -1,0 +1,31 @@
+@import '../../arg.scss';
+.manage{
+  &-item{
+    padding:40rpx 0;
+    border-bottom:1rpx solid #eee;
+  }
+  &-pic{
+    margin-right:24rpx;
+    width:84rpx;
+    height:84rpx;
+    border-radius:100%;
+    overflow:hidden;
+  }
+  &-name{
+    font-size:32rpx;
+    line-height:1;
+    margin-bottom:16rpx;
+    color:$c1;
+  }
+  &-phone{
+    line-height:1;
+    font-size:28rpx;
+    color:$c2;
+  }
+  &-tel{
+    width:70rpx;
+    height:70rpx;
+    background:url(#{$domain}tel.png) 0 0 no-repeat;
+    background-size:100% 100%;
+  }
+}

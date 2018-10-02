@@ -1,0 +1,17 @@
+<view wx:if="{{isLoad}}">
+  <view class="bindMd">
+    <view class="bindMd-ele flex">
+      <view class="bindMd-label flex-box0">案场销售</view>
+      <view class="bindMd-option flex-box1">
+        <picker range="{{range}}" range-key="name" bindchange="change">
+          <input type="text" placeholder="请选择案场销售" disabled value="{{selectname}}"/>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="common-fixbtnplaceholder"></view>
+  <view class="common-fixbtnWrap flex flex-box-mean common-btnstwo">
+    <view class="common-f1 flex-item" bindtap="goDetail">暂不分配</view>
+    <view class="common-f2 flex-item" bindtap="goConfirm">确认</view>
+  </view>
+</view>

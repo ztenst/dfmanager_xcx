@@ -1,0 +1,8 @@
+<view class="bindMd-ele flex">
+  <view class="bindMd-label flex-box0">{{item.text}}</view>
+  <view class="bindMd-option flex-box1">
+    <picker range="{{range}}" range-key="value" bindchange="change" value="{{index}}">
+      <input type="text" placeholder="{{item.placeholder}}" disabled value="{{selectname}}"/>
+    </picker>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="{{show ? '' : 'dn'}}">
+  <view class="cDialog-backdrop"></view>
+  <view class="cDialog">
+    <view class="cDialog-title">{{title}}</view>
+    <view class="cDialog-content">{{msg}}</view>
+    <view class="cDialog-btns flex flex-box-mean">
+      <view class="cDialog-btn b1 flex-item" bindtap="cancel">取消</view>
+      <view class="cDialog-btn b2 flex-item" bindtap="ok">确定</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,169 @@
+<view class="xfList">
+  <view class="search">
+    <view class="search-input">
+      <input type="text" placeholder="搜索项目名称、公司、房源"/>
+    </view>
+  </view>
+  <view class="xfList-tabs flex">
+    <view class="xfList-tab flex-box1">区域</view>
+    <view class="xfList-tab flex-box1">总价</view>
+    <view class="xfList-tab flex-box1 ison">首付</view>
+    <view class="xfList-tab flex-box1">筛选</view>
+    <view class="xfList-tab isorder flex-box0"></view>
+  </view>
+  <view class="backdrop"></view>
+  <view class="filter filter-order">
+    <view class="filter-bd">
+      <view class="filter-ele">默认排序</view>
+      <view class="filter-ele ison">最新发布</view>
+      <view class="filter-ele">总价从低到高</view>
+      <view class="filter-ele">总价从高到低</view>
+      <view class="filter-ele">总价从高到低</view>
+      <view class="filter-ele">总价从高到低</view>
+      <view class="filter-ele">总价从高到低</view>
+    </view>
+  </view>
+
+  <view class="xfList-shaixuan filter dn">
+    <view class="filter-hd">类型</view>
+    <view class="filter-bd filter-bd1">
+      <view class="filter-inner">
+        <view class="filter-ele1">住宅</view>
+        <view class="filter-ele1">别墅</view>
+        <view class="filter-ele1">商住</view>
+        <view class="filter-ele1 ison">写字楼</view>
+        <view class="filter-ele1">商铺</view>
+      </view>
+    </view>
+    <view class="filter-hd">装修</view>
+    <view class="filter-bd filter-bd1">
+      <view class="filter-inner">
+        <view class="filter-ele1">精装修</view>
+        <view class="filter-ele1">普通装修</view>
+        <view class="filter-ele1 ison">毛坯房</view>
+      </view>
+    </view>
+    <view class="filter-ft flex flex-main-justify">
+      <view class="filter-btn1">不限条件</view>
+      <view class="filter-btn2">确认</view>
+    </view>
+  </view>
+  <view class="xfList-shoufu filter dn">
+    <view class="filter-hd">首付（元）</view>
+    <view class="filter-bd filter-bd1">
+      <view class="filter-inner">
+        <view class="filter-ele1">20万以下</view>
+        <view class="filter-ele1 ison">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+        <view class="filter-ele1">20-25万</view>
+      </view>
+    </view>
+    <view class="filter-ft flex flex-main-justify">
+      <view class="filter-btn1">不限条件</view>
+      <view class="filter-btn2">确认</view>
+    </view>
+  </view>
+
+  <view class="xfList-zongjia filter dn">
+    <view class="filter-hd">总价（元）</view>
+    <view class="filter-bd">
+      <view class="filter-ele">5000以下</view>
+      <view class="filter-ele ison">6000-8000元</view>
+      <view class="filter-ele">9000-12000元</view>
+      <view class="filter-ele">13000-15000元</view>
+      <view class="filter-ele">16000-20000元</view>
+      <view class="filter-ele">20000以上</view>
+    </view>
+    <view class="filter-ft flex flex-main-justify">
+      <view class="filter-btn1">不限条件</view>
+      <view class="filter-btn2">确认</view>
+    </view>
+  </view>
+  <view class="xfList-area flex dn">
+    <view class="xfList-area1 xfList-areaList">
+      <view class="xfList-areaElement ison">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+    </view>
+    <view class="xfList-area2 xfList-areaList">
+      <view class="xfList-areaElement ison">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+    </view>
+    <view class="xfList-area3 xfList-areaList">
+      <view class="xfList-areaElement ison">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+      <view class="xfList-areaElement">不限</view>
+    </view>
+  </view>
+  <view class="xfList-wrap wrapper">
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+  </view>
+</view>

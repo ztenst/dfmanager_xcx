@@ -1,0 +1,442 @@
+host: zd.madridwine.cn
+status返回 success和error 字符串
+msg 返回提示信息 如果status返回error则提示msg内容
+
+1.首页
+/api/index/index
+data: {
+	轮播图
+    indexImgs: [
+        "http://oofuaem2b.bkt.clouddn.com/2018/0713/15314721358951521881.png?imageslim"
+    ],
+    城市名
+    cityName: "上海",
+    标签
+    tags: [{
+        name: "新房",
+        image: "http://oofuaem2b.bkt.clouddn.com/2018/0713/15314731927714620062.png?imageslim",
+        url: "/page/index/index"
+    }],
+    新房通头条图标
+    topNewsImage: "http://oofuaem2b.bkt.clouddn.com/2018/0713/15314725889958581370.png?imageslim",
+    头条滚动文字
+    topNewsList: [
+        "房猫~你的miaomiaomiao~~",
+        "希望卖出几百家诶"
+    ],
+    优选房源
+    recomYou: [{
+        id: "1",
+        title: "项目测试",
+        price: "a",
+        addr: "好地方",
+        words: "佣金"
+    }],
+    推荐短图
+    recomShort: [{
+            id: "1",
+            title: "项目测试",
+            price: "a",
+            addr: "好地方",
+            words: "佣金"
+        },
+        {
+            id: "1",
+            title: "项目测试",
+            price: "a",
+            addr: "好地方",
+            words: "佣金"
+        }
+    ],
+    推荐长图
+    recomLong: [{
+        id: "1",
+        title: "项目测试",
+        price: "a",
+        addr: "好地方",
+        words: "佣金"
+    }]
+}
+
+2.城市列表
+/api/index/cityList
+data: {
+    C: {
+        id: "5",
+        name: "常州",
+        pinyin: "C"
+    },
+    S: {
+        id: "2",
+        name: "上海",
+        pinyin: "S"
+    }
+}
+
+3.获取openiduid接口
+/api/index/getOpenid?code=xx
+uid 新用户是空
+openid
+session_key
+
+4.发送验证码
+/api/index/getSmsCode?phone=xx
+
+5.验证验证码
+/api/index/checkCode?phone=xx&code=xx
+
+6.获取用户信息
+/api/index/getUserInfo?kw=xx kw可以是uid也可以是电话号码
+id
+phone
+name
+type 用户类型id
+typename 用户类型名
+status
+openid
+company_name 公司名
+
+7.获取筛选数组
+/api/tag/list?cate=plotFilter
+
+8.获取房源列表
+/api/plot/list
+参数
+area 二级区域id
+city 一级区域id
+street 三级区域id
+aveprice 均价标签
+sfprice 首付比例标签
+sort 排序id
+wylx 物业类型id
+zxzt 装修状态id
+limit 个数 默认20
+company 公司id
+showPay 是否显示佣金方案 没有uid的情况下showPay为0
+uid
+minprice 最小价格
+maxprice 最大价格
+page 页数
+save 收藏列表传1
+kw 搜索关键词
+返回列表
+	list: [{
+        id: "1",
+        title: "项目测试",
+        price: "12000",
+        unit: "元/㎡",
+        area: "上海",
+        street: "闵行区",
+        image: "http://oofuaem2b.bkt.clouddn.com/2018/0710/15311989420591715617.jpg?imageView2/1/w/220/h/164/interlace/1/q/100|imageslim",
+        zd_company: "好地方", 显示在公司位置
+        pay: "3-4w", 佣金方案
+        sort: "置顶房源", 图片上的标签文字
+        wylx: "住宅", 物业类型
+        distance: 0,
+        obj: {}
+    }],
+    page: 1,
+    num: 801,项目数
+    page_count: 1
+
+9.获取房源详情
+/api/plot/info?id=xx
+	id: "1",
+    title: "项目测试", 项目名
+    area: "上海", 二级区域名
+    street: "闵行区", 三级区域名
+    dps: [],
+    dp_num: "0",
+    asks: [],
+    thatuid: "",
+    ask_num: "0",
+    address: "上海闵行区好地方", 地点
+    price: "12000", 价格
+    unit: "元/㎡", 单位
+    map_lat: "31.8100770000",
+    map_lng: "119.9744540000",
+    map_zoom: "12",
+    pay: [{
+        title: "3-4w现金奖", 佣金标题
+        content: "成交就好", 佣金方案
+        num: 1
+    }],
+    news: "",
+    news_time: "",
+    new_num: 0,
+    sell_point: "<p>测测测</p>",卖点
+    sell_point_des: "测测测",
+    hx: [{
+        id: "1",
+        hid: "1",
+        title: "120平", 户型标题
+        image: "http://oofuaem2b.bkt.clouddn.com/2018/0714/15315407832457863323.png?imageView2/1/w/548/h/416/interlace/1/q/100|imageslim", 户型图片
+        bedroom: "2", 室
+        bathroom: "1", 卫
+        livingroom: "2", 厅
+        sale_status: "",
+        size: "120",面积
+        content: null,
+        status: "1",
+        sort: "0",
+        deleted: "0",
+        created: "1531540789",
+        updated: "1531540789"
+    }],
+    phones: [{ 电话列表
+    	name: "小橙子",
+    	phone: "13861242590"
+    }],
+    phone: "",
+    images: [{ 图片数组
+        id: 0,
+        type: "封面图",
+        url: "http://oofuaem2b.bkt.clouddn.com/2018/0710/15311989420591715617.jpg?imageslim|imageMogr2/thumbnail/750x/blur/1x0/quality/75|imageslim",
+        content: "http://oofuaem2b.bkt.clouddn.com/2018/0710/15311989420591715617.jpg?imageslim|imageMogr2/thumbnail/750x/blur/1x0/quality/75|imageslim"
+    }],
+    dk_rule: "<p>点点滴滴</p>", 带看规则
+    is_login: "0",
+    wx_share_title: "项目测试测试",
+    phonesnum: [],
+    qfuidsarr: [],
+    zd_company: "常州回音网络科技有限公司", 代理公司名
+    tags: [ 标签数组
+        "全案总代",
+        "住宅",
+        "毛坯"
+    ],
+    is_contact_only: 0,
+    mzsm: "",
+    areaid: "2",
+    streetid: "3",
+    owner_phone: "",
+    ff_phones: [],
+    is_alert: 0,
+    is_unshow: "0",
+    sale_status: "在售", 销售状态
+    is_save: 0,
+    can_edit: 0
+
+10. 绑定门店码
+/api/user/regis post
+参数
+UserExt[name] 姓名
+UserExt[phone] 手机号
+UserExt[type] 类型 分销2 独立经纪人3
+UserExt[image] 身份证
+UserExt[companycode] 门店码
+
+11. 新增公司 图上加一个公司地址
+/api/plot/subCompany post
+参数
+CompanyExt[name] 公司名
+CompanyExt[address] 地址
+CompanyExt[manager] 联系人名
+CompanyExt[phone] 联系电话
+CompanyExt[image] 认证材料 单图
+
+12.动态列表
+/api/plot/getNewsList?hid=xx
+[
+{
+    id: "1",
+    author: "橙子", 作者
+    content: "这是一条动态", 动态列表
+    time: "2018-07-14 15:09"
+}]
+
+13.新增举报
+/api/plot/addReport post
+hid 房源id
+reason 理由字符串
+uid 用户id
+
+14.客户列表
+/api/plot/getUserList?uid=xx
+
+15.新增报备
+/api/plot/addSub post
+参数
+hid 项目id
+phone 客户电话
+name 客户姓名
+time 来访时间 格式2018-10-10 08:08:08
+sex 性别 男1女2
+note 备注
+visit_way 来访方式 1自驾2班车
+visit_num 来访人数
+uid
+
+13. 个人中心
+/api/user/index?uid=xx
+name: "张涛",
+type: "2",
+typename: "分销", 
+wx_word: "常州回音网络科技", 名字下面的字段
+company: "常州回音网络科技 692196",
+tags: [
+{
+name: "报备管理",
+image: "http://oofuaem2b.bkt.clouddn.com/2018/0714/15315651828989514979.png?imageslim",
+url: ""
+},
+{
+name: "快速报备",
+image: "http://oofuaem2b.bkt.clouddn.com/2018/0714/15315652266456828296.png?imageslim",
+url: ""
+},
+{
+name: "我的关注",
+image: "http://oofuaem2b.bkt.clouddn.com/2018/0714/15315652515324191701.png?imageslim",
+url: ""
+},
+{
+name: "通讯录",
+image: "http://oofuaem2b.bkt.clouddn.com/2018/0714/15315653863059806453.png?imageslim",
+url: ""
+}
+],
+tel: "10086"
+
+14.获取微信绑定的手机号 这个没有msg status和data 直接返回字符串
+/api/index/decode  post
+参数
+accessKey
+encryptedData
+
+14.报备列表
+/api/user/subList?uid=xx&user_type=xx&type=xx&kw=xx&hid=xx user_type 项目展示系统用0 案场传1 市场传2 type是报备状态 
+{
+    num: 1,
+    name: "所有客户",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1,  1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"    第三行显示内容
+    }]
+},
+{
+    num: 1,
+    name: "报备",
+    list: [
+    {
+        id: "1",
+        userName: "梨子",
+        userPhone: "15161129580",
+        isShowCode: 1, 1显示扫一扫标志0不显示
+        type: "0",
+        staffName: "市场部小张",
+        StaffPhone: "13861232323",
+        time: "07-14 15:26",
+        thirdLine: "项目测试"   第三行显示内容     
+    }]
+},
+
+15.上传图片
+/api/image/qnUpload
+
+16.新增收藏
+/api/plot/addSave?uid=xx&hid=xx
+
+17.展示客户码
+/api/user/showCode?id=xx
+id 
+name 姓名
+phone 电话
+time 带看时间
+status 状态
+plot 项目名
+code 客户码
+note 备注
+imgs 图片数组
+
+18.报备详情
+/api/user/subInfo?id=xx&user_type=xx
+    id: "2",
+    plot_title: "桐庐上林春天",
+    status: "1", 状态
+    status_arr: [
+        "报备",
+        "到访",
+        "认筹",
+        "成交",
+        "请佣",
+        "结佣"
+    ],
+    pros: [{ 进程列表
+            id: "3",
+            name: "大橙子添加了跟进",
+            time: "07-17 14:28",
+            note: "今天跟进了很多东西"
+        },
+        {
+            id: "2",
+            name: "大橙子添加了到访",
+            time: "07-17 14:28",
+            note: "客户已经到访"
+        },
+        {
+            id: "1",
+            name: "陈添加了跟进",
+            time: "07-17 14:28",
+            note: "客户明天会来"
+        }
+    ],
+    imgs: [ 资料照片
+        "http://oofuaem2b.bkt.clouddn.com/2018/0717/15318118991936511102.png?imageslim"
+    ],
+    secondArr: {  第二个数组
+        name: "市场部小张",
+        phone: "13861232323",
+        tag: "市场资料"
+    },
+    firstArr: { 第一个数组
+        name: "陈冠希",
+        phone: "15161129580",
+        tag: "客户姓名"
+    }
+    user_phone: "138612324322" 用户电话
+
+19.添加跟进
+/api/user/addSubPro post
+参数
+sid 报备id
+note 备注
+status 状态 项目展示小程序没有这个字段 案场市场有
+uid 项目展示小程序的uid
+staff 案场市场小程序的uid
+
+20.获取报备状态列表
+/api/user/getSubTag
+
+21.楼盘详情新增分销签约
+/api/plot/addCo post
+uid
+hid
+
+22.上传带看资料
+/api/user/addSubImg post
+sid
+imgs 多个逗号隔开
+
+23.更换公司
+/api/user/leave?uid=xx
+
+24.获取用户类型
+/api/index/getUserType
+
+用户中心分销是更换公司，独立经纪人是加入公司
+更换公司是先调离开公司接口 再跳门店码绑定的页面
+所以登录的时候存在一种情况，就是分销用户离开公司之后的情况，他是平台用户 有uid但是也不能访问平台 所以getOpenid那个接口我用了is_true字段来判断是否登录成功
+如果is_true是0并且user_data有值的话 相当于进入绑定门店码页面 分销用户可以进行绑定门店码或者更换用户身份
+独立经纪人点加入公司也是同理 可以用getUserInfo获取用户数据 身份证是image
+
+
+

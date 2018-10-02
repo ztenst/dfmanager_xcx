@@ -1,0 +1,21 @@
+<view class="shenfen">
+  <view class="shenfen-title">请选择用户身份</view>
+  <view class="shenfen-subtitle">认证用户身份，不同的身份对应不同的功能</view>
+  <view class="shenfen-list">
+    <view class="shenfen-item i1" bindtap="onChange" data-type="1">
+      <view class="shenfen-i1">案场助理</view>
+      <view class="shenfen-i2">确认客户/改变客户状态</view>
+      <view class="shenfen-i3 i1"></view>
+    </view>
+    <view class="shenfen-item i2" bindtap="onChange" data-type="3">
+      <view class="shenfen-i1">案场销售</view>
+      <view class="shenfen-i2">跟进客户/查看客户状态</view>
+      <view class="shenfen-i3 i2"></view>
+    </view>
+    <view class="shenfen-item i3" bindtap="onChange" data-type="2">
+      <view class="shenfen-i1">市场专员</view>
+      <view class="shenfen-i2">添加维护渠道信息</view>
+      <view class="shenfen-i3 i3"></view>
+    </view>
+  </view>
+</view>

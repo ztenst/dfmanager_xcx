@@ -1,0 +1,71 @@
+.company-list {
+  padding: 0 40rpx; }
+
+.companyItem {
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #eee; }
+  .companyItem:last-child {
+    border-bottom: 0; }
+  .companyItem-pic {
+    width: 220rpx;
+    height: 170rpx;
+    border: 1rpx solid #eee;
+    position: relative;
+    margin-right: 30rpx; }
+  .companyItem-pictag {
+    position: absolute;
+    font-size: 22rpx;
+    color: #FFF;
+    line-height: 38rpx;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 110rpx;
+    height: 38rpx;
+    background: linear-gradient(90deg, #efcb8c, #d1a762);
+    border-radius: 8rpx 0px 6rpx 0px; }
+    .companyItem-pictag.i1 {
+      background: linear-gradient(90deg, #f54731, #ff7337); }
+  .companyItem-title {
+    font-size: 32rpx;
+    line-height: 1;
+    overflow: hidden;
+    height: 40rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .companyItem-bd {
+    margin-top: 8rpx;
+    margin-bottom: 8rpx; }
+  .companyItem-span {
+    font-size: 24rpx;
+    color: #9097A3;
+    line-height: 40rpx; }
+  .companyItem-score {
+    font-size: 40rpx;
+    line-height: 40rpx;
+    color: #FF601B; }
+  .companyItem-unit {
+    font-size: 24rpx; }
+  .companyItem-tags {
+    height: 32rpx; }
+  .companyItem-tag {
+    background: #fde7e0;
+    border-radius: 4rpx;
+    text-align: center;
+    font-size: 20rpx;
+    line-height: 1;
+    display: inline-block;
+    padding: 6rpx 10rpx;
+    margin-right: 10rpx;
+    vertical-align: top; }
+    .companyItem-tag.i1 {
+      color: #FF601B;
+      background: #FDE7E0; }
+    .companyItem-tag.i2 {
+      color: #4AC845;
+      background: #E4F8E3; }
+    .companyItem-tag.i3 {
+      color: #3778FF;
+      background: #E7EEFF; }
+
+/*# sourceMappingURL=company.wxss.map */

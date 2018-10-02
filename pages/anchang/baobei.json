@@ -1,0 +1,6 @@
+{
+"navigationBarTitleText" : "客户列表",
+"usingComponents" : {
+  "sao" : "../components/sao"
+}
+}

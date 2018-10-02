@@ -1,0 +1,168 @@
+<import src="../../libs/wxParse/wxParse.wxml"/>
+<view class="bbOrder" wx:if="{{isLoad}}">
+  <view class="bbOrder-list">
+    <view class="bbOrder-people flex s1 flex-cross-center" wx:if="{{firstArr.name}}">
+      <view class="bbOrder-user flex-box0">
+        <image src="../../images/84x84.png" class="blockImg"/>
+      </view>
+      <view class="bbOrder-info">
+        <view class="bbOrder-infohd flex">
+          <view class="bbOrder-name">{{firstArr.name}}</view>
+          <view class="bbOrder-tag">{{firstArr.tag}}</view>
+        </view>
+        <view class="bbOrder-tel" >{{firstArr.phone}}</view>
+        <view class="bbOrder-address">{{plot_title}}</view>
+      </view>
+      <view class="bbOrder-contact flex">
+        <view class="bbOrder-telIcon" bindtap="call" data-phone="{{firstArr.phone}}"></view>
+      </view>
+    </view>
+
+    <!---view class="bbOrder-people flex s2 flex-cross-center" wx:if="{{secondArr}}">
+      <view class="bbOrder-user flex-box0">
+        <image src="../../images/84x84.png" class="blockImg"/>
+      </view>
+      <view class="bbOrder-info">
+        <view class="bbOrder-infohd flex">
+          <view class="bbOrder-name">{{secondArr.name}}</view>
+          <view class="bbOrder-tag">{{secondArr.tag}}</view>
+        </view>
+        <view class="bbOrder-tel">{{secondArr.phone}}</view>
+        <view class="bbOrder-address">{{secondArr.company}}</view>
+      </view>
+      <view class="bbOrder-contact flex">
+        <view class="bbOrder-telIcon" bindtap="call" data-phone="{{secondArr.phone}}"></view>
+      </view>
+    </view-->
+  </view>
+  <view class="bbOrder-plot">
+    <view class="bbDetail-list">
+      <view class="bbDetail-people" wx:if="{{secondArr.name}}">
+        <view class="bbDetail-info">
+          <view class="bbDetail-infohd flex">
+            <view class="bbDetail-name">{{secondArr.name}}</view>
+            <view class="bbDetail-tag tag1">{{secondArr.tag}}</view>
+          </view>
+          <view class="bbDetail-tel">{{secondArr.phone}}</view>
+          <view class="bbDetail-address" wx:if="{{secondArr.company}}">{{secondArr.company}}</view>
+        </view>
+        <view class="bbDetail-contact flex">
+          <!--view class="bbDetail-smsIcon"></view-->
+          <view class="bbDetail-telIcon" bindtap="call" data-phone="{{secondArr.phone}}"></view>
+        </view>
+      </view>
+      <view class="bbDetail-people" wx:if="{{thirdArr.name}}">
+        <view class="bbDetail-info">
+          <view class="bbDetail-infohd flex">
+            <view class="bbDetail-name">{{thirdArr.name}}</view>
+            <view class="bbDetail-tag tag2">{{thirdArr.tag}}</view>
+          </view>
+          <view class="bbDetail-tel">{{thirdArr.phone}}</view>
+          <view class="bbDetail-address" wx:if="{{thirdArr.company}}">{{thirdArr.company}}</view>
+        </view>
+        <view class="bbDetail-contact flex">
+          <!--view class="bbDetail-smsIcon"></view-->
+          <view class="bbDetail-telIcon" bindtap="call" data-phone="{{thirdArr.phone}}"></view>
+        </view>
+      </view>
+    </view>
+    <!--view class="flex flex-main-justify flex-cross-center">
+      <view clas="bbOrder-plotName">{{plot_title}}</view>
+      <view class="bbOrder-contactBtn flex-box0" bindtap="call" data-phone="{{user_phone}}">联系客户</view>
+    </view-->
+    <view class="bbOrder-plotLine">
+      <view class="bbOrder-plotLineInner flex">
+        <view class="bbOrder-plotStatus {{status >= index ? 'ison' : ''}}" wx:for="{{status_arr}}" wx:key="*index">{{item}}</view>
+        <!--view class="bbOrder-plotStatus">带看</view>
+        <view class="bbOrder-plotStatus">成交</view>
+        <view class="bbOrder-plotStatus">业绩确认</view>
+        <view class="bbOrder-plotStatus">请佣</view>
+        <view class="bbOrder-plotStatus">结佣</view-->
+      </view>
+    </view>
+  </view>
+  <view class="bbOrder-tabs flex flex-main-justify">
+    <view class="bbOrder-tab {{tab == 0 ? 'ison' : ''}}" bindtap="changeTab" data-index="0">报备记录</view>
+    <view class="bbOrder-tab {{tab == 1 ? 'ison' : ''}}" bindtap="changeTab" data-index="1">资料照片</view>
+  </view>
+  <view class="bbOrder-history" wx:if="{{tab == 0}}">
+    <view class="bbOrderhItem flex" wx:for="{{pros}}">
+      <view class="bbOrderhItem-status flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">{{item.name}}</view>
+          <view class="bbOrderhItem-t2">{{item.time}}</view>
+        </view>
+        <view class="bbOrderhItem-tag"><template is="wxParse" data="{{wxParseData:_note[index].nodes}}"/></view>
+        <!--view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view-->
+      </view>
+    </view>
+    <!--view class="bbOrderhItem flex">
+      <view class="bbOrderhItem-status s2 flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">新增客户报备-已提交</view>
+          <view class="bbOrderhItem-t2">06-10 08:50</view>
+        </view>
+        <view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view>
+      </view>
+    </view>
+
+    <view class="bbOrderhItem flex">
+      <view class="bbOrderhItem-status flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">新增客户报备-已提交</view>
+          <view class="bbOrderhItem-t2">06-10 08:50</view>
+        </view>
+        <view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view>
+      </view>
+    </view-->
+  </view>
+  <view class="bbOrder-photo" wx:if="{{tab == 1}}">
+    <!--view class="commonUpload-pzuploads">
+      <view class="commonUpload-pzupload" wx:for="{{imgs}}" wx:key="index" bindtap="previewPhoto" data-item="{{item}}">
+        <image src="{{item}}" class="blockImg"/>
+      </view>
+    </view-->
+    <view class="daikan-pz wrapper">
+      <!--view class="daikan-pztitle">上传带看凭证</view-->
+      <upload limit="100" id="cupload" images="{{imgs}}" lock="{{true}}"></upload>
+    </view>
+    <view class="bbOrder-history">
+      <view class="bbOrderhItem flex" wx:for="{{imgpros}}">
+        <view class="bbOrderhItem-status flex-box0"></view>
+        <view class="bbOrderhItem-info flex-box1">
+          <view class="bbOrderhItem-hd flex flex-main-justify">
+            <view class="bbOrderhItem-t1">{{item.name}}上传了图片</view>
+            <view class="bbOrderhItem-t2">{{item.time}}</view>
+          </view>
+          <!--view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+          <view class="bbOrderhItem-tag">到访人数：2人</view>
+          <view class="bbOrderhItem-tag">备注：无</view-->
+        </view>
+      </view>
+    </view>
+    <!--view class="daikan-uploadBtnPlaceholder"></view>
+    <view class="daikan-uploadBtnWrapper">
+      <view class="daikan-uploadBtn" bindtap="upload">上传凭证</view>
+    </view-->
+    </view>
+    <view class="bbOrder-optionWrap" wx:if="{{tab == 0}}">
+      <view class="bbOrder-option flex flex-main-justify">
+        <view bindtap="gofp" data-id="{{id}}" class="bbOrder-half b1 flex-box0" wx:if="{{type==1}}">案场销售</view>
+        <navigator url="/pages/anchang/genjin?id={{id}}" class="bbOrder-half flex-box1">添加跟进</navigator>
+      </view>
+    </view>
+    <view class="bbOrder-optionWrap" wx:if="{{tab == 1}}">
+      <view class="bbOrder-option flex flex-main-justify">
+        <view class="bbOrder-full flex-box1" bindtap="upload">上传资料</view>
+      </view>
+    </view>
+</view>

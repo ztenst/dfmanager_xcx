@@ -1,0 +1,81 @@
+<view class="myBaobei">
+  <view class="search">
+    <view class="search-input">
+      <form>
+        <input type="text" placeholder="请输入客户姓名、手机号" bindconfirm="search" confirm-type="search"/>
+      </form>
+    </view>
+  </view>
+  <view class="myBaobei-tabs">
+    <scroll-view scroll-x="true">
+      <view class="myBaobei-tab {{index==cid ? 'ison' : ''}}" bindtap="changeCid" data-index="{{index}}" wx:for="{{list}}" wx:key="index">{{item.name}}({{item.num}})</view>
+    </scroll-view>
+  </view>
+  <view class="myBaobei-list">
+    <view class="myBaobeiItem flex flex-main-justify" wx:for="{{list[cid].list}}" wx:key="id" data-item="{{item}}">
+      <view class="myBaobeiItem-i1">
+        <view class="myBaobeiItem-title"><view class="myBaobeiItem-status s{{item.type == 0 ? '0' : '1'}}">{{item.typeWords}}</view>{{item.plot_title}}</view>
+        <view class="myBaobeiItem-row"><span class="myBaobeiItem-label">时间</span>{{item.time}}</view>
+        <view class="myBaobeiItem-row"><span class="myBaobeiItem-label">{{item.firstL}}</span>{{item.firstR}}</view>
+        <view class="myBaobeiItem-row"><span class="myBaobeiItem-label">{{item.secondL}}</span>{{item.secondR}}</view>
+        <view class="myBaobeiItem-row"><span class="myBaobeiItem-label">{{item.thirdL}}</span>{{item.thirdR}}</view>
+        <view class="myBaobeiItem-row" wx:if="{{item.forthR}}"><span class="myBaobeiItem-label">{{item.forthL}}</span>{{item.forthR}}</view>
+      </view>
+    </view>
+    <!--view class="myBaobeiItem">
+      <view class="myBaobeiItem-i1 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">邓梦华</view>
+          <view>15972671883</view>
+        </view>
+        <view class="myBaobeiItem-sao"></view>
+      </view>
+      <view class="myBaobeiItem-i2 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">曹亦奇</view>
+          <view>15327527197</view>
+        </view>
+        <view>06-02 18:25</view>
+      </view>
+      <view class="myBaobeiItem-i2">上海天玄事业房产经纪人</view>
+    </view>
+    <view class="myBaobeiItem">
+      <view class="myBaobeiItem-i1 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">邓梦华</view>
+          <view>15972671883</view>
+        </view>
+        <view class="myBaobeiItem-sao"></view>
+      </view>
+      <view class="myBaobeiItem-i2 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">曹亦奇</view>
+          <view>15327527197</view>
+        </view>
+        <view>06-02 18:25</view>
+      </view>
+      <view class="myBaobeiItem-i2">上海天玄事业房产经纪人</view>
+    </view>
+    <view class="myBaobeiItem">
+      <view class="myBaobeiItem-i1 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">邓梦华</view>
+          <view>15972671883</view>
+        </view>
+        <view class="myBaobeiItem-sao"></view>
+      </view>
+      <view class="myBaobeiItem-i2 flex flex-main-justify">
+        <view class="flex">
+          <view class="myBaobeiItem-name">曹亦奇</view>
+          <view>15327527197</view>
+        </view>
+        <view>06-02 18:25</view>
+      </view>
+      <view class="myBaobeiItem-i2">上海天玄事业房产经纪人</view>
+    </view-->
+  </view>
+  <!--view class="common-fixbtnplaceholder"></view>
+  <view class="common-fixbtnWrap">
+    <view class="common-fixbtn">添加客户</view>
+  </view-->
+</view>

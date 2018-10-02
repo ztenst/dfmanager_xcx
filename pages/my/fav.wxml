@@ -1,0 +1,48 @@
+<view class="xfList">
+  <view class="listFixed">
+    <search placeholder="搜索项目名称、公司、房源" bindconfirm="onSearch" value="{{kw}}"></search>
+  </view>
+  <view class="xfList-wrap wrapper noTabs">
+    <xf-item wx:for="{{list}}" wx:key="id" item="{{item}}"></xf-item>
+    <!--view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view>
+    <view class="relationItem flex">
+      <view class="relationItem-pic flex-box0">
+        <image src="../../images/220x170.png" class="blockImg"/>
+      </view>
+      <view class="relationItem-info flex-box1">
+        <view class="relationItem-title">中安银领国际</view>
+        <view class="relationItem-area">嘉兴区 新昌县</view>
+        <view class="relationItem-yj">10万-30万</view>
+        <view class="relationItem-company">上海星合房产置业有限公司</view>
+        <view class="relationItem-price"><span>5.2</span><span class="unit">万/㎡</span></view>
+        <view class="relationItem-type">写字楼</view>
+      </view>
+    </view-->
+  </view>
+  <load-more type="{{isNeedLoadMore}}"></load-more>
+</view>

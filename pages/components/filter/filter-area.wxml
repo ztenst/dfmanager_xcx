@@ -1,0 +1,14 @@
+<view class="xfList-area">
+  <scroll-view class="xfList-area1 xfList-areaList" scroll-y="true">
+    <view class="xfList-areaElement {{cityid == 0 ? 'ison' : ''}}" bindtap="onCitySelect">不限</view>
+    <view class="xfList-areaElement {{cityid == item.id? 'ison' : ''}} " wx:for="{{city}}" wx:key="id" bindtap="onTabCity" data-index="{{index}}" data-item="{{item}}">{{item.name}}</view>
+  </scroll-view>
+  <scroll-view class="xfList-area2 xfList-areaList" wx:if="{{cityid}}" scroll-y="true">
+    <view class="xfList-areaElement {{areaid == 0 ? 'ison' : ''}}" bindtap="onAreaSelect">不限</view>
+    <view class="xfList-areaElement {{areaid == item.id ? 'ison' : ''}}" wx:for="{{area}}" wx:key="id" bindtap="onTabArea" data-index="{{index}}" data-item="{{item}}">{{item.name}}</view>
+  </scroll-view>
+  <scroll-view class="xfList-area3 xfList-areaList" wx:if="{{areaid != 0 && areaid != -1}}" scroll-y="true">
+    <view class="xfList-areaElement {{streetid == 0 ? 'ison' : ''}}" bindtap="onStreetSelect">不限</view>
+    <view class="xfList-areaElement {{streetid == item.id ? 'ison' : ''}}" wx:for="{{street}}" wx:key="id" bindtap="onTabStreet" data-index="{{index}}" data-item="{{item}}" bindtap="onStreetSelect">{{item.name}}</view>
+  </scroll-view>
+</view>

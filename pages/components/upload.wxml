@@ -1,0 +1,7 @@
+    <view class="commonUpload-pzuploads">
+      <view class="commonUpload-pzupload" wx:for="{{images}}" wx:key="index">
+        <image src="{{item.imageURL}}?imageView2/1/w/200/h/200/interlace/1" class="blockImg" bindtap="previewPhoto" data-url="{{item.imageURL}}"/>
+        <view class="commonUpload-del" bindtap="del" data-index="{{index}}" wx:if="{{index >= locklen}}"></view>
+      </view>
+      <view class="commonUpload-pzupload commonUpload-pzuploadBtn" bindtap="choose" wx:if="{{images.length < limit}}"></view>
+    </view>

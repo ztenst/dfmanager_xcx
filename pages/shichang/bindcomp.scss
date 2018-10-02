@@ -1,0 +1,82 @@
+@import '../../arg.scss';
+.bindMd{
+  &-ele{
+    height:110rpx;
+    line-height:110rpx;
+  }
+  &-label{
+    width:230rpx;
+    box-sizing:border-box;
+    padding-left:40rpx;
+    font-size:32rpx;
+  }
+  &-option{
+    border-bottom:1rpx solid #eee;
+    input{
+      height:110rpx;
+      width:100%;
+      font-size:32rpx;
+    }
+  }
+  &-select{
+    font-size:24rpx;
+    height:60rpx;
+    line-height:60rpx;
+    text-align:center;
+    padding:0 24rpx;
+    background:#F3F3F6;
+    border-radius:8rpx;
+    margin-right:10rpx;
+  }
+  &-rcodetitle{
+    font-size:32rpx;
+    line-height:1;
+    margin-top:40rpx;
+    margin-bottom:26rpx;
+  }
+  &-rcodetip{
+    line-height:46rpx;
+    font-size:28rpx;
+    color:$c2;
+  }
+  &-rcodeImg{
+    width:206rpx;
+    height:206rpx;
+    margin-top:40rpx;
+  }
+  &-rcodetxt{
+    width:206rpx;
+    text-align:center;
+    font-size:28rpx;
+    line-height:1;
+    margin-top:26rpx;
+    margin-bottom:40rpx;
+  }
+  &-note{
+    font-size:26rpx;
+    line-height:48rpx;
+    color:$c2;
+  }
+  .link{
+    color:#2F74FB;
+    text-decoration:underline;
+  }
+  &-btn{
+    width:670rpx;
+    margin:0 auto;
+    height:100rpx;
+    background:linear-gradient(90deg,rgba(115,161,255,1),rgba(40,107,245,1));
+    border-radius:8rpx;
+    font-size:34rpx;
+    color:#FFF;
+    text-align:center;
+    line-height:100rpx;
+    margin-top:56rpx;
+  }
+}
+button{
+  background:none;
+  &:after{
+    border:0;
+  }
+}

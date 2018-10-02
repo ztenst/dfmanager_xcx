@@ -1,0 +1,1 @@
+<form bindsubmit="submitForm"><slot></slot></form>

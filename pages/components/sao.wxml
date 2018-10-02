@@ -1,0 +1,1 @@
+<common-dialog title="提示信息" id="cdialog" bind:ok="ok" bind:cancel="cancel"></common-dialog>

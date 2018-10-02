@@ -1,0 +1,50 @@
+@import '../../arg.scss';
+.addPlotItem{
+  &:last-child{
+    .addPlotItem-info{
+      border-bottom:0;
+    }
+  }
+  &-radio{
+    width:94rpx;
+    background:url(#{$domain}radio.png) center center no-repeat;
+    background-size:34rpx 34rpx;
+    &.ison{
+      background-image:url(#{$domain}radio-select.png);
+    }
+  } 
+  &-info{
+    padding:40rpx 0;
+    border-bottom:1rpx solid #eee;
+    margin-right:40rpx;
+    margin-left:40rpx;
+  }
+  &-title{
+    font-size:32rpx;
+    color:$c1;
+    line-height:1;
+    margin-bottom:26rpx;
+  }
+  &-sub{
+    line-height:1;
+    font-size:24rpx;
+    color:#9097A3;
+  }
+  &-rate{
+    color:#FF601B;
+    font-size:24rpx;
+    line-height:1;
+    .isnumber{
+      font-size:40rpx;
+    }
+    margin-bottom:26rpx;
+  }
+  &-type{
+    font-size:24rpx;
+    color:#9097A3;
+    line-height:1;
+  }
+  &-b2{
+    text-align:right;
+  }
+}

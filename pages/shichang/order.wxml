@@ -1,0 +1,103 @@
+<view class="bbOrder">
+  <view class="bbOrder-list">
+    <view class="bbOrder-people flex s1 flex-cross-center">
+      <view class="bbOrder-user flex-box0">
+        <image src="../../images/84x84.png" class="blockImg"/>
+      </view>
+      <view class="bbOrder-info">
+        <view class="bbOrder-infohd flex">
+          <view class="bbOrder-name">董德志</view>
+          <view class="bbOrder-tag">中介销售</view>
+        </view>
+        <view class="bbOrder-tel">133-0889-9415</view>
+        <view class="bbOrder-address">上海星合房产置业有限公司</view>
+      </view>
+      <view class="bbOrder-contact flex">
+        <view class="bbOrder-telIcon"></view>
+      </view>
+    </view>
+    <view class="bbOrder-people flex s2 flex-cross-center">
+      <view class="bbOrder-user flex-box0">
+        <image src="../../images/84x84.png" class="blockImg"/>
+      </view>
+      <view class="bbOrder-info">
+        <view class="bbOrder-infohd flex">
+          <view class="bbOrder-name">董德志</view>
+          <view class="bbOrder-tag">中介销售</view>
+        </view>
+        <view class="bbOrder-tel">133-0889-9415</view>
+        <view class="bbOrder-address">上海星合房产置业有限公司</view>
+      </view>
+      <view class="bbOrder-contact flex">
+        <view class="bbOrder-telIcon"></view>
+      </view>
+    </view>
+  </view>
+  <view class="bbOrder-plot">
+    <view class="flex flex-main-justify">
+      <view clas="bbOrder-plotName">悦珑湾2期（新西塘孔雀城）</view>
+      <view class="bbOrder-contactBtn flex-box0">联系客户</view>
+    </view>
+    <view class="bbOrder-plotLine">
+      <view class="bbOrder-plotLineInner flex">
+        <view class="bbOrder-plotStatus ison">报备</view>
+        <view class="bbOrder-plotStatus">带看</view>
+        <view class="bbOrder-plotStatus">成交</view>
+        <view class="bbOrder-plotStatus">业绩确认</view>
+        <view class="bbOrder-plotStatus">请佣</view>
+        <view class="bbOrder-plotStatus">结佣</view>
+      </view>
+    </view>
+  </view>
+  <view class="bbOrder-tabs flex flex-main-justify">
+    <view class="bbOrder-tab ison">订单历史</view>
+    <view class="bbOrder-tab">资料照片</view>
+  </view>
+  <view class="bbOrder-history">
+    <view class="bbOrderhItem flex">
+      <view class="bbOrderhItem-status flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">新增客户报备-已提交</view>
+          <view class="bbOrderhItem-t2">06-10 08:50</view>
+        </view>
+        <view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view>
+      </view>
+    </view>
+    <view class="bbOrderhItem flex">
+      <view class="bbOrderhItem-status s2 flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">新增客户报备-已提交</view>
+          <view class="bbOrderhItem-t2">06-10 08:50</view>
+        </view>
+        <view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view>
+      </view>
+    </view>
+
+    <view class="bbOrderhItem flex">
+      <view class="bbOrderhItem-status flex-box0"></view>
+      <view class="bbOrderhItem-info flex-box1">
+        <view class="bbOrderhItem-hd flex flex-main-justify">
+          <view class="bbOrderhItem-t1">新增客户报备-已提交</view>
+          <view class="bbOrderhItem-t2">06-10 08:50</view>
+        </view>
+        <view class="bbOrderhItem-tag">预计到访时间：2018-06-11 08:52</view>
+        <view class="bbOrderhItem-tag">到访人数：2人</view>
+        <view class="bbOrderhItem-tag">备注：无</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="bbOrder-photo"></view>
+  <view class="bbOrder-optionWrap">
+    <view class="bbOrder-option flex flex-main-justify">
+      <view class="bbOrder-b1">添加跟进</view>
+      <view class="bbOrder-b2">申请到访</view>
+    </view>
+  </view>
+</view>

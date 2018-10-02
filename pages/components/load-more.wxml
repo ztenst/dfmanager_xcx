@@ -1,0 +1,9 @@
+<view class="{{addClass}}">
+  <view class="weui-loadmore" wx:if="{{type == 1}}">
+      <view class="weui-loading"></view>
+      <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view class="listLoad isover islight" wx:if="{{type == 2}}">
+      <view class="listLoad-text">已经全部加载完毕</view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+@import '../../arg.scss';
+.applyMd{
+  &-ele{
+    height:110rpx;
+    line-height:110rpx;
+  }
+  &-label{
+    width:230rpx;
+    box-sizing:border-box;
+    padding-left:40rpx;
+    font-size:32rpx;
+  }
+  &-option{
+    border-bottom:1rpx solid #eee;
+    input{
+      height:110rpx;
+      width:100%;
+      font-size:32rpx;
+    }
+  }
+  &-ht{
+    padding-top:40rpx;
+  }
+}

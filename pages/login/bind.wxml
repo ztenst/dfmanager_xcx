@@ -1,0 +1,37 @@
+<view class="bindMd">
+  <form bindsubmit="submitForm">
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">用户类型</view>
+    <view class="bindMd-option flex-box1 flex flex-cross-center">
+      <!--view class="bindMd-select">总代公司</view-->
+    <view class="bindMd-select {{UserExt.type == item.id ? 'ison' : ''}}" wx:for="{{types}}" bindtap="setType" data-type="{{item.id}}">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="bindMd-ele flex">
+    <view class="bindMd-label flex-box0">真实姓名</view>
+    <view class="bindMd-option flex-box1">
+      <input type="text" name="UserExt.name" placeholder="请输入真实姓名" value="{{UserExt.name}}"/>
+    </view>
+  </view>
+  <view class="bindMd-ele flex" wx:if="{{UserExt.type == 2}}">
+    <view class="bindMd-label flex-box0">填写门店码</view>
+    <view class="bindMd-option flex-box1">
+      <input type="number" name="UserExt.companycode" placeholder="请输入门店码"/>
+    </view>
+  </view>
+  <view class="bindMe-rcode wrapper">
+    <view class="bindMd-rcodetitle">上传身份证</view>
+    <view class="bindMd-rcodetip">身份证照片不得有遮挡，保证字迹边缘清晰，画面不 能模糊变形。</view>
+    <view class="bindMd-rcodeImg">
+      <upload limit="1" id="cupload" images="{{UserExt.image}}"></upload>
+    </view>
+    <view class="bindMd-rcodetxt">身份证正面</view>
+    <view class="bindMd-note">
+      <view>1. 请填写门店码，若无门店码请<span class="link" bindtap="goApplyMd">点击这里申请门店码</span></view>
+      <view>2. 注册独立经纪人请上传真实身份证件和姓名。</view>
+      <view>3. 经纪圈新房通客服电话021-3160-5999</view>
+    </view>
+  </view>
+  <button class="bindMd-btn" formType="submit">提交</button>
+  </form>
+</view>

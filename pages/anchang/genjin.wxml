@@ -1,0 +1,42 @@
+<view class="genjin">
+  <form bindsubmit="add">
+    <view class="genjin-textarea">
+      <textarea cols="30" rows="10" placeholder="请填写跟进内容" name="note" value=""></textarea>
+    </view>
+    <!--view class="bindMd" wx:if="{{user.type == 1 || user.type == 3}}">
+      <view class="bindMd-ele flex">
+        <view class="bindMd-label flex-box0">状态</view>
+        <view class="bindMd-option flex-box1">
+          <picker range="{{range}}" range-key="value" bindchange="change">
+            <input type="text" placeholder="请选择状态" disabled value="{{selectname}}"/>
+          </picker>
+        </view>
+      </view>
+      <view class="bindMd-ele flex">
+        <view class="bindMd-label flex-box0">销售金额</view>
+        <view class="bindMd-option flex-box1">
+          <input type="text" name="price" type="digit" placeholder="请输入销售金额" value="{{price}}"/>
+        </view>
+      </view>
+    </view-->
+    <!--view class="genjin-any"><radio color="#FF601B"/>匿名点评</view-->
+    <view class="bindMd" wx:if="{{user.type == 1 || user.type == 3}}">
+      <view class="bindMd-ele flex">
+        <view class="bindMd-label flex-box0">状态</view>
+        <view class="bindMd-option flex-box1">
+          <picker range="{{range}}" range-key="value" bindchange="change">
+            <input type="text" placeholder="请选择状态" disabled value="{{selectname}}"/>
+          </picker>
+        </view>
+      </view>
+      <view class="currentList">
+        <view wx:for="{{currentList}}">
+          <typeone wx:if="{{item.type == 1}}" item="{{item}}" bindchange="onChangeOne"></typeone>
+          <typetwo wx:if="{{item.type == 2}}" item="{{item}}" bindchange="onChangeTwo"></typetwo>
+          <typethree wx:if="{{item.type == 3}}" item="{{item}}" bindchange="onChangeThree"></typethree>
+        </view>
+      </view>
+    </view>
+    <button formType="submit" class="genjin-btn">提交</button>
+  </form>
+</view>
