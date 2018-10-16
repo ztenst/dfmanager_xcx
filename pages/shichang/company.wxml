@@ -3,7 +3,7 @@
 </view>
 <view class="company xfList-wrap noTabs">
   <view class="company-list">
-    <view class="companyItem flex" wx:for="{{list}}" wx:key="id" bindtap="goDetailCompany" data-item="{{item}}">
+    <view class="companyItem flex" wx:for="{{list}}" wx:key="id" data-item="{{item}}">
       <view class="companyItem-pic flex-box0">
         <image src="{{item.image}}" class="blockImg"/>
         <!--view class="companyItem-pictag">置顶房源</view-->
@@ -13,6 +13,8 @@
         <view class="companyItem-bd flex flex-main-justify">
           <view class="companyItem-b1">
             <view class="companyItem-span">{{item.area}} {{item.street}}</view>
+            <view class="companyItem-span">店长：{{item.manager}} {{item.phone}}</view>
+            <view class="companyItem-span">门店码：{{item.code}}</view>
             <view class="companyItem-span">{{item.address}}</view>
           </view>
           <!--view class="companyItem-b2">
