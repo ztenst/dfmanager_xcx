@@ -19,13 +19,50 @@
   </view>
   <view class="newIndex-data">
     <view class="newIndex-title">
-      <view class="newIndex-h1">今日数据</view>
-    </view>
-    <view class="newIndex-dataList flex flex-main-justify">
-      <view class="newIndex-dataItem" wx:for="{{todayList}}">
-        <view class="newIndex-dataNum">{{item.num}}</view>
-        <view class="newIndex-dataText">{{item.text}}</view>
+      <view class="flex flex-main-justify">
+        <view class="newIndex-h1">数据明细</view>
+        <view class="loadMore">查看更多</view>
       </view>
+      <view class="tabBox flex flex-main-justify">
+        <view class="tab {{currentTab==0?'tabActive':''}}" data-current="0" bindtap="clickTab">今日</view>
+        <view class="tab {{currentTab==1?'tabActive':''}}" data-current="1" bindtap="clickTab">昨日</view>
+        <view class="tab {{currentTab==2?'tabActive':''}}" data-current="2" bindtap="clickTab">本周</view>
+        <view class="tab {{currentTab==3?'tabActive':''}}" data-current="3" bindtap="clickTab">本月</view>
+      </view>
+      <swiper class="swiper-box" current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+          <swiper-item>
+            <view class="newIndex-dataList flex flex-main-justify">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+                <view class="newIndex-dataNum">{{item.num}}</view>
+                <view class="newIndex-dataText">{{item.text}}</view>
+              </view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="newIndex-dataList flex flex-main-justify">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+                <view class="newIndex-dataNum">{{item.num}}</view>
+                <view class="newIndex-dataText">{{item.text}}</view>
+              </view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+             <view class="newIndex-dataList flex flex-main-justify">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+                <view class="newIndex-dataNum">{{item.num}}</view>
+                <view class="newIndex-dataText">{{item.text}}</view>
+              </view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+             <view class="newIndex-dataList flex flex-main-justify">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+                <view class="newIndex-dataNum">{{item.num}}</view>
+                <view class="newIndex-dataText">{{item.text}}</view>
+              </view>
+            </view>
+          </swiper-item>
+      </swiper>
     </view>
   </view>
   <view class="newIndex-menu">

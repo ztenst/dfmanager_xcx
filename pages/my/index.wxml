@@ -34,6 +34,7 @@
     <view class="my-menuItem flex flex-main-justify" bindtap="onChangeshenfen"><view>切换身份</view><view class="my-menuSub">当前身份（{{user.typename}}）</view></view>
     <view class="my-menuItem flex flex-main-justify" bindtap="call"><view>联系客服</view><view class="my-menuSub">{{user.tel}}</view></view>
     <view class="my-menuItem" bindtap="quit">退出登录</view>
+     <view class="my-menuItem">退出登录</view>
   </view>
 </view>
 <footer></footer>

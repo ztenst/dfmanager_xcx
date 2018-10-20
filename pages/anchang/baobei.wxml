@@ -2,9 +2,12 @@
   <view class="search">
     <view class="search-input">
       <form>
-        <input type="text" placeholder="请输入客户姓名、手机号" bindconfirm="search" confirm-type="search"/>
+        <input type="text" placeholder="请输入客户姓名、手机号、分销公司" bindconfirm="search" confirm-type="search"/>
       </form>
     </view>
+  </view>
+  <view class="day-tabs flex flex-main-justify">
+    <view class="day-tab {{index==dayId ? 'ison' : ''}}" bindtap="changeDay" data-index="{{index}}" wx:for="{{dayList}}" wx:key="index">{{item.name}}         </view>
   </view>
   <view class="myBaobei-tabs">
     <scroll-view scroll-x="true">

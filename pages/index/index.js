@@ -2,7 +2,8 @@ import Global from '../../utils/global';
 const app = getApp()
 Page({
   data:{
-    isLoad : false
+    isLoad : false,
+    currentTab: 0
   },
   onLoad: function(options){
     this.Global = app.Global;
@@ -25,7 +26,8 @@ Page({
     this.Global.getUser().then(obj=>{
       this.Global.Api.index({
         uid : obj.id,
-        user_type : obj.type
+        user_type : obj.type,
+        day: parseInt(this.data.currentTab) + 1
       }).then(obj=>{
         obj.isLoad = true;
         this.setData(obj);
@@ -38,5 +40,12 @@ Page({
   onLink : function(e) {
     var url = e.currentTarget.dataset.item.url;
     this.Global.WxService.navigateTo(url);
+  },
+  //  切换tab
+  clickTab : function(e){
+    this.setData({
+      currentTab: e.target.dataset.current
+    });
+    this.refresh();
   }
 })

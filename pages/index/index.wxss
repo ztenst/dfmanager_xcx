@@ -73,6 +73,44 @@
   font-size: 38rpx;
   color: #12213E;
   line-height: 1; }
+.loadMore {
+  color: #9097A3;
+  font-size: 35rpx;
+  position: relative;
+  right: 30rpx;
+}
+.loadMore:after {
+  content: '';
+  position: absolute;
+  width: 18rpx;
+  height: 28rpx;
+  background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-arrow.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  right: -30rpx;
+  top: 15rpx;
+}
+.tabBox {
+  height: 60rpx;
+  margin-top: 48rpx;
+  display: flex;
+  justify-content: center;
+  border:1px solid #3E7BF9;
+  border-radius: 60rpx;
+}
+.tab {
+  width:25%;
+  border-radius: 60rpx;
+  text-align: center;
+  color: #3E7BF9;
+}
+.tabActive {
+  background: #3E7BF9;
+  color: #fff;
+}
+.swiper-box {
+  height:74px;
+  margin:43rpx 30rpx;
+}
 .newIndex-menu {
   margin-top: 56rpx;
   padding: 0 40rpx; }

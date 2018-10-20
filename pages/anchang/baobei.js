@@ -1,7 +1,15 @@
 const app = getApp();
 Page({
   data:{
-    cid : 0
+    cid : 0,
+    dayId : 0,
+    dayList: [
+      { name: '全部' },
+      { name: '今日' },
+      { name: '昨日' },
+      { name: '本周' },
+      { name: '本月' }
+    ]
   },
   onLoad: function(options){
     this.Global = app.Global;
@@ -13,7 +21,8 @@ Page({
       var params = {
         uid : obj.id,
         user_type : obj.type,
-        kw : this.data.kw || ''
+        kw : this.data.kw || '',
+        day : this.data.dayId
       };
       if(this.options.id){
         params['hid'] = this.options.id
@@ -48,6 +57,13 @@ Page({
     this.setData({
       cid : cid
     });
+  },
+  changeDay : function(e) {
+    var dayId = e.currentTarget.dataset.index;
+    this.setData({
+      dayId: dayId
+    });
+    this.getData();
   },
   onShow : function() {
     this.getData();
