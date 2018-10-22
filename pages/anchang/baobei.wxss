@@ -60,10 +60,10 @@ page {
 
 .myBaobei-tab {
   display: inline-block;
-  font-size: 32rpx;
+  font-size: 30rpx;
   vertical-align: top;
-  line-height: 70rpx;
-  height: 70rpx;
+  line-height: 60rpx;
+  height: 60rpx;
   padding: 0rpx 25rpx;
 }
 
@@ -175,4 +175,19 @@ page {
   font-size: 28rpx;
   line-height: 1;
   margin-bottom: 28rpx;
+}
+.nodata-box {
+  width:100%;
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+}
+.nodata-box .img {
+  width: 180px; 
+  height: 180px;
+  margin-left:-17rpx;
+}
+.nodata-box .text {
+  margin-top: 20rpx;
 }

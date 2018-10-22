@@ -57,6 +57,7 @@
     font-size: 28rpx;
     text-align: center;
     margin-bottom: 40rpx;
+    font-weight:600;
     width: 25%; }
     .my-navItem.i1 {
       background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-i1.png) center top no-repeat;

@@ -15,7 +15,7 @@
     </scroll-view>
   </view>
   <view class="myBaobei-list">
-    <view class="myBaobeiItem flex flex-main-justify" wx:for="{{list[cid].list}}" wx:key="id" bindtap="goDetail" data-item="{{item}}">
+    <view class="myBaobeiItem flex flex-main-justify" wx:if="{{list[cid].list.length > 0}}" wx:for="{{list[cid].list}}" wx:key="id" bindtap="goDetail" data-item="{{item}}">
       <view class="myBaobeiItem-i1">
         <view class="myBaobeiItem-title"><view class="myBaobeiItem-status s{{item.type == 0 ? '0' : '1'}}">{{item.typeWords}}</view>{{item.plot_title}}</view>
         <view class="myBaobeiItem-row"><span class="myBaobeiItem-label">时间</span>{{item.time}}</view>
@@ -27,6 +27,10 @@
       <view class="myBaobeiItem-i2 flex-box0 dn" wx:if="{{item.isShowCode}}" catchtap="goGenjin" data-item="{{item}}">
         <view class="myBaobeiItem-sao">客户码</view>
       </view>
+    </view>
+    <view class="nodata-box" wx:if="{{list.length == 0}}">
+      <image class="img" src="../../images/nodata.png"></image>
+      <view class="text">暂无数据</view>
     </view>
     <!--view class="myBaobeiItem">
       <view class="myBaobeiItem-i1 flex flex-main-justify">
@@ -82,7 +86,7 @@
   </view>
   <view class="common-fixbtnplaceholder"></view>
   <view class="common-fixbtnWrap">
-    <view class="common-fixbtn" bindtap="sao">添加客户</view>
+    <view class="common-fixbtn" bindtap="sao">扫码确认客户</view>
   </view>
 </view>
 <sao id="c-sao"></sao>

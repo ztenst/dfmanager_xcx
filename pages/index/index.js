@@ -41,7 +41,10 @@ Page({
     var url = e.currentTarget.dataset.item.url;
     this.Global.WxService.navigateTo(url);
   },
-  //  切换tab
+  loadMore : function() {
+    this.Global.WxService.navigateTo('/pages/anchang/baobei');
+  },
+  //  切换时间tab
   clickTab : function(e){
     this.setData({
       currentTab: e.target.dataset.current

@@ -1,6 +1,6 @@
 <view class="shenfen">
   <view class="shenfen-title">请选择用户身份</view>
-  <view class="shenfen-subtitle">认证用户身份，不同的身份对应不同的功能</view>
+  <view class="shenfen-subtitle">不同的身份对应不同的权限</view>
   <view class="shenfen-list">
     <view class="shenfen-item i1" bindtap="onChange" data-type="1">
       <view class="shenfen-i1">案场助理</view>

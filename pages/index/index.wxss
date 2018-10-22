@@ -102,6 +102,8 @@
   border-radius: 60rpx;
   text-align: center;
   color: #3E7BF9;
+  height: 60rpx;
+  line-height: 60rpx;
 }
 .tabActive {
   background: #3E7BF9;

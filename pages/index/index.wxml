@@ -21,7 +21,7 @@
     <view class="newIndex-title">
       <view class="flex flex-main-justify">
         <view class="newIndex-h1">数据明细</view>
-        <view class="loadMore">查看更多</view>
+        <view class="loadMore" bindtap="loadMore">查看更多</view>
       </view>
       <view class="tabBox flex flex-main-justify">
         <view class="tab {{currentTab==0?'tabActive':''}}" data-current="0" bindtap="clickTab">今日</view>

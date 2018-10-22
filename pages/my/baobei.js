@@ -19,6 +19,7 @@ Page({
         this.setData({
           list : obj
         })
+        console.log(this.data.list)
       })
     })
   },
