@@ -6,6 +6,9 @@
       </form>
     </view>
   </view>
+  <view class="day-tabs flex flex-main-justify">
+    <view class="day-tab {{index==dayId ? 'ison' : ''}}" bindtap="changeDay" data-index="{{index}}" wx:for="{{dayList}}" wx:key="index">{{item.name}}         </view>
+  </view>
   <view class="myBaobei-tabs">
     <scroll-view scroll-x="true">
       <view class="myBaobei-tab {{index==cid ? 'ison' : ''}}" bindtap="changeCid" data-index="{{index}}" wx:for="{{list}}" wx:key="index">{{item.name}}({{item.num}})</view>
