@@ -93,7 +93,7 @@ Page({
         value['area'] = this.data.area;
         value['city'] = this.data.city;
         value['street'] = this.data.street;
-        value['adduid'] = this.Global.getUid();
+        value['staff'] = this.Global.getUid();
         //坐标转化
         if(this.data.map_lng){
           var cs = this.Global.coordtransform.gcj02tobd09(this.data.map_lng,this.data.map_lat);
