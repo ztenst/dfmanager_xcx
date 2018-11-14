@@ -1,0 +1,4 @@
+<view class="copyright {{fixed ? 'copyright-fixed' : ''}}">
+  <view class="copyright-logo" style="background-image:url({{image}})"></view>
+  <view class="copyright-text">{{text}}</view>
+</view>

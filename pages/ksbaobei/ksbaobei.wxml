@@ -1,0 +1,18 @@
+<view class="genjin">
+  <form bindsubmit="add">
+    <view class="genjin-textarea">
+      <textarea  cols="30" rows="10"  placeholder="请点击下方复制报备模板，再粘贴到此处" name="note" value=""></textarea>
+    </view>
+    <!--view class="genjin-any"><radio color="#FF601B"/>匿名点评</view-->
+  
+<view class='copy' bindtap='copy'>复制报备模版</view>
+<view class='attention'>
+  <view class='attention-top'>注意事项：</view>
+  <view class='attention-bottom'>支持多组客户批量报备，多组客户请用空格隔开</view>
+</view>
+
+<button class='sy-btn' bindtap="backhome">首页</button>
+<button class='bb-btn' formType="submit">提交报备</button>
+<copyright class='wz'></copyright>
+</form>
+</view>
