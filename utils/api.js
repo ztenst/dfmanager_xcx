@@ -119,7 +119,7 @@ class Api{
   }
   //我的报备列表
   subList(data){
-    var url = '/user/subList';
+    var url = '/user/subListNew';
     return this.request.getRequest(url,{
       data : data
     }).then(obj=>{

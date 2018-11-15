@@ -28,9 +28,9 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '分享给好友',
+      title: '钉房管家快速报备系统',
       desc: '最具人气的小程序!',
-      path: ''
+      path: '/api/user/getSharePic'
     }
   },
 
@@ -53,12 +53,30 @@ Page({
       this.Global.showErrorMsg(error.msg);
     } else {
       this.Global.getUser().then(obj => {
+        var app = getApp();
+        var user = app.globalData.wxUser;
+        var str1 = e.detail['value']['note'].replace(/\n/g, "tt");
         // console.log(e.detail);
         this.Api.getSumit({
-          staff: obj.id,
-          note: e.detail['value']['note']
+          uid: obj.id !== undefined ? obj.id : '',
+          note: str1,
+          openid: user.openid,
         }).then(obj => {
-          this.Global.showErrorMsg(obj.msg);
+          if (obj.status == 'success') {
+            this.Global.wxLogin().then(obj1 => {
+              //   app.globalData.wxUser = obj1;
+              app.globalData.user = obj.data;
+              this.Global.showOkMsg(obj.msg).then(obj => {
+                wx.navigateTo({
+                  url: '/pages/my/baobei'
+                })
+              });
+            });
+            // this.Global.showErrorMsg('请重新登录小程序');
+          } else {
+            this.Global.showErrorMsg(obj.msg);
+          }
+
         });
       })
     }
