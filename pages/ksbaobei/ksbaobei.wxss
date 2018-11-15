@@ -30,27 +30,15 @@ page {
 }
 
 .attention {
-  width: 588rpx;
-  height: 80rpx;
+  width: 635rpx;
+  height: 260rpx;
   position: relative;
   top: 50rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color:#9E9E9E;
 }
 
-.attention-top {
-  height: 50%;
-  width: 100%;
-  font-size: 28rpx;
-  color:#9E9E9E;
-  font-family: PingFangSC-Regular;
-}
-
-.attention-bottom {
-  height: 50%;
-  width: 100%;
-  font-size: 28rpx;
-  color:#9E9E9E;
-  font-family: PingFangSC-Regular;
-}
 
 .cue {
   font-size: 28rpx;

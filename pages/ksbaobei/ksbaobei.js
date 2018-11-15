@@ -1,6 +1,8 @@
 const app = getApp();
 Page({
   data: {
+    name:'',
+    sitename:''
   },
   onLoad: function (options) {
     this.Global = app.Global;
@@ -10,7 +12,11 @@ Page({
       type: 2,
       staff: app.globalData.wxUser.uid,
     }).then(obj => {
-      console.log(obj)
+      this.setData({
+        name: obj.name,
+        sitename: obj.sitename
+      })
+
       wx.setNavigationBarTitle({
         title: obj.title
       })
