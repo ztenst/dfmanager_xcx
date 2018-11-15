@@ -5,16 +5,19 @@ Page({
     type : 1
   },
   onLoad: function(options){
+   
+  },
+  onShow: function(){
     this.Global = app.Global;
     this.Api = this.Global.Api;
-    this.Global.getUser().then(obj=>{
+    this.Global.getUser().then(obj => {
       this.setData({
-        isLoad : true,
-        type : obj.type
+        isLoad: true,
+        type: obj.type
       });
     })
     this.init();
-    this.Global.pubsub.on('genjin',()=>{
+    this.Global.pubsub.on('genjin', () => {
       this.init();
     })
   },
