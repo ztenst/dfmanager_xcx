@@ -28,9 +28,9 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '分享给好友',
+      title: '钉房管家快速报备系统',
       desc: '最具人气的小程序!',
-      path: ''
+      path: '/api/user/getSharePic'
     }
   },
 
@@ -54,6 +54,9 @@ Page({
       this.Global.showErrorMsg(error.msg);
     } else {
       this.Global.getUser().then(obj => {
+        var app = getApp();
+        var user = app.globalData.wxUser;
+        var str1 = e.detail['value']['note'].replace(/\n/g, "tt");
         // console.log(e.detail);
         this.Api.getSumit({
           staff: obj.id,
