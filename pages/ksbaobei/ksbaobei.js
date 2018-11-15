@@ -47,6 +47,7 @@ Page({
     })
   },
   add: function (e) {
+    var str1 = e.detail['value']['note'].replace(/\n/g, "tt");
     console.log(1);
     if (!this.WxValidate.checkForm(e)) {
       const error = this.WxValidate.errorList[0];
@@ -56,9 +57,18 @@ Page({
         // console.log(e.detail);
         this.Api.getSumit({
           staff: obj.id,
-          note: e.detail['value']['note']
+          note: str1,
         }).then(obj => {
-          this.Global.showErrorMsg(obj.msg);
+          if (obj.status == 'success') {
+            this.Global.showOkMsg(obj.msg).then(obj => {
+              wx.navigateTo({
+                url: '/pages/my/index'
+              })
+            });
+            // this.Global.showErrorMsg('请重新登录小程序');
+          } else {
+            this.Global.showErrorMsg(obj.msg);
+          }
         });
       })
     }
