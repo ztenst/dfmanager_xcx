@@ -30,9 +30,9 @@
         <view class="myBaobeiItem-row" wx:if="{{item.forthR}}">
           <span class="myBaobeiItem-label">{{item.forthL}}</span>{{item.forthR}}</view>
       </view>
-      <view class="myBaobeiItem-i2 flex-box0" wx:if="{{item.isShowCode}}" catchtap="goGenjin" data-item="{{item}}">
+      <!-- <view class="myBaobeiItem-i2 flex-box0" wx:if="{{item.isShowCode}}" catchtap="goGenjin" data-item="{{item}}">
         <view class="myBaobeiItem-sao">客户码</view>
-      </view>
+      </view> -->
     </view>
     <view class="nodata-box" wx:if="{{list.length == 0}}">
       <image class="img" src="../../images/nodata.png"></image>

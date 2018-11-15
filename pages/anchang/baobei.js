@@ -33,12 +33,12 @@ Page({
   //带看
   goGenjin: function (e) {
     var item = e.currentTarget.dataset.item;
-    this.Global.WxService.navigateTo('/pages/baobei/daikan?id=' + item.id);
+    this.Global.WxService.navigateTo('/pages/anchang/daikan?id=' + item.id);
   },
   //去详情
   goDetail: function (e) {
     var item = e.currentTarget.dataset.item;
-    this.Global.WxService.navigateTo('/pages/baobei/order?id=' + item.id);
+    this.Global.WxService.navigateTo('/pages/anchang/order?id=' + item.id);
   },
   onSearch: function (e) {
     var kw = e.detail;

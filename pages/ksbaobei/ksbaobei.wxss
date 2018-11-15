@@ -30,7 +30,7 @@ page {
 }
 
 .attention {
-  width: 635rpx;
+  width: 100%;
   height: 260rpx;
   position: relative;
   top: 70rpx;
