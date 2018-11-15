@@ -5,12 +5,14 @@ Page({
   onLoad: function (options) {
     this.Global = app.Global;
     this.Api = this.Global.Api;
+    console.log(app.globalData.wxUser)
     this.Api.getTitle({
-      type: 2
+      type: 2,
+      staff: app.globalData.wxUser.uid,
     }).then(obj => {
-      // console.log(obj)
+      console.log(obj)
       wx.setNavigationBarTitle({
-        title: obj
+        title: obj.title
       })
     });
     var WxValidate = this.Global.WxValidate;
