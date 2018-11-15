@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 20,
+			"current": 40,
 			"list": [
 				{
 					"id": -1,
@@ -271,6 +271,11 @@
 					"name": "切换身份",
 					"pathName": "pages/my/shenfen",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "快速报备",
+					"pathName": "pages/ksbaobei/ksbaobei"
 				}
 			]
 		}

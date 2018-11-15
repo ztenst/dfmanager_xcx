@@ -286,6 +286,19 @@ class Global{
       }
     });
   }
+  //获得底部配置
+  getBottom() {
+    return new Promise(resolve => {
+      var app = getApp();
+      if (app.globalData._bottom) {
+        resolve(app.globalData._bottom);
+      } else {
+        app._bottomCallback.push(function (obj) {
+          resolve(obj);
+        });
+      }
+    })
+  }
   //获得配置
   getConfig(){
     return new Promise(resolve=>{
@@ -302,5 +315,6 @@ class Global{
   //获取isLogin
   
 }
+
 
 export default Global;

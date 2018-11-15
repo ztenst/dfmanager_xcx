@@ -23,7 +23,8 @@
     "pages/shichang/applymd",
     "pages/shichang/select",
     "pages/shichang/bindcomp",
-    "pages/shichang/baobei"
+    "pages/shichang/baobei",
+    "pages/ksbaobei/ksbaobei"
   ],
   "window":{
     "backgroundTextStyle":"light",
