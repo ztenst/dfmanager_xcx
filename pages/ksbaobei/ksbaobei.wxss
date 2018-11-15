@@ -33,7 +33,7 @@ page {
   width: 635rpx;
   height: 260rpx;
   position: relative;
-  top: 50rpx;
+  top: 70rpx;
   font-size: 28rpx;
   font-family: PingFangSC-Regular;
   color:#9E9E9E;
