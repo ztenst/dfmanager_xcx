@@ -47,6 +47,7 @@ Page({
     })
   },
   add: function (e) {
+    var str1 = e.detail['value']['note'].replace(/\n/g, "tt");
     console.log(1);
     if (!this.WxValidate.checkForm(e)) {
       const error = this.WxValidate.errorList[0];
@@ -58,25 +59,19 @@ Page({
         var str1 = e.detail['value']['note'].replace(/\n/g, "tt");
         // console.log(e.detail);
         this.Api.getSumit({
-          uid: obj.id !== undefined ? obj.id : '',
+          staff: obj.id,
           note: str1,
-          openid: user.openid,
         }).then(obj => {
           if (obj.status == 'success') {
-            this.Global.wxLogin().then(obj1 => {
-              //   app.globalData.wxUser = obj1;
-              app.globalData.user = obj.data;
-              this.Global.showOkMsg(obj.msg).then(obj => {
-                wx.navigateTo({
-                  url: '/pages/my/baobei'
-                })
-              });
+            this.Global.showOkMsg(obj.msg).then(obj => {
+              wx.navigateTo({
+                url: '/pages/my/index'
+              })
             });
             // this.Global.showErrorMsg('请重新登录小程序');
           } else {
             this.Global.showErrorMsg(obj.msg);
           }
-
         });
       })
     }
