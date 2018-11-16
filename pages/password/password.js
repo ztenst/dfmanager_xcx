@@ -24,13 +24,14 @@ Page({
       oldpwd: this.data.oldpwd,
       newpwd: this.data.newpwd,
     }).then(obj => {
-      wx.showToast({
-        title: obj.msg,
-        icon: 'succes',
-        duration: 1000,
-        mask: true
-      })
-      console.log(obj.msg)
+      if (obj.status == 'success') {
+        //this.Global.pubsub.emit('genjin');
+        this.Global.showOkMsg(obj.msg).then(obj => {
+          wx.navigateBack();
+        });
+      } else {
+        this.Global.showErrorMsg(obj.msg);
+      }
     });
 
   },

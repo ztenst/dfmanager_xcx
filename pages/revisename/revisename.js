@@ -17,17 +17,19 @@ Page({
       name: this.data.voteTitle,
       type: 1
     }).then(obj => {
-      wx.showToast({
-        title: obj.msg,
-        icon: 'succes',
-        duration: 1000,
-        mask: true
-      })
-      console.log(obj.msg)
+      if (obj.status == 'success') {
+        //this.Global.pubsub.emit('genjin');
+        this.Global.showOkMsg(obj.msg).then(obj => {
+          wx.navigateBack();
+        });
+      } else {
+        this.Global.showErrorMsg(obj.msg);
+      }
     });
   },
-  voteTitle: function (e) {
-    this.data.voteTitle = e.detail.value;
-    console.log(this.data.voteTitle)
+  bindKeyInput: function (e) {
+    this.setData({
+      voteTitle: e.detail.value
+    })
   },
 })

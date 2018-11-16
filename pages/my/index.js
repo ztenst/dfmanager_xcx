@@ -73,12 +73,15 @@ Page({
     this.Global.makePhone(this.data.user.tel);
   },
   init : function() {
-    this.Global.checkUser().then(obj=>{
+    this.Global.getUser().then(obj=>{
+      this.Global.initUserInfo({ uid: obj.id, user_type: obj.type}).then(obj1 => {
         this.setData({
-          user : obj,
-          isLoad : true
+          user: obj1.data,
+          isLoad: true
         });
         this.Global.hideLoginDialog();
+      });
+        
         //this.getUserIndex({
           //uid : obj.uid,
           //type : obj.type
