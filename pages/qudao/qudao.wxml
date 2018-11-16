@@ -1,0 +1,32 @@
+<view class='top'>
+  <view class="search">
+    <view class="search-input">
+      <input type="text" placeholder="请输入渠道公司名称" bindconfirm="confirm" bindinput="onInput" confirm-type="search" value="{{value}}" />
+    </view>
+  </view>
+  <view class='red'>
+    <text class='text1'>以下渠道公司【<text>{{title}}</text>】项目可以重新开发</text>
+  </view>
+  <!-- <view class="xfList-tabs flex">
+    <view class="xfList-tab flex-box1 {{index == 0 ? 'ison' : ''}}" bindtap="showFilter" data-index="0">{{tabs[0]['name']}}</view>
+    
+  </view>
+  <view class="filter-content" wx:if="{{filter}}">
+    <view class="backdrop" wx:if="{{index != -1}}"></view>
+    <filter-area data="{{filter[0]}}" options="{{options}}" data-index="0" wx:if="{{index == 0}}" bind:select="onFilterSelect"></filter-area>
+    <filter-tabs data="{{filter[1]}}" options="{{options}}" data-index="1" wx:if="{{index == 1}}" bind:select="onFilterSelect"></filter-tabs>
+    <filter-tabs data="{{filter[2]}}" options="{{options}}" data-index="2" wx:if="{{index == 2}}" bind:select="onFilterSelect"></filter-tabs>
+    <filter-more data="{{filter[3]}}" options="{{options}}" data-index="3" wx:if="{{index == 3}}" bind:select="onFilterSelect"></filter-more>
+    <filter-common data="{{filter[4]}}" options="{{options}}" data-index="4" wx:if="{{index == 4}}" bind:select="onFilterSelect"></filter-common>
+  </view> -->
+</view>
+<view class='content' wx:for="{{list1}}">
+  <view class='c-left'>
+  <image class='img' src='{{item.image}}'></image>
+  </view>
+  <view class='c-right'>
+    <view class='c-text1'>{{item.name}}</view>
+    <view class='c-text2'>{{item.parent}}</view>
+    <view class='c-text3'>门店码：{{item.code}}</view>
+  </view>
+</view>

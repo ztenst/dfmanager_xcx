@@ -117,5 +117,19 @@ Page({
   onChangeshenfen : function() {
     this.Global.WxService.navigateTo('/pages/my/shenfen');
   },
-
+  gorevise:function(){
+    wx.navigateTo({
+      url: '../revisename/revisename',
+    })
+  },
+  gopassword:function(){
+    wx.navigateTo({
+      url: '../password/password',
+    })
+  },
+  goxm:function(){
+    wx.navigateTo({
+      url: '../xiangmuku/xiangmuku',
+    })
+  }
 })

@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/my/index",
     "pages/login/bind",
@@ -24,12 +24,16 @@
     "pages/shichang/select",
     "pages/shichang/bindcomp",
     "pages/shichang/baobei",
-    "pages/ksbaobei/ksbaobei"
+    "pages/ksbaobei/ksbaobei",
+    "pages/revisename/revisename",
+    "pages/password/password",
+    "pages/xiangmuku/xiangmuku",
+    "pages/qudao/qudao"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

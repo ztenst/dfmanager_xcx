@@ -1,0 +1,10 @@
+<view class='xmlist' wx:for="{{list}}" data-id="{{item.id}}"  data-title="{{item.title}}" bindtap='goxm'>
+    <view class='xm-left'>
+      <view class='xm-text'>{{item.title}}</view>
+      <view class='xm-city'>{{item.price}}{{item.unit}}{{item.area}}{{item.street}}</view>
+      <view class='dc'></view>
+    </view>
+    <view class='xm-right'>
+      <view class='nubmer'><text class='nubmer1'>{{item.companyNum}}</text><text class='text'>家</text></view>
+    </view>
+</view>

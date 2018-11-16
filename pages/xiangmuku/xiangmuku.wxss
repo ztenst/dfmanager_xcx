@@ -1,0 +1,67 @@
+/* pages/xiangmuku/xiangmuku.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.xmlist {
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+
+.xm-left {
+  height: 100%;
+  width: 70%;
+  position: relative;
+}
+
+.xm-right {
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+
+.xm-text {
+  color: #12213e;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 20rpx;
+}
+
+.xm-city {
+  font-size: 24rpx;
+  color: #9097a3;
+  font-family: PingFangSC-Regular;
+  position: absolute;
+  top: 80rpx;
+  left: 50rpx;
+}
+
+.dc {
+  height: 50rpx;
+  width: 630rpx;
+  border-bottom: 1rpx solid #eee;
+  position: absolute;
+  top: 100rpx;
+  left: 50rpx;
+}
+
+.nubmer {
+  position: absolute;
+  left: 50rpx;
+  font-family: PingFangSC-Medium;
+}
+
+.nubmer1 {
+  font-size: 66rpx;
+  color: #ff601b;
+}
+
+.text{
+  color: #9097A3;
+  font-size:30rpx;
+}

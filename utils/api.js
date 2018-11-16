@@ -406,6 +406,42 @@ class Api{
       return obj.data;
     })
   }
+  //修改名字
+  revisename(data) {
+    var url = '/user/editName';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //修改密码
+  password(data) {
+    var url = '/user/editPwd';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //项目库
+  xiangmu(data) {
+    var url = '/user/getPublicCompany';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //项目列表
+  xmlist(data) {
+    var url = '/plot/list';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
 }
 
 export default Api;
