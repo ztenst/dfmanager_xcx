@@ -19,10 +19,9 @@ Page({
   onLoad: function (options) {
     this.Global = app.Global;
     this.Api = this.Global.Api;
+    this.getData();
   },
   onShow: function () {
-    console.log(app.globalData.user);
-    this.getData();
   },
   onClear: function () {
     this.setData({
@@ -60,7 +59,9 @@ Page({
   changeDay: function (e) {
     var dayId = e.currentTarget.dataset.index;
     this.setData({
-      dayId: dayId
+      dayId: dayId,
+      page: 1,
+      list1: ''
     });
     this.getData();
   },

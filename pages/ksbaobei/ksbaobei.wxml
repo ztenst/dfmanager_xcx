@@ -8,7 +8,7 @@
 <view class='copy' bindtap='copy'>复制报备模版</view>
 <view class='attention'>
 <view><text style='color:#3776F7'>{{name}}</text><text>,您好</text></view>
-<view><text>1.报备成功后会有短信提醒分销经纪人，当分销经纪人带客户到访后，请让他登陆"</text><text style='color:#3776F7'>{{sitename}}</text><text>"小程序进入客服订单页面出示客户二维码给案场销售扫描确认</text></view>
+<view><text>1.报备成功后会有短信提醒分销经纪人，当分销经纪人带客户到访后，请让他登陆"</text><text style='color:#3776F7'>{{sitename}}</text><text>"小程序进入客户订单页面出示客户二维码给案场销售扫描确认</text></view>
 <view>2.项目名称/公司全称必须完全正确无误才可报备</view>
 <view>3.多组客户批量报备请在客户信息行用空格隔开</view>
 </view>
