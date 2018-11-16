@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "修改姓名",
+  "usingComponents": {
+    "upload": "../components/upload",
+    "common-dialog-other": "../components/common-dialog-other"
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "渠道公库",
   "usingComponents": {
     "xf-item": "../components/xf-item",
     "filter-tabs": "../components/filter/filter-tabs",

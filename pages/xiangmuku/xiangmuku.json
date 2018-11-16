@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "我的项目列表",
+  "usingComponents": {
+    "upload": "../components/upload",
+    "common-dialog-other": "../components/common-dialog-other"
+  }
+}
