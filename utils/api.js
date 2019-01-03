@@ -442,6 +442,15 @@ class Api{
       return obj.data;
     })
   }
+  //项目列表
+  subpros(data) {
+    var url = '/user/getSubPros';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data.data;
+    })
+  }
 }
 
 export default Api;

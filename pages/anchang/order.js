@@ -2,12 +2,12 @@ const app = getApp();
 Page({
   data:{
     tab : 0,
-    type : 1
+    type : 1,
+    pros: null,
+    imgs: null,
+    imgpros: null,
   },
   onLoad: function(options){
-   
-  },
-  onShow: function(){
     this.Global = app.Global;
     this.Api = this.Global.Api;
     this.Global.getUser().then(obj => {
@@ -19,6 +19,23 @@ Page({
     this.init();
     this.Global.pubsub.on('genjin', () => {
       this.init();
+    })
+  },
+  onShow: function(){
+    this.setData({
+      pros: '',
+      // imgs: '',
+      // imgpros: '',
+    });
+    var id = this.options.id;
+    this.Api.subpros({sid: id}).then(obj=>{
+      this.Global._.each(obj.pros, (v, k) => {
+        console.log(v);
+        this.Global.wxParse.wxParse('_note[' + k + ']', 'html', v.note, this, 15);
+      });
+      console.log(obj)
+      this.setData(obj);
+      
     })
   },
   upload : function() {
@@ -77,6 +94,7 @@ Page({
           console.log(v);
           this.Global.wxParse.wxParse('_note[' + k + ']','html',v.note,this,15);
         });
+        console.log(data)
         this.setData(data);
       })
     })

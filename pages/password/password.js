@@ -6,7 +6,13 @@ Page({
    */
   data: {
     oldpwd:null,
-    newpwd:null
+    newpwd:null,
+    uid: ''
+  },
+  onLoad: function(options){
+    this.setData({
+      uid: options.uid
+    });
   },
   voteTitle: function (e) {
     this.data.oldpwd = e.detail.value;
@@ -20,7 +26,7 @@ Page({
     this.Global = app.Global;
     this.Api = this.Global.Api;
     this.Api.password({
-      uid: app.globalData.wxUser.uid,
+      uid: this.data.uid,
       oldpwd: this.data.oldpwd,
       newpwd: this.data.newpwd,
     }).then(obj => {

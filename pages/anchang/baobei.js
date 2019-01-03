@@ -4,7 +4,11 @@ Page({
     index: -1,
     isNeedLoadMore: 1,
     page: 1,
+    saleNum: '',
+    hkNum: '',
+    rcNum: '',
     cid: '',
+    hid: '',
     dayId: 0,
     dayList: [
       { name: '全部' },
@@ -17,6 +21,9 @@ Page({
     list1: []
   },
   onLoad: function (options) {
+    this.setData({
+      hid: options.hid
+    });
     this.Global = app.Global;
     this.Api = this.Global.Api;
     this.getData();
@@ -42,7 +49,9 @@ Page({
   onSearch: function (e) {
     var kw = e.detail;
     this.setData({
-      kw: kw
+      kw: kw,
+      list1: '',
+      page: 1,
     });
     this.getData();
   },
@@ -66,13 +75,13 @@ Page({
     this.getData();
   },
   getData: function () {
-    console.log(this.data.page);
     this.Global.getUser().then(obj => {
       this.Api.subList({
         uid: obj.id,
         user_type: obj.type,
         page: this.data.page,
-        kw: this.data.kw || '',
+        hid: this.data.hid,
+        kw: this.data.kw ? this.data.kw.value:'',
         day: this.data.dayId,
         cid: this.data.cid,
       }).then(obj => {
@@ -82,6 +91,9 @@ Page({
           list1: this.data.list,
           page: this.data.page + 1,
           list: obj.groups,
+          saleNum: obj.saleNum,
+          hkNum: obj.hkNum,
+          rcNum: obj.rcNum,
         };
         if (this.data.page >= obj.page_count) {
           params.isNeedLoadMore = 2;
@@ -103,5 +115,8 @@ Page({
       this.getData(this.data.options);
     }
   },
+  sao: function () {
+    var c = this.selectComponent('#c-sao');
+    c.sao();
+  },
 })
-

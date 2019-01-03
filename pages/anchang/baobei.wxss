@@ -55,7 +55,7 @@ page {
 
 .myBaobei-tabs {
   white-space: nowrap;
-  padding-top: 40rpx;
+  padding: 20rpx 0;
 }
 
 .myBaobei-tab {
@@ -82,8 +82,19 @@ page {
   margin-right: 40rpx;
 }
 
+.total{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background:rgba(246,229,226,1);
+  color: #F23D22;
+  font-size: 14px;
+  margin-bottom: 20rpx;
+}
+
 .myBaobei-list {
-  margin-top: 40rpx;
+  margin-top: 0rpx;
 }
 
 .myBaobeiItem {
@@ -118,6 +129,7 @@ page {
   margin-right: 36rpx;
 }
 
+
 .myBaobeiItem-status {
   border-radius: 4rpx;
   margin-right: 26rpx;
@@ -148,7 +160,12 @@ page {
   margin-bottom: 24rpx;
   white-space: nowrap;
 }
-
+.company{
+  width: 325px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
 .myBaobeiItem-sao {
   background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/54x54.png?t=1) center 103rpx no-repeat;
   background-size: 54rpx 54rpx;

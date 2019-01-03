@@ -18,28 +18,36 @@ Page({
   },
   onLoad: function (options) {
     console.log(options)
+    this.setData({
+      hid: options.id,
+      title: options.title
+    })
     this.Global = app.Global;
     this.Api = this.Global.Api;
-    this.Api.xiangmu({
-      hid: options.id,
-      kw: this.data.voteTitle,
-      city:'',
-      area:'',
-      street:''
-    }).then(obj => {
-      this.setData({
-        list1: obj.data,
-        title: options.title
-      })
-    });
+    this.getData();
   },
   confirm: function (e) {
     var value = e.detail.value;
     this.triggerEvent('confirm', value);
   },
   onInput: function (e) {
-    this.data.voteTitle = e.detail.value;
-    console.log(this.data.voteTitle)
+    this.setData({
+      voteTitle: e.detail.value,
+    })
+    this.getData();
+  },
+  getData: function () {
+    this.Api.xiangmu({
+      hid: this.data.hid,
+      kw: this.data.voteTitle,
+      city: '',
+      area: '',
+      street: ''
+    }).then(obj => {
+      this.setData({
+        list1: obj.data,
+      })
+    });
   },
   showFilter: function (e) {
     console.log(1)

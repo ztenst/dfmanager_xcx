@@ -2,7 +2,7 @@
   <view class="search">
     <view class="search-input">
       <form>
-        <input type="text" placeholder="请输入客户姓名、手机号、分销公司" bindconfirm="search" confirm-type="search"/>
+        <input type="text" placeholder="请输入客户姓名、手机号、分销公司" bindconfirm="onSearch" confirm-type="search"/>
       </form>
     </view>
   </view>
@@ -13,6 +13,14 @@
     <scroll-view scroll-x="true">
       <view class="myBaobei-tab {{item.cid===cid ? 'ison' : ''}}" bindtap="changeCid" data-index="{{item.cid}}" wx:for="{{list}}" wx:key="index">{{item.name}}({{item.num}})</view>
     </scroll-view>
+  </view>
+  <view class="total">
+    <text>销售额</text>
+    <text>{{saleNum}} | </text>
+    <text>认筹金</text>
+    <text>{{rcNum}} | </text>
+    <text>回款</text>
+    <text>{{hkNum}}</text>
   </view>
   <view class="myBaobei-list">
     <view class="myBaobeiItem flex flex-main-justify" wx:if="{{list1.length > 0}}" wx:for="{{list1}}" wx:key="id" bindtap="goDetail" data-item="{{item}}">
@@ -34,7 +42,7 @@
         <view class="myBaobeiItem-sao">客户码</view>
       </view> -->
     </view>
-    <view class="nodata-box" wx:if="{{list.length == 0}}">
+    <view class="nodata-box" wx:if="{{list1.length == 0}}">
       <image class="img" src="../../images/nodata.png"></image>
       <view class="text">暂无数据</view>
     </view>

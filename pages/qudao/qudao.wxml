@@ -5,7 +5,7 @@
     </view>
   </view>
   <view class='red'>
-    <text class='text1'>以下渠道公司【<text>{{title}}</text>】项目可以重新开发</text>
+    <text class='text1'>『<text>{{title}}</text>』项目，以下渠道公司可重新开发</text>
   </view>
   <!-- <view class="xfList-tabs flex">
     <view class="xfList-tab flex-box1 {{index == 0 ? 'ison' : ''}}" bindtap="showFilter" data-index="0">{{tabs[0]['name']}}</view>
@@ -29,4 +29,8 @@
     <view class='c-text2'>{{item.parent}}</view>
     <view class='c-text3'>门店码：{{item.code}}</view>
   </view>
+</view>
+<view class="nodata-box" wx:if="{{list1.length == 0}}">
+  <image class="img" src="../../images/nodata.png"></image>
+  <view class="text">暂无数据</view>
 </view>

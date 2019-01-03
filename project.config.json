@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
-	"appid": "wx8de477ed5b2baacb",
-	"projectname": "%E9%92%89%E6%88%BF%E7%AE%A1%E5%AE%B6",
+	"appid": "wx870ef097d399a4dd",
+	"projectname": "%E6%89%BF%E9%82%91%E8%8D%9F",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 44,
+			"current": 46,
 			"list": [
 				{
 					"id": -1,
@@ -299,6 +299,18 @@
 				{
 					"id": -1,
 					"name": "渠道",
+					"pathName": "pages/qudao/qudao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专员",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "渠道公库",
 					"pathName": "pages/qudao/qudao"
 				}
 			]

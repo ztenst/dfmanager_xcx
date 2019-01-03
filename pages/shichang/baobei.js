@@ -5,6 +5,9 @@ Page({
     isNeedLoadMore: 1,
     page: 1,
     cid: '',
+    saleNum: '',
+    hkNum: '',
+    rcNum: '',
     dayId: 0,
     dayList: [
       { name: '全部' },
@@ -42,7 +45,9 @@ Page({
   onSearch: function (e) {
     var kw = e.detail;
     this.setData({
-      kw: kw
+      kw: kw,
+      list1: '',
+      page: 1,
     });
     this.getData();
   },
@@ -70,7 +75,7 @@ Page({
         uid: obj.id,
         user_type: obj.type,
         page: this.data.page,
-        kw: this.data.kw || '',
+        kw: this.data.kw ? this.data.kw.value:'',
         day: this.data.dayId,
         cid: this.data.cid,
       }).then(obj => {
@@ -80,6 +85,9 @@ Page({
           list1: this.data.list,
           page: this.data.page + 1,
           list: obj.groups,
+          saleNum: obj.saleNum,
+          hkNum: obj.hkNum,
+          rcNum: obj.rcNum,
         };
         if (this.data.page >= obj.page_count) {
           params.isNeedLoadMore = 2;

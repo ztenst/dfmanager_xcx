@@ -2,17 +2,25 @@
   <view class="search">
     <view class="search-input">
       <form>
-        <input type="text" placeholder="请输入客户姓名、手机号、分销公司" bindconfirm="search" confirm-type="search"/>
+        <input type="text" placeholder="请输入客户姓名、手机号、分销公司" bindconfirm="onSearch" confirm-type="search"/>
       </form>
     </view>
   </view>
   <view class="day-tabs flex flex-main-justify">
-    <view class="day-tab {{index==dayId ? 'ison' : ''}}" bindtap="changeDay" data-index="{{index}}" wx:for="{{dayList}}" wx:key="index">{{item.name}}         </view>
+    <view class="day-tab {{index==dayId ? 'ison' : ''}}" bindtap="changeDay" data-index="{{index}}" wx:for="{{dayList}}" wx:key="index">{{item.name}}</view>
   </view>
- <view class="myBaobei-tabs">
+  <view class="myBaobei-tabs">
     <scroll-view scroll-x="true">
       <view class="myBaobei-tab {{item.cid===cid ? 'ison' : ''}}" bindtap="changeCid" data-index="{{item.cid}}" wx:for="{{list}}" wx:key="index">{{item.name}}({{item.num}})</view>
     </scroll-view>
+  </view>
+  <view class="total">
+    <text>销售额</text>
+    <text>{{saleNum}} | </text>
+    <text>认筹金</text>
+    <text>{{rcNum}} | </text>
+    <text>回款</text>
+    <text>{{hkNum}}</text>
   </view>
   <view class="myBaobei-list">
     <view class="myBaobeiItem flex flex-main-justify" wx:if="{{list1.length > 0}}" wx:for="{{list1}}" wx:key="id" bindtap="goDetail" data-item="{{item}}">
@@ -27,14 +35,14 @@
           <span class="myBaobeiItem-label">{{item.secondL}}</span>{{item.secondR}}</view>
         <view class="myBaobeiItem-row">
           <span class="myBaobeiItem-label">{{item.thirdL}}</span>{{item.thirdR}}</view>
-        <view class="myBaobeiItem-row" wx:if="{{item.forthR}}">
+        <view class="myBaobeiItem-row company" wx:if="{{item.forthR}}">
           <span class="myBaobeiItem-label">{{item.forthL}}</span>{{item.forthR}}</view>
       </view>
       <!-- <view class="myBaobeiItem-i2 flex-box0" wx:if="{{item.isShowCode}}" catchtap="goGenjin" data-item="{{item}}">
         <view class="myBaobeiItem-sao">客户码</view>
       </view> -->
     </view>
-    <view class="nodata-box" wx:if="{{list.length == 0}}">
+    <view class="nodata-box" wx:if="{{list1.length == 0}}">
       <image class="img" src="../../images/nodata.png"></image>
       <view class="text">暂无数据</view>
     </view>

@@ -5,13 +5,24 @@ Page({
     id: null,
   },
 
-
-  onLoad: function(options) {
+  onLoad: function (options) {
     this.Global = app.Global;
     this.Api = this.Global.Api;
+    this.getData();
+  },
+  onSearch: function (e) {
+    var kw = e.detail;
+    this.setData({
+      kw: kw,
+      list: '',
+    });
+    this.getData();
+  },
+  getData: function () {
     this.Api.xmlist({
       staffuid: app.globalData.wxUser.uid,
       user_type: 2,
+      kw: this.data.kw ? this.data.kw.value : '',
       isShowCompanyNum: 1
     }).then(obj => {
       this.setData({
@@ -19,7 +30,6 @@ Page({
       })
       console.log(obj.id)
     });
-    console.log(app.globalData.wxUser.uid)
   },
   goxm: function(e) {
     var id = e.currentTarget.dataset.id
