@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText" : "添加楼盘",
+    "usingComponents" : {
+        "load-more" : "../components/load-more",
+        "search" : "../components/search"
+    }
+}

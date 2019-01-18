@@ -53,6 +53,17 @@
       <upload limit="1" id="cupload2" images="{{images}}"></upload>
     </view>
   </view>
+  <view class='bindfloor'>
+    <view class='bindtitle'>
+      绑定楼盘
+    </view>
+    <view bindtap='gobind' class='gobind'>
+        请选择绑定的楼盘
+    </view>
+  </view>
+  <view style='padding:0 40rpx;'>
+    <xf-plot hid="{{hid}}" wx:if="{{hid.length}}" bind:del="delHid"></xf-plot>
+  </view>
   <button class="bindMd-btn" formType="submit">提交</button>
   </form>
 </view>

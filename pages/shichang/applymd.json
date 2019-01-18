@@ -2,6 +2,7 @@
 "navigationBarTitleText" : "申请门店码",
 "usingComponents" : {
     "upload" : "../components/upload",
-    "common-dialog-other" : "../components/common-dialog-other"
+    "common-dialog-other" : "../components/common-dialog-other",
+    "xf-plot": "../components/xf-plot"
 }
 }
