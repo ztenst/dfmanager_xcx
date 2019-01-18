@@ -4,7 +4,8 @@ Page({
     images : [],
     city_index : 0,
     area_index : 0,
-    street_index : 0
+    street_index : 0,
+    hid:[]
   },
   chooseLocation : function() {
     this.WxService.chooseLocation().then(obj=>{
@@ -18,6 +19,11 @@ Page({
     },obj=>{
       //this.Global.showErrorMsg('请打开允许访问地理位置权限');
     });
+  },
+  gobind(){
+    wx.navigateTo({
+      url: '../select/select',
+    })
   },
   onSelectRegion : function(e) {
     var value = e.detail.value;
@@ -105,7 +111,7 @@ Page({
         if(images2.length > 0){
           value['ava'] = images2[0]['key'];
         }
-
+        value["hids"]=this.data.hid;
         this.Api.subCompany(e.detail.value).then(obj=>{
           if(obj.status === 'success'){
             this.showDialogByMsg(obj.data);
@@ -126,12 +132,37 @@ Page({
   },
   onReady : function() {
   },
+  //设置楼盘信息
+  setPlot(e) {
+    var _ = this.Global._;
+    var ids = _.map(e, function (v, k) {
+      return v.id;
+    });
+    var hid = this.data.hid;
+    var obj = _.union(hid, ids);
+    obj = _.uniq(obj);
+    this.setData({
+      hid: obj
+    })
+  },
+  delHid: function (e) {
+    var hid = e.detail;
+    var index = this.data.hid.indexOf(hid);
+    this.data.hid.splice(index, 1);
+    this.setData({
+      'hid': this.data.hid
+    });
+  },
+  onUnload(){
+    this.Global.pubsub.off('select.select', this.setPlot);
+  },
   onLoad: function(options){
     this.Global = app.Global;
     this.WxService = this.Global.WxService;
     this.Api = this.Global.Api;
     this.init();
     this._ = this.Global._;
+    this.Global.pubsub.on('select.select', this.setPlot);
     this.setData({
       isLoad : true
     })

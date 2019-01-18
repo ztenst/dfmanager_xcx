@@ -1,3 +1,23 @@
 
 
 /*# sourceMappingURL=applymd.wxss.map */
+.bindfloor{
+  width: 670rpx;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background:url("https://oss-sysweet-demo.huafangweiyuan.com/zongdai/images/rarrow2.png") right center/12rpx 24rpx no-repeat;
+}
+.bindtitle{
+  font-size:34rpx;
+line-height:1;
+color:#12213E;
+
+
+}
+.gobind{
+  font-size:28rpx;
+color:#9097A3;
+margin-right: 40rpx;
+}
