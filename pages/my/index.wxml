@@ -24,9 +24,9 @@
   </view>
   <view class="my-menu">
     <!--view class="my-menuItem">我的订阅</view>
-    <view class="my-menuItem">案场销售</view>
-    <view class="my-menuItem">案场助理</view>
-    <view class="my-menuItem">我的点评</view-->
+    <view class="my-menuItem" bindtap='goxm'>项目入口</view-->
+    <view class="my-menuItem" bindtap='gorevise'>修改姓名</view>
+    <view class="my-menuItem" bindtap='gopassword'>修改密码</view>
     <!--view class="my-menuItem flex flex-main-justify" wx:if="{{user.type == 2}}" bindtap="changeCompany"><view class="flex-box0">更换公司</view><view class="my-menuSub">{{user.company}}</view></view>
     <view class="my-menuItem flex flex-main-justify" bindtap="joinCompany" wx:if="{{user.type == 3}}"><view class="flex-box0">加入公司</view><view class="my-menuSub"></view></view-->
     <!--view class="my-menuItem flex flex-main-justify" bindtap="beAnchang" wx:if="{{user.type == 2}}"><view>成为案场</view></view>

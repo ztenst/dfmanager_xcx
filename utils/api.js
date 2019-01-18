@@ -119,7 +119,7 @@ class Api{
   }
   //我的报备列表
   subList(data){
-    var url = '/user/subList';
+    var url = '/user/subListNew';
     return this.request.getRequest(url,{
       data : data
     }).then(obj=>{
@@ -387,6 +387,70 @@ class Api{
     });
   }
 
+  //获取标题
+  getTitle(data) {
+    var url = '/user/getMultiTitle';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data.data;
+    })
+  }
+
+  //快速报备提交
+  getSumit(data) {
+    var url = '/user/multiSub';
+    return this.request.postRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //修改名字
+  revisename(data) {
+    var url = '/user/editName';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //修改密码
+  password(data) {
+    var url = '/user/editPwd';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //项目库
+  xiangmu(data) {
+    var url = '/user/getPublicCompany';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //项目列表
+  xmlist(data) {
+    var url = '/plot/list';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data;
+    })
+  }
+  //项目列表
+  subpros(data) {
+    var url = '/user/getSubPros';
+    return this.request.getRequest(url, {
+      data: data
+    }).then(obj => {
+      return obj.data.data;
+    })
+  }
 }
 
 export default Api;

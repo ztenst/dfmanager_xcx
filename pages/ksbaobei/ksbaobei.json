@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+      "copyright": "../components/copyright"
+    }
+}

@@ -50,5 +50,12 @@ Page({
       currentTab: e.target.dataset.current
     });
     this.refresh();
+  },
+  // 滑动切换时间
+  swiperTab : function(e){
+    this.setData({
+      currentTab: e.detail.current
+    });
+    this.refresh();
   }
 })

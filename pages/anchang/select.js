@@ -66,6 +66,6 @@ Page({
   },
   onSelect : function(e) {
     var item = e.currentTarget.dataset.item;
-    this.Global.WxService.navigateTo('/pages/anchang/baobei?id=' +  item.id);
+    this.Global.WxService.navigateTo('/pages/anchang/baobei?hid=' +  item.id);
   }
 })

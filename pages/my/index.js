@@ -1,6 +1,7 @@
 const app = getApp();
 Page({
   data:{
+    uid: ''
   },
   quit : function() {
     this.Global.showLoginDialog(1);
@@ -42,7 +43,8 @@ Page({
   getUserIndex : function(data) {
     this.Api.userIndex(data).then(obj=>{
       this.setData({
-        user : obj.data
+        user : obj.data,
+        // uid : obj.data.id,
       })
     })
   },
@@ -73,12 +75,18 @@ Page({
     this.Global.makePhone(this.data.user.tel);
   },
   init : function() {
-    this.Global.checkUser().then(obj=>{
+    this.Global.getUser().then(obj=>{
+      this.setData({
+        uid: obj.id,
+      });
+      this.Global.initUserInfo({ uid: obj.id, user_type: obj.type}).then(obj1 => {
         this.setData({
-          user : obj,
-          isLoad : true
+          user: obj1.data,
+          isLoad: true
         });
         this.Global.hideLoginDialog();
+      });
+        
         //this.getUserIndex({
           //uid : obj.uid,
           //type : obj.type
@@ -117,5 +125,19 @@ Page({
   onChangeshenfen : function() {
     this.Global.WxService.navigateTo('/pages/my/shenfen');
   },
-
+  gorevise:function(){
+    wx.navigateTo({
+      url: '../revisename/revisename',
+    })
+  },
+  gopassword:function(){
+    wx.navigateTo({
+      url: '../password/password?uid='+this.data.uid,
+    })
+  },
+  goxm:function(){
+    wx.navigateTo({
+      url: '../xiangmuku/xiangmuku',
+    })
+  }
 })

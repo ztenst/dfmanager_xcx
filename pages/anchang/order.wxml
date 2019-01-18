@@ -65,6 +65,20 @@
           <view class="bbDetail-telIcon" bindtap="call" data-phone="{{thirdArr.phone}}"></view>
         </view>
       </view>
+      <view class="bbDetail-people" wx:if="{{forthArr.name}}">
+        <view class="bbDetail-info">
+          <view class="bbDetail-infohd flex">
+            <view class="bbDetail-name">{{forthArr.name}}</view>
+            <view class="bbDetail-tag tag2">{{forthArr.tag}}</view>
+          </view>
+          <view class="bbDetail-tel">{{forthArr.phone}}</view>
+          <view class="bbDetail-address" wx:if="{{forthArr.company}}">{{forthArr.company}}</view>
+        </view>
+        <view class="bbDetail-contact flex">
+          <!--view class="bbDetail-smsIcon"></view-->
+          <view class="bbDetail-telIcon" bindtap="call" data-phone="{{forthArr.phone}}"></view>
+        </view>
+      </view>
     </view>
     <!--view class="flex flex-main-justify flex-cross-center">
       <view clas="bbOrder-plotName">{{plot_title}}</view>
@@ -82,7 +96,7 @@
     </view>
   </view>
   <view class="bbOrder-tabs flex flex-main-justify">
-    <view class="bbOrder-tab {{tab == 0 ? 'ison' : ''}}" bindtap="changeTab" data-index="0">报备记录</view>
+    <view class="bbOrder-tab {{tab == 0 ? 'ison' : ''}}" bindtap="changeTab" data-index="0">订单流水</view>
     <view class="bbOrder-tab {{tab == 1 ? 'ison' : ''}}" bindtap="changeTab" data-index="1">资料照片</view>
   </view>
   <view class="bbOrder-history" wx:if="{{tab == 0}}">

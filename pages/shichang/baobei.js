@@ -1,7 +1,13 @@
 const app = getApp();
 Page({
   data: {
-    cid: 0,
+    index: -1,
+    isNeedLoadMore: 1,
+    page: 1,
+    cid: '',
+    saleNum: '',
+    hkNum: '',
+    rcNum: '',
     dayId: 0,
     dayList: [
       { name: '全部' },
@@ -9,74 +15,99 @@ Page({
       { name: '昨日' },
       { name: '本周' },
       { name: '本月' }
-    ]
+    ],
+    list: [],
+    list1: []
   },
   onLoad: function (options) {
     this.Global = app.Global;
     this.Api = this.Global.Api;
-    //this.getData();
+    this.getData();
   },
-  getData: function () {
-    this.Global.getUser().then(obj => {
-      var params = {
-        uid: obj.id,
-        user_type: obj.type,
-        kw: this.data.kw || '',
-        day: this.data.dayId
-      };
-      if (this.options.id) {
-        params['hid'] = this.options.id
-      }
-      this.Api.subList(params).then(obj => {
-        console.log(obj);
-        this.setData({
-          list: obj
-        })
-      })
-    })
+  onShow: function () {
+  },
+  onClear: function () {
+    this.setData({
+      kw: ''
+    });
+    this.getData();
   },
   //带看
   goGenjin: function (e) {
     var item = e.currentTarget.dataset.item;
-    this.Global.WxService.navigateTo('/pages/baobei/daikan?id=' + item.id);
+    this.Global.WxService.navigateTo('/pages/shichang/daikan?id=' + item.id);
   },
   //去详情
   goDetail: function (e) {
     var item = e.currentTarget.dataset.item;
     this.Global.WxService.navigateTo('/pages/anchang/order?id=' + item.id);
   },
-  search: function (e) {
-    var kw = e.detail.value;
+  onSearch: function (e) {
+    var kw = e.detail;
     this.setData({
-      kw: kw
+      kw: kw,
+      list1: '',
+      page: 1,
     });
     this.getData();
   },
   changeCid: function (e) {
     var cid = e.currentTarget.dataset.index;
     this.setData({
-      cid: cid
+      cid: cid,
+      page: 1,
+      list1: ''
     });
+    this.getData();
   },
   changeDay: function (e) {
     var dayId = e.currentTarget.dataset.index;
     this.setData({
-      dayId: dayId
+      dayId: dayId,
+      page: 1,
+      list1: ''
     });
     this.getData();
   },
-  onShow: function () {
-    this.getData();
-  },
-  sao: function () {
-    var c = this.selectComponent('#c-sao');
-    c.sao();
-  },
-  //确认到访
-  daoFang: function (id) {
-    return this.Api.setCome({
-      sid: id,
-      uid: this.Global.getUid()
+  getData: function () {
+    this.Global.getUser().then(obj => {
+      this.Api.subList({
+        uid: obj.id,
+        user_type: obj.type,
+        page: this.data.page,
+        kw: this.data.kw ? this.data.kw.value:'',
+        day: this.data.dayId,
+        cid: this.data.cid,
+      }).then(obj => {
+        var list = obj.list;
+        this.data.list = this.Global._.union(this.data.list1, list);
+        var params = {
+          list1: this.data.list,
+          page: this.data.page + 1,
+          list: obj.groups,
+          saleNum: obj.saleNum,
+          hkNum: obj.hkNum,
+          rcNum: obj.rcNum,
+        };
+        if (this.data.page >= obj.page_count) {
+          params.isNeedLoadMore = 2;
+        }
+
+        this.setData(params);
+        // this.setData({
+        //   list: obj.groups,
+        //   list1:obj.list
+        // })
+      })
     })
-  }
+  },
+  onReachBottom: function () {
+    this.loadmore();
+  },
+  loadmore: function () {
+    if (this.data.isNeedLoadMore == 1) {
+      this.getData(this.data.options);
+    }
+  },
 })
+

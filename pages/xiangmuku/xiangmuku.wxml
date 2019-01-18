@@ -1,0 +1,31 @@
+<view class="xiangmuku">
+  <view class="search">
+    <view class="search-input">
+      <form>
+        <input type="text" placeholder="请输入项目名称" bindconfirm="onSearch" confirm-type="search"/>
+      </form>
+    </view>
+  </view>
+  <view class='xmlist' wx:for="{{list}}" data-id="{{item.id}}"  data-title="{{item.title}}" bindtap='goxm'>
+      <view class='xm-left'>
+        <view class='xm-text'>{{item.title}}</view>
+        <view class='xm-city'>
+          {{item.price}}{{item.unit}}
+          <text class="area">{{item.area}}{{item.street}}</text> 
+        </view>
+        <view class='dc'></view>
+      </view>
+      <view class='xm-right'>
+        <view class='nubmer'>
+          <text class='nubmer1'>{{item.companyNum}}</text>
+          <text class='text'>家</text>
+        </view>
+      </view>
+  </view>
+  <view class="nodata-box" wx:if="{{list.length == 0}}">
+    <image class="img" src="../../images/nodata.png"></image>
+    <view class="text">暂无数据</view>
+  </view>
+</view>
+
+ 

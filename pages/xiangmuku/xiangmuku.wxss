@@ -1,0 +1,107 @@
+/* pages/xiangmuku/xiangmuku.wxss */
+
+.xiangmuku {
+  height: 100%;
+  width: 100%;
+}
+
+.search {
+  background: #fff;
+}
+
+.search-input {
+  width: 670rpx;
+  height: 68rpx;
+  border-radius: 8rpx;
+  padding-left: 78rpx;
+  background: #f3f3f6 url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/search2.png) 34rpx center no-repeat;
+  background-size: 30rpx 33rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.search-input input {
+  font-size: 28rpx;
+  height: 68rpx;
+}
+
+.xmlist {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+
+.xm-left {
+  height: 100%;
+  width: 70%;
+  position: relative;
+}
+
+.xm-right {
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+
+.xm-text {
+  color: #12213e;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 20rpx;
+}
+
+.area{
+  margin-left:5rpx;
+}
+
+.xm-city {
+  font-size: 24rpx;
+  color: #9097a3;
+  font-family: PingFangSC-Regular;
+  position: absolute;
+  top: 80rpx;
+  left: 50rpx;
+}
+
+.dc {
+  height: 50rpx;
+  width: 630rpx;
+  border-bottom: 1rpx solid #eee;
+  position: absolute;
+  top: 100rpx;
+  left: 50rpx;
+}
+
+.nubmer {
+  position: absolute;
+  left: 50rpx;
+  font-family: PingFangSC-Medium;
+}
+
+.nubmer1 {
+  font-size: 66rpx;
+  color: #ff601b;
+}
+
+.text{
+  color: #9097A3;
+  font-size:28rpx;
+}
+
+.nodata-box {
+  width:100%;
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+}
+.nodata-box .img {
+  width: 180px; 
+  height: 180px;
+  margin-left:-17rpx;
+}
+.nodata-box .text {
+  margin-top: 20rpx;
+}

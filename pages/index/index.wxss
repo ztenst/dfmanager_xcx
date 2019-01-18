@@ -74,12 +74,19 @@
   color: #12213E;
   line-height: 1; }
 .loadMore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 83px;
   color: #9097A3;
-  font-size: 35rpx;
-  position: relative;
-  right: 30rpx;
+  font-size: 32rpx;
 }
-.loadMore:after {
+.loadMore .img {
+  width:10px;
+  height:14px;
+
+}
+/* .loadMore:after {
   content: '';
   position: absolute;
   width: 18rpx;
@@ -87,8 +94,8 @@
   background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-arrow.png) 0 0 no-repeat;
   background-size: 100% 100%;
   right: -30rpx;
-  top: 15rpx;
-}
+  top: 14rpx;
+} */
 .tabBox {
   height: 60rpx;
   margin-top: 48rpx;
@@ -117,10 +124,12 @@
   margin-top: 56rpx;
   padding: 0 40rpx; }
 .newIndex-menuList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0 -20rpx; }
 .newIndex-menuItem {
   margin-bottom: 40rpx;
-  float: left;
   width: 25%; }
 .newIndex-menuIcon {
   margin: 0 auto;

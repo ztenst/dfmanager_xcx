@@ -14,14 +14,17 @@
   <view class="blank2"></view>
   <view class="newIndex-swiper">
     <swiper class="newIndex-wrapper" vertical="true" autoplay="true" interval="3000" circular="true">
-      <swiper-item class="newIndex-swipertitle" wx:for="{{topNewsList}}">{{item}}</swiper-item>
+      <swiper-item class="newIndex-swipertitle" wx:for="{{topNewsList}}" wx:key="{{item}}">{{item}}</swiper-item>
     </swiper>
   </view>
   <view class="newIndex-data">
     <view class="newIndex-title">
       <view class="flex flex-main-justify">
         <view class="newIndex-h1">数据明细</view>
-        <view class="loadMore" bindtap="loadMore">查看更多</view>
+        <view class="loadMore" bindtap="loadMore">
+          <text>查看更多</text>
+          <image class="img" src="http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/my-arrow.png"></image>
+        </view>
       </view>
       <view class="tabBox flex flex-main-justify">
         <view class="tab {{currentTab==0?'tabActive':''}}" data-current="0" bindtap="clickTab">今日</view>
@@ -32,7 +35,7 @@
       <swiper class="swiper-box" current="{{currentTab}}" duration="300"  bindchange="swiperTab">
           <swiper-item>
             <view class="newIndex-dataList flex flex-main-justify">
-              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}" wx:key="{{item.num}}">
                 <view class="newIndex-dataNum">{{item.num}}</view>
                 <view class="newIndex-dataText">{{item.text}}</view>
               </view>
@@ -40,7 +43,7 @@
           </swiper-item>
           <swiper-item>
             <view class="newIndex-dataList flex flex-main-justify">
-              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}" wx:key="{{item.num}}">
                 <view class="newIndex-dataNum">{{item.num}}</view>
                 <view class="newIndex-dataText">{{item.text}}</view>
               </view>
@@ -48,7 +51,7 @@
           </swiper-item>
           <swiper-item>
              <view class="newIndex-dataList flex flex-main-justify">
-              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}" wx:key="{{item.num}}">
                 <view class="newIndex-dataNum">{{item.num}}</view>
                 <view class="newIndex-dataText">{{item.text}}</view>
               </view>
@@ -56,7 +59,7 @@
           </swiper-item>
           <swiper-item>
              <view class="newIndex-dataList flex flex-main-justify">
-              <view class="newIndex-dataItem" wx:for="{{todayList}}">
+              <view class="newIndex-dataItem" wx:for="{{todayList}}" wx:key="{{item.num}}">
                 <view class="newIndex-dataNum">{{item.num}}</view>
                 <view class="newIndex-dataText">{{item.text}}</view>
               </view>
@@ -70,7 +73,7 @@
       <view class="newIndex-h1">工作台</view>
     </view>
     <view class="newIndex-menuList">
-      <view class="newIndex-menuItem" wx:for="{{tags}}" bindtap="onLink" data-item="{{item}}">
+      <view class="newIndex-menuItem" wx:for="{{tags}}" wx:key="{{item.name}}" bindtap="onLink" data-item="{{item}}">
         <view class="newIndex-menuIcon">
           <image src="{{item.image}}" class="blockImg"/>
         </view>

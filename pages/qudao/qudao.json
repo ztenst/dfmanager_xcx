@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "渠道公库",
+  "usingComponents": {
+    "xf-item": "../components/xf-item",
+    "filter-tabs": "../components/filter/filter-tabs",
+    "filter-common": "../components/filter/filter-common",
+    "filter-area": "../components/filter/filter-area",
+    "filter-more": "../components/filter/filter-more",
+    "load-more": "../components/load-more",
+    "search": "../components/search"
+  }
+}

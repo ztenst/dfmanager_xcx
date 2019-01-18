@@ -27,23 +27,24 @@
   font-size: 28rpx;
   line-height: 1;
   color: #FFF;
-  margin-top: 24rpx; }
+  margin-top: 20rpx; }
 .bbOrder-telIcon {
   width: 70rpx;
   height: 70rpx;
   background: url(http://sysweet-demo.oss-cn-beijing.aliyuncs.com/zongdai/images/tel2.png) 0 0 no-repeat;
   background-size: 100% 100%; }
 .bbOrder-address {
-  font-size: 26rpx;
+  font-size: 30rpx;
   color: #FFF;
-  margin-top: 24rpx;
-  line-height: 1; }
+  margin-top: 20rpx;
+  line-height: 1;
+  font-weight:600 }
 .bbOrder-name {
   font-size: 32rpx;
   color: #fff;
   line-height: 1; }
 .bbOrder-tag {
-  width: 120rpx;
+  width: 80rpx;
   height: 36rpx;
   border-radius: 6rpx;
   line-height: 36rpx;
@@ -52,6 +53,7 @@
   font-size: 24rpx;
   vertical-align: top;
   margin-left: 22rpx;
+  letter-spacing:4rpx;
   color: #FFF; }
 .bbOrder-contactBtn {
   width: 180rpx;

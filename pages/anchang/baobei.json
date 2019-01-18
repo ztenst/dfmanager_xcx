@@ -1,5 +1,5 @@
 {
-"navigationBarTitleText" : "客户列表",
+"navigationBarTitleText" : "客户订单列表",
 "usingComponents" : {
   "sao" : "../components/sao"
 }
