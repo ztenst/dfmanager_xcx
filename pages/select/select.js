@@ -36,10 +36,11 @@ Page({
     this.loadmore();
   },
   getData : function() {
+    console.log(app.globalData)
     var params = {
       page : this.data.page,
       kw : this.data.kw,
-      is_login : this.Global.is_true
+      is_login: app.globalData.is_true
     };
     this.Api.xfList(params).then(obj=>{
       var list = obj.list;

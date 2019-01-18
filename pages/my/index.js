@@ -74,6 +74,7 @@ Page({
   },
   init : function() {
     this.Global.checkUser().then(obj=>{
+      app.globalData.is_true=obj.is_true;
         this.setData({
           user : obj,
           isLoad : true
